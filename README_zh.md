@@ -13,28 +13,24 @@
 
 # Watermark
 
-> This is a *canvas-based* watermark for browser.
+> 这是一个基于 *canvas* 画布的水印库，作用于浏览器中。
 
-- 🛠️ Rich Features
-- 🔑 Fully Typed APIs
-- 📦️ Extremely light
+- 🛠️ 丰富的功能
+- 🔑 完全类型化的API
+- 📦️ 极致轻量化
 
-Watermark works with both Vue 2 , Vue 3 And React.
+同时支持 Vue 2、Vue 3和React。
 
-# Translations
-
-* [中文文档](README_zh.md)
-
-## Installing
+## 安装
 
 ```bash
 # or pnpm or yarn
 npm install company-autocomplete
 ```
 
-## Documentation
+## 文档
 
-To learn more, check [its documentation](https://zhensherlock.github.io/company-autocomplete).
+要了解更多，请查看[文档](https://zhensherlock.github.io/company-autocomplete)
 
 ## License
 

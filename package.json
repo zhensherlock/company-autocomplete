@@ -1,0 +1,82 @@
+{
+  "name": "company-autocomplete",
+  "version": "0.0.1",
+  "description": "company-autocomplete",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "lint": "npx eslint \"src/*.{ts,js}\"",
+    "dev": "concurrently \"npm run src:dev\" \"npm run docs:dev\"",
+    "src:dev": "rollup -c --watch",
+    "build": "rollup -c --environment NODE_ENV:production",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 -n changelog-option.js",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs",
+    "lint-changelog": "concurrently \"npm run lint\" \"npm run changelog\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhensherlock/company-autocomplete.git"
+  },
+  "author": "zhensherlock",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhensherlock/company-autocomplete/issues"
+  },
+  "homepage": "https://zhensherlock.github.io/company-autocomplete/",
+  "keywords": [
+    "企业",
+    "企业名称",
+    "企业组件",
+    "企业补全组件",
+    "企业名称自动补全组件"
+  ],
+  "main": "dist/ca.esm.min.js",
+  "module": "dist/ca.esm.min.js",
+  "browser": "dist/ca.umd.min.js",
+  "unpkg": "",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/plugin-transform-runtime": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@element-plus/icons-vue": "^2.1.0",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-eslint": "^9.0.3",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-replace": "^5.0.2",
+    "@rollup/plugin-terser": "0.4.0",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/markdown-it": "^12.2.3",
+    "@typescript-eslint/parser": "^5.54.1",
+    "@vue/theme": "^1.3.0",
+    "concurrently": "^7.6.0",
+    "conventional-changelog-angular": "^5.0.13",
+    "conventional-changelog-cli": "^2.2.2",
+    "core-js": "^3.29.0",
+    "element-plus": "^2.2.35",
+    "eslint": "^8.35.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-semistandard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
+    "lodash": "^4.17.21",
+    "markdown-it": "^13.0.1",
+    "rollup": "^3.18.0",
+    "rollup-plugin-filesize": "^10.0.0",
+    "rollup-plugin-your-function": "^0.4.11",
+    "terser": "^5.16.5",
+    "typescript": "^4.9.5",
+    "unplugin-element-plus": "^0.7.0",
+    "vitepress": "^1.0.0-alpha.50"
+  }
+}

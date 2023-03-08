@@ -1,3 +1,5 @@
+.DS_Store
+.idea/
 # Logs
 logs
 *.log
@@ -102,3 +104,5 @@ dist
 
 # TernJS port file
 .tern-port
+
+/docs/.vitepress/cache/deps/
