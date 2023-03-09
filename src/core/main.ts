@@ -13,9 +13,28 @@ export default class CompanyAutocomplete {
     } else {
       this.target = <Element> this.options.target
     }
-    console.log(this.target)
+    this.drawContainer()
   }
 
   async create () {
+  }
+
+  private drawContainer () {
+    if (!this.target) {
+      return
+    }
+    // innerHTML数组方式 > createElement方式 > innerHTML字符串拼接方式
+    const fragments = [
+      '<div class="company-autocomplete">',
+      '<div class="company-autocomplete__input">',
+      '<input type="text" />',
+      '</div>',
+      '</div>'
+    ]
+    this.target.innerHTML = fragments.join('')
+    const input = document.querySelector('.company-autocomplete__input input')
+    input?.addEventListener('input', () => {
+      console.log('input')
+    })
   }
 }
