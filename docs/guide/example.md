@@ -20,7 +20,6 @@ onMounted(() => {
 </script>
 
 ## CompanyAutocomplete
-
 <div id="example_ca">
 </div>
 

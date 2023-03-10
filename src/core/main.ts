@@ -2,6 +2,7 @@ import { CompanyAutocompleteOptions } from '../types'
 import { initialOptions } from '../utils/initialization'
 import { isString } from '../utils'
 import { debounce } from '../utils/throttle'
+import { handleQueryData } from './api'
 
 export default class CompanyAutocomplete {
   private readonly options: CompanyAutocompleteOptions
@@ -35,28 +36,8 @@ export default class CompanyAutocomplete {
     this.target.innerHTML = fragments.join('')
     const input = document.querySelector('.company-autocomplete__input input')
     input?.addEventListener('input', debounce((e) => {
-      console.log(e)
-      // @ts-ignore
-      fetch(`https://c.qcc.com/embed/api/company/getCompanyName?searchKey=${e.target?.value}`, {
-        headers: {
-          accept: 'application/json, text/plain, */*',
-          'accept-language': 'zh-CN,zh;q=0.9',
-          'cache-control': 'no-cache',
-          pragma: 'no-cache',
-          'sec-ch-ua': '"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"',
-          'sec-ch-ua-mobile': '?0',
-          'sec-ch-ua-platform': '"macOS',
-          'sec-fetch-dest': 'empty',
-          'sec-fetch-mode': 'cors',
-          'sec-fetch-site': 'same-origin'
-        },
-        referrer: 'https://c.qcc.com/',
-        referrerPolicy: 'strict-origin-when-cross-origin',
-        body: null,
-        method: 'GET',
-        mode: 'cors',
-        credentials: 'include'
-      })
+      const value = (<HTMLInputElement> e.target).value
+      handleQueryData(this.options.api, value)
     }, 500))
   }
 }

@@ -1,3 +1,6 @@
-export const initialOptions = {
-  target: 'body'
+import { CompanyAutocompleteOptions } from '../types'
+
+export const initialOptions: CompanyAutocompleteOptions = {
+  target: 'body',
+  api: 'qcc_openapi'
 }
