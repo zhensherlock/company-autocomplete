@@ -32,11 +32,6 @@
     "企业补全组件",
     "企业名称自动补全组件"
   ],
-  "main": "dist/ca.esm.min.js",
-  "module": "dist/ca.esm.min.js",
-  "browser": "dist/ca.umd.min.js",
-  "unpkg": "",
-  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
