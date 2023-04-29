@@ -5,7 +5,7 @@ layout: doc
 
 <script setup lang="ts">
 import { getCurrentInstance, onMounted } from 'vue';
-import { CompanyAutocomplete } from '../../src';
+import { CompanyAutocomplete } from '../../src/main';
 
 const app = getCurrentInstance();
 

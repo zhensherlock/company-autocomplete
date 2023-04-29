@@ -11,15 +11,9 @@
   <a href="https://gitter.im/china-hy/company-autocomplete?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"><img src="https://badges.gitter.im/china-hy/company-autocomplete.svg" alt="Join the chat at https://gitter.im/china-hy/company-autocomplete"></a>
 </p>
 
-# Watermark
+# Company Autocomplete
 
-> This is a *canvas-based* watermark for browser.
-
-- 🛠️ Rich Features
-- 🔑 Fully Typed APIs
-- 📦️ Extremely light
-
-Watermark works with both Vue 2 , Vue 3 And React.
+Works with both Vue 2 , Vue 3 And React.
 
 # Translations
 

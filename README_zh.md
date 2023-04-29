@@ -11,13 +11,7 @@
   <a href="https://gitter.im/china-hy/company-autocomplete?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"><img src="https://badges.gitter.im/china-hy/company-autocomplete.svg" alt="Join the chat at https://gitter.im/china-hy/company-autocomplete"></a>
 </p>
 
-# Watermark
-
-> 这是一个基于 *canvas* 画布的水印库，作用于浏览器中。
-
-- 🛠️ 丰富的功能
-- 🔑 完全类型化的API
-- 📦️ 极致轻量化
+# Company Autocomplete
 
 同时支持 Vue 2、Vue 3和React。
 
