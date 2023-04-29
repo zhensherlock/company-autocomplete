@@ -16,7 +16,10 @@ const queryQccOpenAPI = async (keyword: string): Promise<CompanyDataType[]> => {
   }
   const res: Response = await fetch(`https://c.qcc.com/embed/api/company/getCompanyName?searchKey=${keyword}`, {
     method: 'GET',
-    mode: 'cors'
+    mode: 'cors',
+    headers: {
+      Referer: 'https://c.qcc.com/'
+    }
   })
   const json = <QccOpenAPIResponseType> await res.json()
   // const json = {

@@ -1,4 +1,4 @@
-// import { version } from '../../package.json'
+import { version } from '../../package.json'
 import zh_CN from './locales/zh-CN'
 
 export default {
@@ -13,9 +13,9 @@ export default {
     logo: '/logo.png',
     nav: [
       { text: 'Guide', link: '/guide/what-is-this', activeMatch: '/guide/' },
-      { text: 'Configs', link: '/config/', activeMatch: '/config/' },
+      // { text: 'Configs', link: '/config/', activeMatch: '/config/' },
       {
-        // text: version,
+        text: version,
         items: [
           {
             text: 'Changelog',
@@ -35,7 +35,7 @@ export default {
           items: [
             { text: 'Introduce', link: '/guide/what-is-this' },
             { text: 'Getting Started', link: '/guide/getting-started' },
-            { text: 'Placeholder', link: '/guide/placeholder' }
+            { text: 'Example', link: '/guide/example' }
           ]
         }
       ]
@@ -49,11 +49,8 @@ export default {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2021-present Michael Sun'
     },
-    locales: {
-      '/zh/': zh_CN
-    },
     localeLinks: {
-      // text: 'English',
+      text: 'English',
       items: [
         { text: 'English', link: '/' },
         { text: '简体中文', link: '/zh/' },
@@ -64,16 +61,15 @@ export default {
     // lineNumbers: true
   },
   locales: {
-    '/': {
-      lang: 'en-US',
-      title: 'company-autocomplete',
-      description: 'A fancy placeholder plugin',
+    root: {
+      label: 'English',
+      lang: 'en'
     },
-    '/zh/': {
+    zh: {
+      label: '中文',
       lang: 'zh-CN',
-      description: '一个华丽的占位符插件',
-      outlineTitle: '本页目录',
-      lastUpdatedText: '上次更新',
+      link: '/zh/',
+      themeConfig: zh_CN
     }
   }
 }
