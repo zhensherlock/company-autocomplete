@@ -8,6 +8,7 @@
 * add qcc query api ([1133022](https://github.com/zhensherlock/company-autocomplete/commit/1133022625b4b9d5928f8a98ce3084a288992bb9))
 * add style files ([b701ea3](https://github.com/zhensherlock/company-autocomplete/commit/b701ea312fe77803b3b5a931efdbb58229996cbd))
 * initialization framework ([0878bf6](https://github.com/zhensherlock/company-autocomplete/commit/0878bf6cde3b59f636d18956554321a02a07ad8d))
+* update qcc openai query data ([5fa1f89](https://github.com/zhensherlock/company-autocomplete/commit/5fa1f893bf8f50b6b2f6b45c3cef0035ef5e3aed))
 
 
 ### 🎫 Chores | 其他更新
