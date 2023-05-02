@@ -1,4 +1,4 @@
-## 0.0.1 (2023-04-29)
+## [0.0.1](https://github.com/zhensherlock/company-autocomplete/compare/0878bf6cde3b59f636d18956554321a02a07ad8d...v0.0.1) (2023-04-29)
 
 
 ### ✨ Features | 新功能
@@ -9,6 +9,7 @@
 * add style files ([b701ea3](https://github.com/zhensherlock/company-autocomplete/commit/b701ea312fe77803b3b5a931efdbb58229996cbd))
 * initialization framework ([0878bf6](https://github.com/zhensherlock/company-autocomplete/commit/0878bf6cde3b59f636d18956554321a02a07ad8d))
 * update qcc openai query data ([5fa1f89](https://github.com/zhensherlock/company-autocomplete/commit/5fa1f893bf8f50b6b2f6b45c3cef0035ef5e3aed))
+* update qcc openai query logic ([67bd7b6](https://github.com/zhensherlock/company-autocomplete/commit/67bd7b660610daa70aec8ad060b28e8dcef49959))
 
 
 ### 🎫 Chores | 其他更新

@@ -1,4 +1,4 @@
-import { CompanyAutocompleteOptions } from '../types'
+import { CompanyAutocompleteOptions, CompanyDataType } from '../types'
 import { initialOptions } from '../utils/initialization'
 import { isString } from '../utils'
 import { debounce } from '../utils/throttle'
@@ -9,6 +9,9 @@ import { clickOutside } from '../utils/click-outside'
 class CompanyAutocomplete {
   private readonly options: CompanyAutocompleteOptions
   private readonly target: Element | null
+  private suggestions: CompanyDataType[] = []
+  private suggestionElement: HTMLDivElement = document.createElement('div')
+  private inputWrapElement: HTMLElement = document.createElement('div')
 
   constructor (args: Partial<CompanyAutocompleteOptions> = {}) {
     this.options = Object.assign({}, initialOptions, args)
@@ -20,9 +23,6 @@ class CompanyAutocomplete {
     this.render()
   }
 
-  async create () {
-  }
-
   private render (): void {
     if (!this.target) {
       return
@@ -31,29 +31,29 @@ class CompanyAutocomplete {
     const fragments = [
       '<div class="company-autocomplete">',
       '<div class="company-autocomplete__input">',
-      '<input type="text" />',
+      `<input type="text" placeholder="${this.options.placeholder}" />`,
       '</div>',
       '</div>'
     ]
     this.target.innerHTML = fragments.join('')
-    const suggestionElement = document.createElement('div')
-    suggestionElement.classList.add('suggestion-popper')
-    suggestionElement.innerHTML = ''
-    document.body.appendChild(suggestionElement)
-    const inputElement = <HTMLElement> this.target
-    autoUpdate(inputElement, suggestionElement, () => {
-      computePosition(inputElement, suggestionElement, {
+    this.suggestionElement.classList.add('suggestion-popper')
+    this.suggestionElement.innerHTML = ''
+    document.body.appendChild(this.suggestionElement)
+    this.inputWrapElement = <HTMLElement> this.target.querySelector('.company-autocomplete')
+    const inputElement = <HTMLInputElement> this.inputWrapElement.querySelector('input')
+    autoUpdate(this.inputWrapElement, this.suggestionElement, () => {
+      computePosition(this.inputWrapElement, this.suggestionElement, {
         middleware: [
           size({
-            apply ({ rects }) {
-              Object.assign(suggestionElement.style, {
+            apply: ({ rects }) => {
+              Object.assign(this.suggestionElement.style, {
                 width: `${rects.reference.width}px`
               })
             }
           })
         ]
       }).then(({ x, y }) => {
-        Object.assign(suggestionElement.style, {
+        Object.assign(this.suggestionElement.style, {
           left: `${x}px`,
           top: `${y}px`
         })
@@ -61,35 +61,68 @@ class CompanyAutocomplete {
     })
     inputElement?.addEventListener('input', debounce((e) => {
       const value = (<HTMLInputElement> e.target).value
-      handleQueryData(this.options.api, value).then(data => {
-        if (data.length === 0) {
-          suggestionElement.innerHTML = ''
-          return
-        }
-        const suggestionFragments: string[] = [
-          '<div class="suggestion-popper__body">'
-        ]
-        data.forEach(item => {
-          suggestionFragments.push('<div class="suggestion">')
-          suggestionFragments.push('<div class="suggestion__avatar"></div>')
-          suggestionFragments.push(`<div class="suggestion__label">${item.name}</div>`)
-          suggestionFragments.push('<div class="suggestion__extra"></div>')
-          suggestionFragments.push('</div>')
-        })
-        suggestionFragments.push('</div>')
-        suggestionFragments.push('<div class="suggestion-popper__footer">')
-        suggestionFragments.push('</div>')
-        suggestionElement.innerHTML = suggestionFragments.join('')
-      })
+      this.handleQuerySuggestion(value)
     }, this.options.queryDelay))
 
-    inputElement.querySelector('input')?.addEventListener('click', () => {
-      suggestionElement.classList.add('suggestion-popper--activated')
+    inputElement?.addEventListener('click', (e) => {
+      if (this.suggestions.length > 0) {
+        this.showSuggestion()
+        return
+      }
+      const value = (<HTMLInputElement> e.target).value
+      this.handleQuerySuggestion(value)
     })
 
-    clickOutside(suggestionElement, () => {
-      suggestionElement.classList.remove('suggestion-popper--activated')
+    clickOutside(this.suggestionElement, () => {
+      this.hideSuggestion()
     })
+
+    this.suggestionElement.addEventListener('click', (e: MouseEvent) => {
+      if ((<HTMLElement> e.target).closest('.suggestion')) {
+        const labelElement = (<HTMLElement> e.target).closest('.suggestion')?.querySelector('.suggestion__label')
+        const text = labelElement?.textContent || ''
+        inputElement.value = text
+        this.suggestions = []
+        this.options.fetchCallback(text)
+        this.hideSuggestion()
+      }
+    })
+  }
+
+  private handleQuerySuggestion (value: string) {
+    handleQueryData(this.options.api, value).then(data => {
+      this.suggestions = data
+      if (data.length === 0) {
+        this.suggestionElement.innerHTML = ''
+        this.hideSuggestion()
+        return
+      }
+      const suggestionFragments: string[] = [
+        '<div class="suggestion-popper__body">'
+      ]
+      data.forEach(item => {
+        suggestionFragments.push('<div class="suggestion">')
+        suggestionFragments.push('<div class="suggestion__avatar"></div>')
+        suggestionFragments.push(`<div class="suggestion__label">${item.name}</div>`)
+        suggestionFragments.push('<div class="suggestion__extra"></div>')
+        suggestionFragments.push('</div>')
+      })
+      suggestionFragments.push('</div>')
+      suggestionFragments.push('<div class="suggestion-popper__footer">')
+      suggestionFragments.push('</div>')
+      this.suggestionElement.innerHTML = suggestionFragments.join('')
+      this.showSuggestion()
+    })
+  }
+
+  private showSuggestion () {
+    this.inputWrapElement.classList.add('company-autocomplete--activated')
+    this.suggestionElement.classList.add('suggestion-popper--activated')
+  }
+
+  private hideSuggestion () {
+    this.inputWrapElement.classList.remove('company-autocomplete--activated')
+    this.suggestionElement.classList.remove('suggestion-popper--activated')
   }
 }
 

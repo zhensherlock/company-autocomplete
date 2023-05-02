@@ -19,7 +19,13 @@
   line-height: var(--line-height);
   box-sizing: border-box;
   vertical-align: middle;
-  overflow: hidden;
+  //overflow: hidden;
+
+  &--activated {
+    .company-autocomplete__input {
+      border-radius: 4px 4px 0 0;
+    }
+  }
 
   &__input {
     display: inline-flex;
@@ -62,7 +68,7 @@
   left: 0;
   padding: 15px;
   background: #fff;
-  z-index: 1;
+  z-index: 10;
   border-radius: 0 0 4px 4px;
   border: 1px solid #EEEEEE;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
