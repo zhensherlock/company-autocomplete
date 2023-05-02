@@ -16,6 +16,14 @@ export interface CompanyAutocompleteOptions {
    */
   queryDelay: number;
   /**
+   * input placeholder content
+   */
+  placeholder: string;
+  /**
+   * fetch api callback
+   */
+  fetchCallback: Function;
+  /**
    * set direction of layout
    */
   // direction: LayoutDirection;
