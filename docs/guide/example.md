@@ -15,7 +15,6 @@ onMounted(() => {
   companyAutocomplete = new CompanyAutocomplete({
     target: '#example_ca'
   });
-  companyAutocomplete.create()
 })
 </script>
 
@@ -29,6 +28,4 @@ import { CompanyAutocomplete } from 'company-autocomplete'
 const companyAutocomplete = new CompanyAutocomplete({
   target: '#example'
 })
-
-companyAutocomplete.create()
 ```
