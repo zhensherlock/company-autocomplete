@@ -1,3 +1,18 @@
+## [0.0.2](https://github.com/zhensherlock/company-autocomplete/compare/v0.0.1...v0.0.2) (2023-05-02)
+
+
+### ✨ Features | 新功能
+
+* add placeholder and fetchCallback ([37d854a](https://github.com/zhensherlock/company-autocomplete/commit/37d854a4f2e0467ccb89fe7b0a560d2c2657c537))
+* perfect autocomplete logic ([557a785](https://github.com/zhensherlock/company-autocomplete/commit/557a7857a7b522c37f04ae6e7d10928d37dff8cf))
+
+
+### 🎫 Chores | 其他更新
+
+* update dependencies ([bb707fd](https://github.com/zhensherlock/company-autocomplete/commit/bb707fdd742e61c0fa0a087a5e130cf483effcce))
+
+
+
 ## [0.0.1](https://github.com/zhensherlock/company-autocomplete/compare/0878bf6cde3b59f636d18956554321a02a07ad8d...v0.0.1) (2023-04-29)
 
 
