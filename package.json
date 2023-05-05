@@ -1,6 +1,6 @@
 {
   "name": "company-autocomplete",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "company-autocomplete",
   "scripts": {
     "clean:dist": "rimraf dist",
@@ -43,12 +43,12 @@
     "dist"
   ],
   "devDependencies": {
-    "@babel/core": "^7.21.5",
-    "@babel/eslint-parser": "^7.21.3",
+    "@babel/core": "^7.21.8",
+    "@babel/eslint-parser": "^7.21.8",
     "@babel/plugin-transform-runtime": "^7.21.4",
     "@babel/preset-env": "^7.21.5",
-    "@commitlint/cli": "^17.6.1",
-    "@commitlint/config-conventional": "^17.6.1",
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.3",
     "@element-plus/icons-vue": "^2.1.0",
     "@rollup/plugin-babel": "^6.0.3",
     "@rollup/plugin-commonjs": "^24.1.0",
@@ -76,7 +76,7 @@
     "lint-staged": "^13.2.2",
     "lodash": "^4.17.21",
     "markdown-it": "^13.0.1",
-    "rollup": "^3.21.2",
+    "rollup": "^3.21.4",
     "rollup-plugin-css-porter": "^1.0.2",
     "rollup-plugin-filesize": "^10.0.0",
     "rollup-plugin-postcss": "^4.0.2",
