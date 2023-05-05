@@ -68,6 +68,9 @@ class CompanyAutocomplete {
     inputElement?.addEventListener('input', () => {
       const value = inputElement.value
       this.inputWrapElement.classList[value.length > 0 ? 'add' : 'remove'](this.inputWrapHaveWordsClassName)
+      if (value.length === 0) {
+        this.hideSuggestion()
+      }
     })
     inputElement?.addEventListener('input', debounce(() => {
       const value = inputElement.value
@@ -111,7 +114,7 @@ class CompanyAutocomplete {
     handleQueryData(this.options.api, value).then(data => {
       this.suggestions = data
       if (data.length === 0) {
-        this.suggestionElement.innerHTML = ''
+        this.suggestionElement.textContent = ''
         this.hideSuggestion()
         return
       }
