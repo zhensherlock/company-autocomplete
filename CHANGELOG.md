@@ -1,3 +1,19 @@
+## [0.0.3](https://github.com/zhensherlock/company-autocomplete/compare/v0.0.2...v0.0.3) (2023-05-05)
+
+
+### ✨ Features | 新功能
+
+* add input clear function ([10a7fd1](https://github.com/zhensherlock/company-autocomplete/commit/10a7fd1e41f43d67900f7d92b7f37854061a4721))
+* add suggestion object avatar ([af88fb9](https://github.com/zhensherlock/company-autocomplete/commit/af88fb9bafbaa32fc104b88fed53c522ea40e712))
+* perfect suggestion style ([9dda2f1](https://github.com/zhensherlock/company-autocomplete/commit/9dda2f12d1a0ee20f5abcaf39247d86741484419))
+
+
+### 🎫 Chores | 其他更新
+
+* update dependencies ([cc4084a](https://github.com/zhensherlock/company-autocomplete/commit/cc4084aa24508da8b05c5db7b1aecbde032067bc))
+
+
+
 ## [0.0.2](https://github.com/zhensherlock/company-autocomplete/compare/v0.0.1...v0.0.2) (2023-05-02)
 
 
