@@ -3,7 +3,7 @@ import { initialOptions } from '../utils/initialization'
 import { isString } from '../utils'
 import { debounce } from '../utils/throttle'
 import { handleQueryData } from './api'
-import { computePosition, autoUpdate, size } from '@floating-ui/dom'
+import { computePosition, autoUpdate, size, offset } from '@floating-ui/dom'
 import { clickOutside } from '../utils/click-outside'
 
 class CompanyAutocomplete {
@@ -44,6 +44,7 @@ class CompanyAutocomplete {
     autoUpdate(this.inputWrapElement, this.suggestionElement, () => {
       computePosition(this.inputWrapElement, this.suggestionElement, {
         middleware: [
+          offset(5),
           size({
             apply: ({ rects }) => {
               Object.assign(this.suggestionElement.style, {
