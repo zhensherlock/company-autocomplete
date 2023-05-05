@@ -101,9 +101,9 @@ class CompanyAutocomplete {
       const suggestionFragments: string[] = [
         '<div class="suggestion-popper__body">'
       ]
-      data.forEach(item => {
+      data.forEach((item: CompanyDataType) => {
         suggestionFragments.push('<div class="suggestion">')
-        suggestionFragments.push('<div class="suggestion__avatar"></div>')
+        suggestionFragments.push(`<div class="suggestion__avatar"><img data-suggestion-id="${item.id}" src="https://image.qcc.com/logo/${item.id}.jpg" /></div>`)
         suggestionFragments.push(`<div class="suggestion__label">${item.name}</div>`)
         suggestionFragments.push('<div class="suggestion__extra"></div>')
         suggestionFragments.push('</div>')
@@ -112,6 +112,12 @@ class CompanyAutocomplete {
       suggestionFragments.push('<div class="suggestion-popper__footer">')
       suggestionFragments.push('</div>')
       this.suggestionElement.innerHTML = suggestionFragments.join('')
+
+      this.suggestionElement.querySelectorAll('img').forEach(img => {
+        img.addEventListener('error', function () {
+          this.src = `https://image.qcc.com/auto/${this.dataset.suggestionId}.jpg`
+        })
+      })
       this.showSuggestion()
     })
   }
