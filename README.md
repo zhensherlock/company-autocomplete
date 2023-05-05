@@ -26,6 +26,18 @@ Works with both Vue 2 , Vue 3 And React.
 npm install company-autocomplete
 ```
 
+## Usage
+
+### General
+
+```ts
+import { CompanyAutocomplete } from 'company-autocomplete'
+
+const companyAutocomplete = new CompanyAutocomplete({
+  target: '#example'
+})
+```
+
 ## Documentation
 
 To learn more, check [its documentation](https://zhensherlock.github.io/company-autocomplete).
