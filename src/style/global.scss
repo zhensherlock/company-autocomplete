@@ -27,12 +27,18 @@
   //  }
   //}
 
+  &--words {
+    .company-autocomplete__clear {
+      opacity: 1;
+    }
+  }
+
   &__input {
     display: inline-flex;
     flex-grow: 1;
     align-items: center;
     justify-content: center;
-    padding: 1px 11px;
+    padding: 1px 10px;
     background-color: var(--input-bg-color);
     background-image: none;
     border-radius: var(--input-border-radius);
@@ -42,6 +48,22 @@
 
     &:focus-within {
       box-shadow: 0 0 0 1px var(--input-focus-border-color) inset, 0 0 0 2px var(--input-focus-border-outline);
+    }
+  }
+
+  &__clear {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    cursor: pointer;
+    top: 9px;
+    color: rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    transition: color 0.2s ease,opacity 0.3s ease;
+    text-rendering: auto;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.45);
     }
   }
 

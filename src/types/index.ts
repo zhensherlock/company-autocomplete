@@ -20,6 +20,14 @@ export interface CompanyAutocompleteOptions {
    */
   placeholder: string;
   /**
+   * show clear button
+   */
+  clearable: Boolean;
+  /**
+   * clear icon
+   */
+  clearIcon: string;
+  /**
    * fetch api callback
    */
   fetchCallback: Function;

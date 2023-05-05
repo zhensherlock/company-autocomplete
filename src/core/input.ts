@@ -11,7 +11,11 @@ class CompanyAutocomplete {
   private readonly target: Element | null
   private suggestions: CompanyDataType[] = []
   private suggestionElement: HTMLDivElement = document.createElement('div')
+  private suggestionActivatedClassName: string = 'suggestion-popper--activated'
   private inputWrapElement: HTMLElement = document.createElement('div')
+  private inputWrapHaveWordsClassName: string = 'company-autocomplete--words'
+  private inputWrapActivatedClassName: string = 'company-autocomplete--activated'
+  private inputClearElement?: HTMLElement | null
 
   constructor (args: Partial<CompanyAutocompleteOptions> = {}) {
     this.options = Object.assign({}, initialOptions, args)
@@ -33,11 +37,12 @@ class CompanyAutocomplete {
       '<div class="company-autocomplete__input">',
       `<input type="text" placeholder="${this.options.placeholder}" />`,
       '</div>',
+      this.options.clearable && `<div class="company-autocomplete__clear">${this.options.clearIcon}</div>`,
       '</div>'
     ]
     this.target.innerHTML = fragments.join('')
     this.suggestionElement.classList.add('suggestion-popper')
-    this.suggestionElement.innerHTML = ''
+    this.suggestionElement.textContent = ''
     document.body.appendChild(this.suggestionElement)
     this.inputWrapElement = <HTMLElement> this.target.querySelector('.company-autocomplete')
     const inputElement = <HTMLInputElement> this.inputWrapElement.querySelector('input')
@@ -60,8 +65,12 @@ class CompanyAutocomplete {
         })
       })
     })
-    inputElement?.addEventListener('input', debounce((e) => {
-      const value = (<HTMLInputElement> e.target).value
+    inputElement?.addEventListener('input', () => {
+      const value = inputElement.value
+      this.inputWrapElement.classList[value.length > 0 ? 'add' : 'remove'](this.inputWrapHaveWordsClassName)
+    })
+    inputElement?.addEventListener('input', debounce(() => {
+      const value = inputElement.value
       this.handleQuerySuggestion(value)
     }, this.options.queryDelay))
 
@@ -88,6 +97,14 @@ class CompanyAutocomplete {
         this.hideSuggestion()
       }
     })
+
+    this.inputClearElement = this.inputWrapElement.querySelector('.company-autocomplete__clear')
+    if (this.inputClearElement) {
+      this.inputClearElement?.addEventListener('click', () => {
+        inputElement.value = ''
+        this.inputWrapElement.classList.remove(this.inputWrapHaveWordsClassName)
+      })
+    }
   }
 
   private handleQuerySuggestion (value: string) {
@@ -103,7 +120,7 @@ class CompanyAutocomplete {
       ]
       data.forEach((item: CompanyDataType) => {
         suggestionFragments.push('<div class="suggestion">')
-        suggestionFragments.push(`<div class="suggestion__avatar"><img data-suggestion-id="${item.id}" src="https://image.qcc.com/logo/${item.id}.jpg" /></div>`)
+        suggestionFragments.push(`<div class="suggestion__avatar"><img data-suggestion-id="${item.id}" src="https://image.qcc.com/logo/${item.id}.jpg" alt="${item.name}"/></div>`)
         suggestionFragments.push(`<div class="suggestion__label">${item.name}</div>`)
         suggestionFragments.push('<div class="suggestion__extra"></div>')
         suggestionFragments.push('</div>')
@@ -123,13 +140,13 @@ class CompanyAutocomplete {
   }
 
   private showSuggestion () {
-    this.inputWrapElement.classList.add('company-autocomplete--activated')
-    this.suggestionElement.classList.add('suggestion-popper--activated')
+    this.inputWrapElement.classList.add(this.inputWrapActivatedClassName)
+    this.suggestionElement.classList.add(this.suggestionActivatedClassName)
   }
 
   private hideSuggestion () {
-    this.inputWrapElement.classList.remove('company-autocomplete--activated')
-    this.suggestionElement.classList.remove('suggestion-popper--activated')
+    this.inputWrapElement.classList.remove(this.inputWrapActivatedClassName)
+    this.suggestionElement.classList.remove(this.suggestionActivatedClassName)
   }
 }
 
