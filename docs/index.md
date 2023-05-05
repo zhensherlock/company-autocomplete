@@ -1,12 +1,11 @@
 ---
 layout: home
 sidebar: false
-title: company-autocomplete.js
-titleTemplate: Fancy Holder
+title: Company Autocomplete
+titleTemplate: false
 
 hero:
-  name: company-autocomplete
-  text: fancy placeholder plugin
+  name: Company Autocomplete
   tagline: Simple, powerful, and performant.
   image:
     src: /hero-image.png
@@ -22,12 +21,12 @@ hero:
 features:
   - icon: 🛠️
     title: Rich Features
-    details: Supports text, multi-line text, image and rich text.
+    details: Supports many functions.
   - icon: 🔑
     title: Fully Typed APIs
     details: Flexible programmatic APIs with full TypeScript typing..
   - icon: 📦
     title: Extremely light
-    details: weighs ~1kb, you will forget it's even there!
+    details: weighs ~7kb, you will forget it's even there!
 ---
 

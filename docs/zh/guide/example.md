@@ -1,11 +1,11 @@
 ---
 layout: doc
 ---
-# Example
+# 示例
 
 <script setup lang="ts">
 import { getCurrentInstance, onMounted } from 'vue';
-import { CompanyAutocomplete } from '../../src/main';
+import { CompanyAutocomplete } from '../../../src/main';
 
 const app = getCurrentInstance();
 
@@ -18,7 +18,7 @@ onMounted(() => {
 })
 </script>
 
-## General
+## 常规用法
 <div id="example_ca">
 </div>
 

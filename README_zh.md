@@ -21,6 +21,17 @@
 # or pnpm or yarn
 npm install company-autocomplete
 ```
+## 用法
+
+### 常规用法
+
+```ts
+import { CompanyAutocomplete } from 'company-autocomplete'
+
+const companyAutocomplete = new CompanyAutocomplete({
+  target: '#example'
+})
+```
 
 ## 文档
 
