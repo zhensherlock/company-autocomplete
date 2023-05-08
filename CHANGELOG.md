@@ -1,3 +1,17 @@
+## [0.0.4](https://github.com/zhensherlock/company-autocomplete/compare/v0.0.3...v0.0.4) (2023-05-08)
+
+
+### ✨ Features | 新功能
+
+* better webpack support ([568b29b](https://github.com/zhensherlock/company-autocomplete/commit/568b29bd031787e6455395cbb65d3e65f049888f))
+
+
+### 🎫 Chores | 其他更新
+
+* update dependencies ([5eaa90e](https://github.com/zhensherlock/company-autocomplete/commit/5eaa90e67ad84f7fea1d6e0df0505b620883ab09))
+
+
+
 ## [0.0.3](https://github.com/zhensherlock/company-autocomplete/compare/v0.0.2...v0.0.3) (2023-05-05)
 
 
@@ -11,6 +25,12 @@
 ### 🎫 Chores | 其他更新
 
 * update dependencies ([cc4084a](https://github.com/zhensherlock/company-autocomplete/commit/cc4084aa24508da8b05c5db7b1aecbde032067bc))
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* hide suggestion delay problem ([c45fe87](https://github.com/zhensherlock/company-autocomplete/commit/c45fe87ffcdfe3160e787e401348eb613fbb8708))
+* query api no work ([e3e7507](https://github.com/zhensherlock/company-autocomplete/commit/e3e75077e914364a64414da252a21de2dfa7e808))
 
 
 
