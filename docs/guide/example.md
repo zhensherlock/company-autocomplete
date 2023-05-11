@@ -13,7 +13,9 @@ let companyAutocomplete = null;
 
 onMounted(() => {
   companyAutocomplete = new CompanyAutocomplete({
-    target: '#example_ca'
+    target: '#example_ca',
+    searchUrl: 'https://api-company.starmaverick.repl.co/qcc/search/{keyword}',
+    avatarUrl: 'https://api-company.starmaverick.repl.co/qcc/logo/{id}'
   });
 })
 </script>
