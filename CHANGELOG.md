@@ -1,3 +1,17 @@
+## [0.0.5](https://github.com/zhensherlock/company-autocomplete/compare/v0.0.4...v0.0.5) (2023-05-11)
+
+
+### ✨ Features | 新功能
+
+* add searchUrl, avatarUrl ([4a20710](https://github.com/zhensherlock/company-autocomplete/commit/4a20710bd74542ceda8d257866c2f13911ad2e38))
+
+
+### 🎫 Chores | 其他更新
+
+* update dependencies ([adbc001](https://github.com/zhensherlock/company-autocomplete/commit/adbc0014ad2d7a7844421e0254ff8d965cd0f8e7))
+
+
+
 ## [0.0.4](https://github.com/zhensherlock/company-autocomplete/compare/v0.0.3...v0.0.4) (2023-05-08)
 
 
