@@ -140,6 +140,13 @@
         height: 22px;
         border-radius: 4px;
         border: 1px solid #EEEEEE;
+
+        &:not([src]) {
+          visibility: hidden;
+        }
+        &[src=""] {
+          visibility: hidden;
+        }
       }
     }
 

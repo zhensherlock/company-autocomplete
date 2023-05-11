@@ -32,6 +32,14 @@ export interface CompanyAutocompleteOptions {
    */
   fetchCallback: Function;
   /**
+   * search query api url
+   */
+  searchUrl?: string;
+  /**
+   * avatar url
+   */
+  avatarUrl?: string;
+  /**
    * set direction of layout
    */
   // direction: LayoutDirection;

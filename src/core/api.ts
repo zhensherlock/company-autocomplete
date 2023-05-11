@@ -1,20 +1,24 @@
-import { CompanyDataType, QccOpenAPIResponseType } from '../types'
+import type { CompanyDataType, QccOpenAPIResponseType, CompanyAutocompleteOptions } from '../types'
+import { getSearchUrl } from '../utils'
 
-export const handleQueryData = async (type: string, keyword: string) => {
-  switch (type) {
+const searchUrl: string = 'https://c.qcc.com/embed/api/company/getCompanyName?searchKey={keyword}'
+
+export const handleQueryData = async (keyword: string, options: CompanyAutocompleteOptions) => {
+  switch (options.api) {
     case 'qcc_openapi':
-      return await queryQccOpenAPI(keyword)
+      return await queryQccOpenAPI(keyword, options)
     default:
       return []
   }
 }
 
-const queryQccOpenAPI = async (keyword: string): Promise<CompanyDataType[]> => {
-  console.log(keyword)
+const queryQccOpenAPI = async (keyword: string, options: CompanyAutocompleteOptions): Promise<CompanyDataType[]> => {
+  // console.log(keyword)
   if (keyword.length < 2) {
     return []
   }
-  const res: Response = await fetch(`https://c.qcc.com/embed/api/company/getCompanyName?searchKey=${keyword}`, {
+  const url = getSearchUrl(keyword, searchUrl, options.searchUrl)
+  const res: Response = await fetch(url, {
     method: 'GET',
     mode: 'cors',
     headers: {
@@ -47,8 +51,9 @@ const queryQccOpenAPI = async (keyword: string): Promise<CompanyDataType[]> => {
   //     }
   //   ]
   // }
+  const result: CompanyDataType[] = []
   if (json.status !== '200') {
-    return []
+    return result
   }
   return json.result.map(item => {
     return {

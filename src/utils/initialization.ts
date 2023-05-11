@@ -1,4 +1,4 @@
-import { CompanyAutocompleteOptions } from '../types'
+import type { CompanyAutocompleteOptions } from '../types'
 
 export const initialOptions: CompanyAutocompleteOptions = {
   target: 'body',

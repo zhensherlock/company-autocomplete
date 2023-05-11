@@ -1,10 +1,11 @@
-import { CompanyAutocompleteOptions, CompanyDataType } from '../types'
+import type { CompanyAutocompleteOptions, CompanyDataType } from '../types'
 import { initialOptions } from '../utils/initialization'
 import { isString } from '../utils'
 import { debounce } from '../utils/throttle'
 import { handleQueryData } from './api'
 import { computePosition, autoUpdate, size, offset } from '@floating-ui/dom'
 import { clickOutside } from '../utils/click-outside'
+import { handleAvatar } from './avatar'
 
 class CompanyAutocomplete {
   private readonly options: CompanyAutocompleteOptions
@@ -105,13 +106,14 @@ class CompanyAutocomplete {
     if (this.inputClearElement) {
       this.inputClearElement?.addEventListener('click', () => {
         inputElement.value = ''
+        this.suggestionElement.textContent = ''
         this.inputWrapElement.classList.remove(this.inputWrapHaveWordsClassName)
       })
     }
   }
 
   private handleQuerySuggestion (value: string) {
-    handleQueryData(this.options.api, value).then(data => {
+    handleQueryData(value, this.options).then(data => {
       this.suggestions = data
       if (data.length === 0) {
         this.suggestionElement.textContent = ''
@@ -123,7 +125,7 @@ class CompanyAutocomplete {
       ]
       data.forEach((item: CompanyDataType) => {
         suggestionFragments.push('<div class="suggestion">')
-        suggestionFragments.push(`<div class="suggestion__avatar"><img data-suggestion-id="${item.id}" src="https://image.qcc.com/logo/${item.id}.jpg" alt="${item.name}"/></div>`)
+        suggestionFragments.push(`<div class="suggestion__avatar"><img data-id="${item.id}" alt="${item.name}"/></div>`)
         suggestionFragments.push(`<div class="suggestion__label">${item.name}</div>`)
         suggestionFragments.push('<div class="suggestion__extra"></div>')
         suggestionFragments.push('</div>')
@@ -134,9 +136,7 @@ class CompanyAutocomplete {
       this.suggestionElement.innerHTML = suggestionFragments.join('')
 
       this.suggestionElement.querySelectorAll('img').forEach(img => {
-        img.addEventListener('error', function () {
-          this.src = `https://image.qcc.com/auto/${this.dataset.suggestionId}.jpg`
-        })
+        handleAvatar(img, this.options)
       })
       this.showSuggestion()
     })
