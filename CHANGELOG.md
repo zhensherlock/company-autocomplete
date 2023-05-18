@@ -1,3 +1,18 @@
+## [0.0.7](https://github.com/zhensherlock/company-autocomplete/compare/v0.0.6...v0.0.7) (2023-05-18)
+
+
+### ✨ Features | 新功能
+
+* add submit button ([774d365](https://github.com/zhensherlock/company-autocomplete/commit/774d365838d7373221a2dd184bcbe9f9e3685daa))
+
+
+### 🎫 Chores | 其他更新
+
+* update dependencies ([53642da](https://github.com/zhensherlock/company-autocomplete/commit/53642daa0e446d9db3f8ef864bc88bc570035b3f))
+* update dependencies ([74ffd45](https://github.com/zhensherlock/company-autocomplete/commit/74ffd45f39aa4a2ba47cacfeb696fc59303d7faf))
+
+
+
 ## [0.0.6](https://github.com/zhensherlock/company-autocomplete/compare/v0.0.5...v0.0.6) (2023-05-14)
 
 
