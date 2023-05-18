@@ -32,6 +32,10 @@ export interface CompanyAutocompleteOptions {
    */
   fetchCallback: Function;
   /**
+   * select company callback
+   */
+  selectCallback: Function;
+  /**
    * search query api url
    */
   searchUrl?: string;
@@ -39,6 +43,18 @@ export interface CompanyAutocompleteOptions {
    * avatar url
    */
   avatarUrl?: string;
+  /**
+   * show submit button
+   */
+  showSubmitButton: boolean;
+  /**
+   * submit button label
+   */
+  submitButtonLabel: string;
+  /**
+   * submit callback
+   */
+  submitCallback: Function;
   /**
    * set direction of layout
    */

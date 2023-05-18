@@ -17,6 +17,7 @@ class CompanyAutocomplete {
   private inputWrapHaveWordsClassName: string = 'company-autocomplete--words'
   private inputWrapActivatedClassName: string = 'company-autocomplete--activated'
   private inputClearElement?: HTMLElement | null
+  private selectCompany?: CompanyDataType
 
   constructor (args: Partial<CompanyAutocompleteOptions> = {}) {
     this.options = Object.assign({}, initialOptions, args)
@@ -34,11 +35,14 @@ class CompanyAutocomplete {
     }
     // innerHTML数组方式 > createElement方式 > innerHTML字符串拼接方式
     const fragments = [
-      '<div class="company-autocomplete">',
+      `<div class="company-autocomplete ${this.options.showSubmitButton ? 'company-autocomplete--show-submit' : ''}">`,
       '<div class="company-autocomplete__input">',
       `<input type="text" placeholder="${this.options.placeholder}" />`,
+      this.options.clearable ? `<div class="company-autocomplete__clear">${this.options.clearIcon}</div>` : '',
       '</div>',
-      this.options.clearable && `<div class="company-autocomplete__clear">${this.options.clearIcon}</div>`,
+      this.options.showSubmitButton ? '<div class="company-autocomplete__submit">' : '',
+      this.options.showSubmitButton ? `<button type="button">${this.options.submitButtonLabel}</button>` : '',
+      this.options.showSubmitButton ? '</div>' : '',
       '</div>'
     ]
     this.target.innerHTML = fragments.join('')
@@ -47,6 +51,7 @@ class CompanyAutocomplete {
     document.body.appendChild(this.suggestionElement)
     this.inputWrapElement = <HTMLElement> this.target.querySelector('.company-autocomplete')
     const inputElement = <HTMLInputElement> this.inputWrapElement.querySelector('input')
+    const buttonElement = <HTMLInputElement> this.inputWrapElement.querySelector('button')
     autoUpdate(this.inputWrapElement, this.suggestionElement, () => {
       computePosition(this.inputWrapElement, this.suggestionElement, {
         middleware: [
@@ -67,6 +72,7 @@ class CompanyAutocomplete {
       })
     })
     inputElement?.addEventListener('input', () => {
+      this.selectCompany = undefined
       const value = inputElement.value
       this.inputWrapElement.classList[value.length > 0 ? 'add' : 'remove'](this.inputWrapHaveWordsClassName)
       if (value.length === 0) {
@@ -87,17 +93,30 @@ class CompanyAutocomplete {
       this.handleQuerySuggestion(value)
     })
 
+    buttonElement?.addEventListener('click', () => {
+      this.options.submitCallback({
+        company: this.selectCompany,
+        text: inputElement.value
+      })
+    })
+
     clickOutside(this.suggestionElement, () => {
       this.hideSuggestion()
     })
 
     this.suggestionElement.addEventListener('click', (e: MouseEvent) => {
       if ((<HTMLElement> e.target).closest('.suggestion')) {
-        const labelElement = (<HTMLElement> e.target).closest('.suggestion')?.querySelector('.suggestion__label')
-        const text = labelElement?.textContent || ''
-        inputElement.value = text
+        const suggestionElement = (<HTMLElement> e.target).closest('.suggestion')
+        // const labelElement = (<HTMLElement> e.target).closest('.suggestion')?.querySelector('.suggestion__label')
+        // const text = labelElement?.textContent || ''
+        const name = (<HTMLElement> suggestionElement)?.dataset.name || ''
+        inputElement.value = name
         this.suggestions = []
-        this.options.fetchCallback(text)
+        this.selectCompany = {
+          id: (<HTMLElement> suggestionElement)?.dataset.id || '',
+          name
+        }
+        this.options.selectCallback(this.selectCompany)
         this.hideSuggestion()
       }
     })
@@ -105,6 +124,7 @@ class CompanyAutocomplete {
     this.inputClearElement = this.inputWrapElement.querySelector('.company-autocomplete__clear')
     if (this.inputClearElement) {
       this.inputClearElement?.addEventListener('click', () => {
+        this.selectCompany = undefined
         inputElement.value = ''
         this.suggestionElement.textContent = ''
         this.inputWrapElement.classList.remove(this.inputWrapHaveWordsClassName)
@@ -124,7 +144,7 @@ class CompanyAutocomplete {
         '<div class="suggestion-popper__body">'
       ]
       data.forEach((item: CompanyDataType) => {
-        suggestionFragments.push('<div class="suggestion">')
+        suggestionFragments.push(`<div class="suggestion" data-id="${item.id}" data-name="${item.name}">`)
         suggestionFragments.push(`<div class="suggestion__avatar"><img data-id="${item.id}" alt="${item.name}"/></div>`)
         suggestionFragments.push(`<div class="suggestion__label">${item.name}</div>`)
         suggestionFragments.push('<div class="suggestion__extra"></div>')
@@ -139,6 +159,7 @@ class CompanyAutocomplete {
         handleAvatar(img, this.options)
       })
       this.showSuggestion()
+      this.options.fetchCallback()
     })
   }
 
