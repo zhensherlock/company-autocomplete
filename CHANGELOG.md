@@ -1,3 +1,17 @@
+## [0.0.8](https://github.com/zhensherlock/company-autocomplete/compare/v0.0.7...v0.0.8) (2023-05-20)
+
+
+### ✨ Features | 新功能
+
+* add autoFocus, onFetch, onSelect, onClear params ([692a55c](https://github.com/zhensherlock/company-autocomplete/commit/692a55c4c927aea62f01fbe3a815431158f3e72c))
+
+
+### 🎫 Chores | 其他更新
+
+* update dependencies ([f9f3ace](https://github.com/zhensherlock/company-autocomplete/commit/f9f3ace85d7bdf8b47185060dc1a0fd2479b409d))
+
+
+
 ## [0.0.7](https://github.com/zhensherlock/company-autocomplete/compare/v0.0.6...v0.0.7) (2023-05-18)
 
 
