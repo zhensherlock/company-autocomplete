@@ -28,13 +28,21 @@ export interface CompanyAutocompleteOptions {
    */
   clearIcon: string;
   /**
-   * fetch api callback
+   * auto focus
    */
-  fetchCallback: Function;
+  autoFocus: Boolean;
   /**
-   * select company callback
+   * fetch api event
    */
-  selectCallback: Function;
+  onFetch: Function;
+  /**
+   * select company event
+   */
+  onSelect: Function;
+  /**
+   * input clear event
+   */
+  onClear: Function;
   /**
    * search query api url
    */

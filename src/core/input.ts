@@ -116,7 +116,7 @@ class CompanyAutocomplete {
           id: (<HTMLElement> suggestionElement)?.dataset.id || '',
           name
         }
-        this.options.selectCallback(this.selectCompany)
+        this.options.onSelect(this.selectCompany)
         this.hideSuggestion()
       }
     })
@@ -128,7 +128,12 @@ class CompanyAutocomplete {
         inputElement.value = ''
         this.suggestionElement.textContent = ''
         this.inputWrapElement.classList.remove(this.inputWrapHaveWordsClassName)
+        this.options.onClear()
       })
+    }
+
+    if (this.options.autoFocus) {
+      inputElement.focus()
     }
   }
 
@@ -159,7 +164,7 @@ class CompanyAutocomplete {
         handleAvatar(img, this.options)
       })
       this.showSuggestion()
-      this.options.fetchCallback()
+      this.options.onFetch()
     })
   }
 
