@@ -1,6 +1,6 @@
 {
   "name": "company-autocomplete",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "company-autocomplete",
   "scripts": {
     "clean:dist": "rimraf dist",
@@ -81,8 +81,8 @@
     "conventional-changelog-cli": "^2.2.2",
     "core-js": "^3.30.2",
     "cssnano": "^6.0.1",
-    "element-plus": "^2.3.4",
-    "eslint": "^8.40.0",
+    "element-plus": "^2.3.5",
+    "eslint": "^8.41.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-semistandard": "^17.0.0",
     "eslint-plugin-import": "^2.27.5",
@@ -100,7 +100,7 @@
     "terser": "^5.17.4",
     "typescript": "^5.0.4",
     "unplugin-element-plus": "^0.7.1",
-    "vitepress": "^1.0.0-alpha.75"
+    "vitepress": "^1.0.0-alpha.76"
   },
   "dependencies": {
     "@floating-ui/dom": "^1.2.8"
