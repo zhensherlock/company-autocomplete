@@ -1,3 +1,18 @@
+## [0.0.9](https://github.com/zhensherlock/company-autocomplete/compare/v0.0.8...v0.0.9) (2023-05-23)
+
+
+### ✨ Features | 新功能
+
+* add autoFlip option ([f3cc9e0](https://github.com/zhensherlock/company-autocomplete/commit/f3cc9e0fbabe8681bd578287bc8b8cfb87c84921))
+* add offsetTop option ([a358b56](https://github.com/zhensherlock/company-autocomplete/commit/a358b5626f2a3b914d23de69de7b918b5c7ca862))
+
+
+### 🎫 Chores | 其他更新
+
+* update dependencies ([ba3aff6](https://github.com/zhensherlock/company-autocomplete/commit/ba3aff633002d5a327e33c5ef780677beaac0166))
+
+
+
 ## [0.0.8](https://github.com/zhensherlock/company-autocomplete/compare/v0.0.7...v0.0.8) (2023-05-20)
 
 
