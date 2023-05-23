@@ -55,7 +55,7 @@ class CompanyAutocomplete {
     autoUpdate(this.inputWrapElement, this.suggestionElement, () => {
       computePosition(this.inputWrapElement, this.suggestionElement, {
         middleware: [
-          offset(5),
+          offset(this.options.offsetTop),
           size({
             apply: ({ rects }) => {
               Object.assign(this.suggestionElement.style, {

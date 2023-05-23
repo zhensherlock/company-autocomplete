@@ -52,6 +52,10 @@ export interface CompanyAutocompleteOptions {
    */
   avatarUrl?: string;
   /**
+   * pixels to offset from input bottom
+   */
+  offsetTop: number;
+  /**
    * show submit button
    */
   showSubmitButton: boolean;

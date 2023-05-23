@@ -13,6 +13,7 @@ export const initialOptions: CompanyAutocompleteOptions = {
   onClear: () => {},
   showSubmitButton: true,
   submitButtonLabel: 'Submit',
+  offsetTop: 5,
   submitCallback: () => {}
   // direction: 'ltr'
 }
