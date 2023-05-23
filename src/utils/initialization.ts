@@ -14,6 +14,7 @@ export const initialOptions: CompanyAutocompleteOptions = {
   showSubmitButton: true,
   submitButtonLabel: 'Submit',
   offsetTop: 5,
+  autoFlip: false,
   submitCallback: () => {}
   // direction: 'ltr'
 }

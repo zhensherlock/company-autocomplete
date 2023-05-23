@@ -3,7 +3,7 @@ import { initialOptions } from '../utils/initialization'
 import { isString } from '../utils'
 import { debounce } from '../utils/throttle'
 import { handleQueryData } from './api'
-import { computePosition, autoUpdate, size, offset } from '@floating-ui/dom'
+import { computePosition, autoUpdate, size, offset, flip } from '@floating-ui/dom'
 import { clickOutside } from '../utils/click-outside'
 import { handleAvatar } from './avatar'
 
@@ -62,7 +62,15 @@ class CompanyAutocomplete {
                 width: `${rects.reference.width}px`
               })
             }
-          })
+          }),
+          ...(this.options.autoFlip
+            ? [
+                flip({
+                  fallbackPlacements: ['top']
+                })
+              ]
+            : []
+          )
         ]
       }).then(({ x, y }) => {
         Object.assign(this.suggestionElement.style, {

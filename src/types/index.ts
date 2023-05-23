@@ -56,6 +56,10 @@ export interface CompanyAutocompleteOptions {
    */
   offsetTop: number;
   /**
+   * auto flip
+   */
+  autoFlip: boolean;
+  /**
    * show submit button
    */
   showSubmitButton: boolean;
