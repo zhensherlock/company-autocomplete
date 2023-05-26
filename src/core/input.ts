@@ -102,10 +102,7 @@ class CompanyAutocomplete {
     })
 
     buttonElement?.addEventListener('click', () => {
-      this.options.submitCallback({
-        company: this.selectCompany,
-        text: inputElement.value
-      })
+      this.handleSubmit(inputElement.value)
     })
 
     clickOutside(this.suggestionElement, () => {
@@ -176,14 +173,29 @@ class CompanyAutocomplete {
     })
   }
 
+  private handleSubmit (text: string) {
+    this.options.submitCallback({
+      company: this.selectCompany,
+      text
+    })
+  }
+
   private showSuggestion () {
     this.inputWrapElement.classList.add(this.inputWrapActivatedClassName)
     this.suggestionElement.classList.add(this.suggestionActivatedClassName)
+    this.inputWrapElement.addEventListener('keydown', this.handleKeyDown.bind(this))
   }
 
   private hideSuggestion () {
     this.inputWrapElement.classList.remove(this.inputWrapActivatedClassName)
     this.suggestionElement.classList.remove(this.suggestionActivatedClassName)
+    this.inputWrapElement.removeEventListener('keydown', this.handleKeyDown.bind(this))
+  }
+
+  private handleKeyDown (event: KeyboardEvent) {
+    if (event.key === 'Enter') {
+      this.handleSubmit((<HTMLInputElement> event.target)?.value)
+    }
   }
 }
 
