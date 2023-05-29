@@ -27,6 +27,18 @@ export const replaceAll = (str: string, find: string, replace: string) => {
   return str.replace(new RegExp(find, 'g'), replace)
 }
 
+export const getSiblings = (element: HTMLElement): HTMLElement[] => {
+  const siblings = Array.from(element.parentNode ? element.parentNode.children : [])
+  return siblings.filter((sibling) => sibling !== element) as HTMLElement[]
+}
+
+export const setSuggestionItemClass = (suggestions: HTMLElement[], index: number, className: string) => {
+  suggestions.forEach(item => {
+    item.classList.remove(className)
+  })
+  suggestions[index].classList.add(className)
+}
+
 // export const debounce = (fn: Function, ms = 0) => {
 //   let timeoutId: any
 //   return function (...args: any[]) {

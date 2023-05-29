@@ -1,6 +1,6 @@
 import type { CompanyAutocompleteOptions, CompanyDataType } from '../types'
 import { initialOptions } from '../utils/initialization'
-import { isString } from '../utils'
+import { isString, setSuggestionItemClass } from '../utils'
 import { debounce } from '../utils/throttle'
 import { handleQueryData } from './api'
 import { computePosition, autoUpdate, size, offset, flip } from '@floating-ui/dom'
@@ -18,6 +18,8 @@ class CompanyAutocomplete {
   private inputWrapActivatedClassName: string = 'company-autocomplete--activated'
   private inputClearElement?: HTMLElement | null
   private selectCompany?: CompanyDataType
+  private keyboardActiveIndex?: number
+  private keyDownHandler: any
 
   constructor (args: Partial<CompanyAutocompleteOptions> = {}) {
     this.options = Object.assign({}, initialOptions, args)
@@ -80,6 +82,7 @@ class CompanyAutocomplete {
       })
     })
     inputElement?.addEventListener('input', () => {
+      this.keyboardActiveIndex = undefined
       this.selectCompany = undefined
       const value = inputElement.value
       this.inputWrapElement.classList[value.length > 0 ? 'add' : 'remove'](this.inputWrapHaveWordsClassName)
@@ -183,18 +186,48 @@ class CompanyAutocomplete {
   private showSuggestion () {
     this.inputWrapElement.classList.add(this.inputWrapActivatedClassName)
     this.suggestionElement.classList.add(this.suggestionActivatedClassName)
-    this.inputWrapElement.addEventListener('keydown', this.handleKeyDown.bind(this))
+    this.keyDownHandler && this.inputWrapElement.removeEventListener('keydown', this.keyDownHandler)
+    this.keyDownHandler = this.handleKeyDown.bind(this)
+    this.inputWrapElement.addEventListener('keydown', this.keyDownHandler)
   }
 
   private hideSuggestion () {
     this.inputWrapElement.classList.remove(this.inputWrapActivatedClassName)
     this.suggestionElement.classList.remove(this.suggestionActivatedClassName)
-    this.inputWrapElement.removeEventListener('keydown', this.handleKeyDown.bind(this))
+    this.inputWrapElement.removeEventListener('keydown', this.keyDownHandler)
   }
 
   private handleKeyDown (event: KeyboardEvent) {
-    if (event.key === 'Enter') {
-      this.handleSubmit((<HTMLInputElement> event.target)?.value)
+    switch (event.key) {
+      case 'Enter':
+        this.handleSubmit((<HTMLInputElement> event.target)?.value)
+        break
+      case 'ArrowUp':
+        if (!this.keyboardActiveIndex) {
+          this.keyboardActiveIndex = this.suggestions.length - 1
+        } else {
+          this.keyboardActiveIndex--
+        }
+        this.selectCompany = this.suggestions[this.keyboardActiveIndex]
+        setSuggestionItemClass(
+          Array.from(this.suggestionElement.querySelectorAll('.suggestion')),
+          this.keyboardActiveIndex,
+          'suggestion--keyboard-active'
+        )
+        break
+      case 'ArrowDown':
+        if (this.keyboardActiveIndex === undefined || this.keyboardActiveIndex >= this.suggestions.length - 1) {
+          this.keyboardActiveIndex = 0
+        } else {
+          this.keyboardActiveIndex++
+        }
+        this.selectCompany = this.suggestions[this.keyboardActiveIndex]
+        setSuggestionItemClass(
+          Array.from(this.suggestionElement.querySelectorAll('.suggestion')),
+          this.keyboardActiveIndex,
+          'suggestion--keyboard-active'
+        )
+        break
     }
   }
 }
