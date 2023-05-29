@@ -1,3 +1,17 @@
+## [0.0.11](https://github.com/zhensherlock/company-autocomplete/compare/v0.0.10...v0.0.11) (2023-05-29)
+
+
+### ✨ Features | 新功能
+
+* support press ArrowDown\ArrowUp to select company ([d926a8a](https://github.com/zhensherlock/company-autocomplete/commit/d926a8a6bac3c0648c73da063c47367eec187f4c))
+
+
+### 🎫 Chores | 其他更新
+
+* update dependencies ([6755b5f](https://github.com/zhensherlock/company-autocomplete/commit/6755b5f20e3a1278788f5d46af732fe75b222acd))
+
+
+
 ## [0.0.10](https://github.com/zhensherlock/company-autocomplete/compare/v0.0.9...v0.0.10) (2023-05-26)
 
 
