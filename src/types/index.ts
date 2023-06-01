@@ -81,15 +81,15 @@ export interface CompanyDataType {
   /**
    * company name
    */
-  name: String;
+  name: string;
   /**
    * company id
    */
-  id: String;
+  id: string;
   /**
    * company avatar
    */
-  avatar?: String;
+  avatar?: string;
 }
 
 export interface QccOpenAPIResponseType {
