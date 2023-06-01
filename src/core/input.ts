@@ -1,6 +1,6 @@
 import type { CompanyAutocompleteOptions, CompanyDataType } from '../types'
 import { initialOptions } from '../utils/initialization'
-import { isString, setSuggestionItemClass } from '../utils'
+import { isString, removeHtmlTags, setSuggestionItemClass } from '../utils'
 import { debounce } from '../utils/throttle'
 import { handleQueryData } from './api'
 import { computePosition, autoUpdate, size, offset, flip } from '@floating-ui/dom'
@@ -157,8 +157,9 @@ class CompanyAutocomplete {
         '<div class="suggestion-popper__body">'
       ]
       data.forEach((item: CompanyDataType) => {
-        suggestionFragments.push(`<div class="suggestion" data-id="${item.id}" data-name="${item.name}">`)
-        suggestionFragments.push(`<div class="suggestion__avatar"><img data-id="${item.id}" alt="${item.name}"/></div>`)
+        const name = removeHtmlTags(item.name)
+        suggestionFragments.push(`<div class="suggestion" data-id="${item.id}" data-name="${name}">`)
+        suggestionFragments.push(`<div class="suggestion__avatar"><img data-id="${item.id}" alt="${name}"/></div>`)
         suggestionFragments.push(`<div class="suggestion__label">${item.name}</div>`)
         suggestionFragments.push('<div class="suggestion__extra"></div>')
         suggestionFragments.push('</div>')

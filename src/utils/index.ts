@@ -39,6 +39,10 @@ export const setSuggestionItemClass = (suggestions: HTMLElement[], index: number
   suggestions[index].classList.add(className)
 }
 
+export const removeHtmlTags = (str: string): string => {
+  return str.replace(/(<([^>]+)>)/gi, '')
+}
+
 // export const debounce = (fn: Function, ms = 0) => {
 //   let timeoutId: any
 //   return function (...args: any[]) {
