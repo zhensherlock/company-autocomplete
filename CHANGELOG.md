@@ -1,3 +1,22 @@
+## [0.0.12](https://github.com/zhensherlock/company-autocomplete/compare/v0.0.11...v0.0.12) (2023-06-01)
+
+
+### ✨ Features | 新功能
+
+* perfect typescript ([fa6b76e](https://github.com/zhensherlock/company-autocomplete/commit/fa6b76e6b14fdb5b3078b1e93fec675914450070))
+
+
+### 🎫 Chores | 其他更新
+
+* update dependencies ([2e0a781](https://github.com/zhensherlock/company-autocomplete/commit/2e0a781d189a6b382e16ec223049f359243de3fb))
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* remove highlight html tag ([3213ce9](https://github.com/zhensherlock/company-autocomplete/commit/3213ce9ddd168dc661593f445d91d4569bce2409))
+
+
+
 ## [0.0.11](https://github.com/zhensherlock/company-autocomplete/compare/v0.0.10...v0.0.11) (2023-05-29)
 
 
