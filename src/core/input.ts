@@ -1,6 +1,6 @@
 import type { CompanyAutocompleteOptions, CompanyDataType } from '../types'
 import { initialOptions } from '../utils/initialization'
-import { isString, removeHtmlTags, setSuggestionItemClass } from '../utils'
+import { addHistory, getHistory, isString, removeHtmlTags, setSuggestionItemClass } from '../utils'
 import { debounce } from '../utils/throttle'
 import { handleQueryData } from './api'
 import { computePosition, autoUpdate, size, offset, flip } from '@floating-ui/dom'
@@ -49,7 +49,7 @@ class CompanyAutocomplete {
     ]
     this.target.innerHTML = fragments.join('')
     this.suggestionElement.classList.add('suggestion-popper')
-    this.suggestionElement.textContent = ''
+    this.clearSuggestion()
     document.body.appendChild(this.suggestionElement)
     this.inputWrapElement = <HTMLElement> this.target.querySelector('.company-autocomplete')
     const inputElement = <HTMLInputElement> this.inputWrapElement.querySelector('input')
@@ -87,12 +87,13 @@ class CompanyAutocomplete {
       const value = inputElement.value
       this.inputWrapElement.classList[value.length > 0 ? 'add' : 'remove'](this.inputWrapHaveWordsClassName)
       if (value.length === 0) {
+        this.clearSuggestion()
         this.hideSuggestion()
       }
     })
     inputElement?.addEventListener('input', debounce(() => {
       const value = inputElement.value
-      this.handleQuerySuggestion(value)
+      value && this.handleQuerySuggestion(value)
     }, this.options.queryDelay))
 
     inputElement?.addEventListener('click', (e) => {
@@ -101,7 +102,11 @@ class CompanyAutocomplete {
         return
       }
       const value = (<HTMLInputElement> e.target).value
-      this.handleQuerySuggestion(value)
+      if (value) {
+        this.handleQuerySuggestion(value)
+      } else if (this.options.history.enabled) {
+        this.handleSuggestionDom(getHistory(this.options.history))
+      }
     })
 
     buttonElement?.addEventListener('click', () => {
@@ -124,7 +129,7 @@ class CompanyAutocomplete {
           id: (<HTMLElement> suggestionElement)?.dataset.id || '',
           name
         }
-        this.options.onSelect(this.selectCompany)
+        this.handleSelect()
         this.hideSuggestion()
       }
     })
@@ -134,7 +139,7 @@ class CompanyAutocomplete {
       this.inputClearElement?.addEventListener('click', () => {
         this.selectCompany = undefined
         inputElement.value = ''
-        this.suggestionElement.textContent = ''
+        this.clearSuggestion()
         this.inputWrapElement.classList.remove(this.inputWrapHaveWordsClassName)
         this.options.onClear()
       })
@@ -147,34 +152,45 @@ class CompanyAutocomplete {
 
   private handleQuerySuggestion (value: string) {
     handleQueryData(value, this.options).then(data => {
-      this.suggestions = data
-      if (data.length === 0) {
-        this.suggestionElement.textContent = ''
-        this.hideSuggestion()
-        return
-      }
-      const suggestionFragments: string[] = [
-        '<div class="suggestion-popper__body">'
-      ]
-      data.forEach((item: CompanyDataType) => {
-        const name = removeHtmlTags(item.name)
-        suggestionFragments.push(`<div class="suggestion" data-id="${item.id}" data-name="${name}">`)
-        suggestionFragments.push(`<div class="suggestion__avatar"><img data-id="${item.id}" alt="${name}"/></div>`)
-        suggestionFragments.push(`<div class="suggestion__label">${item.name}</div>`)
-        suggestionFragments.push('<div class="suggestion__extra"></div>')
-        suggestionFragments.push('</div>')
-      })
-      suggestionFragments.push('</div>')
-      suggestionFragments.push('<div class="suggestion-popper__footer">')
-      suggestionFragments.push('</div>')
-      this.suggestionElement.innerHTML = suggestionFragments.join('')
-
-      this.suggestionElement.querySelectorAll('img').forEach(img => {
-        handleAvatar(img, this.options)
-      })
-      this.showSuggestion()
-      this.options.onFetch()
+      this.handleSuggestionDom(data)
     })
+  }
+
+  private handleSuggestionDom (data: CompanyDataType[]) {
+    this.suggestions = data
+    if (data.length === 0) {
+      this.clearSuggestion()
+      this.hideSuggestion()
+      return
+    }
+    const suggestionFragments: string[] = [
+      '<div class="suggestion-popper__body">'
+    ]
+    data.forEach((item: CompanyDataType) => {
+      const name = removeHtmlTags(item.name)
+      suggestionFragments.push(`<div class="suggestion" data-id="${item.id}" data-name="${name}">`)
+      suggestionFragments.push(`<div class="suggestion__avatar"><img data-id="${item.id}" alt="${name}"/></div>`)
+      suggestionFragments.push(`<div class="suggestion__label">${item.name}</div>`)
+      suggestionFragments.push('<div class="suggestion__extra"></div>')
+      suggestionFragments.push('</div>')
+    })
+    suggestionFragments.push('</div>')
+    suggestionFragments.push('<div class="suggestion-popper__footer">')
+    suggestionFragments.push('</div>')
+    this.suggestionElement.innerHTML = suggestionFragments.join('')
+
+    this.suggestionElement.querySelectorAll('img').forEach(img => {
+      handleAvatar(img, this.options)
+    })
+    this.showSuggestion()
+    this.options.onFetch()
+  }
+
+  private handleSelect () {
+    if (this.options.history.enabled && this.selectCompany) {
+      addHistory(this.selectCompany, this.options.history)
+    }
+    this.options.onSelect(this.selectCompany)
   }
 
   private handleSubmit (text: string) {
@@ -196,6 +212,11 @@ class CompanyAutocomplete {
     this.inputWrapElement.classList.remove(this.inputWrapActivatedClassName)
     this.suggestionElement.classList.remove(this.suggestionActivatedClassName)
     this.inputWrapElement.removeEventListener('keydown', this.keyDownHandler)
+  }
+
+  private clearSuggestion () {
+    this.suggestionElement.textContent = ''
+    this.suggestions = []
   }
 
   private handleKeyDown (event: KeyboardEvent) {

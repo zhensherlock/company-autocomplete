@@ -1,3 +1,5 @@
+export * from './history'
+
 export const isString = (value: any): boolean => {
   return typeof value === 'string'
 }
@@ -50,3 +52,16 @@ export const removeHtmlTags = (str: string): string => {
 //     timeoutId = setTimeout(() => fn.apply(this, args), ms)
 //   }
 // }
+
+export const stringToJson = (str: string): any[] => {
+  try {
+    const result = JSON.parse(str)
+    if (Array.isArray(result)) {
+      return result
+    } else {
+      return []
+    }
+  } catch (e) {
+    return []
+  }
+}

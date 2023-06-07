@@ -1,6 +1,14 @@
 export type ApiType = 'qcc_openapi' | 'qcc_api' | 'qixin_api' | 'tianyancha_api'
 
+export type HistoryType = 'localStorage' | 'sessionStorage'
+
 export type LayoutDirection = 'ltr' | 'rtl'
+
+export interface HistoryOptions {
+  enabled: boolean;
+  type: HistoryType;
+  key: string
+}
 
 export interface CompanyAutocompleteOptions {
   /**
@@ -59,6 +67,10 @@ export interface CompanyAutocompleteOptions {
    * auto flip
    */
   autoFlip: boolean;
+  /**
+   * history
+   */
+  history: HistoryOptions;
   /**
    * show submit button
    */
