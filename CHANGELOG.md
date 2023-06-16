@@ -1,3 +1,21 @@
+## [0.1.3](https://github.com/zhensherlock/company-autocomplete/compare/v0.1.2...v0.1.3) (2023-06-16)
+
+
+### ✨ Features | 新功能
+
+* add remove history link ([36976f4](https://github.com/zhensherlock/company-autocomplete/commit/36976f4531585334ea646e94afb393db9650e4e6))
+
+
+
+## [0.1.2](https://github.com/zhensherlock/company-autocomplete/compare/v0.1.1...v0.1.2) (2023-06-13)
+
+
+### 🎫 Chores | 其他更新
+
+* update dependencies ([39251c1](https://github.com/zhensherlock/company-autocomplete/commit/39251c1cd60003590651f2d770ca41c44cd9bf90))
+
+
+
 ## [0.1.1](https://github.com/zhensherlock/company-autocomplete/compare/v0.1.0...v0.1.1) (2023-06-10)
 
 
