@@ -125,6 +125,8 @@
   //border: 1px solid #EEEEEE;
   //box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   display: none;
+  --footer-text-default-color: #999;
+  --footer-text-primary-color: #128BED;
 
   &--activated {
     display: block;
@@ -140,6 +142,22 @@
   }
 
   &__footer {
+    line-height: 22px;
+    font-size: 14px;
+    padding: 10px 0;
+    margin-bottom: -15px;
+
+    &:empty {
+      display: none;
+    }
+
+    a {
+      color: var(--footer-text-default-color);
+
+      &:hover {
+        color: var(--footer-text-primary-color);
+      }
+    }
   }
 
   .suggestion {

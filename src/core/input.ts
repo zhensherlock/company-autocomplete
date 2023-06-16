@@ -1,6 +1,6 @@
 import type { CompanyAutocompleteOptions, CompanyDataType } from '../types'
 import { initialOptions } from '../utils/initialization'
-import { addHistory, getHistory, isString, removeHtmlTags, setSuggestionItemClass } from '../utils'
+import { addHistory, getHistory, isString, removeHistory, removeHtmlTags, setSuggestionItemClass } from '../utils'
 import { debounce } from '../utils/throttle'
 import { handleQueryData } from './api'
 import { computePosition, autoUpdate, size, offset, flip } from '@floating-ui/dom'
@@ -105,7 +105,7 @@ class CompanyAutocomplete {
       if (value) {
         this.handleQuerySuggestion(value)
       } else if (this.options.history.enabled) {
-        this.handleSuggestionDom(getHistory(this.options.history))
+        this.handleSuggestionDom(getHistory(this.options.history), 'history')
       }
     })
 
@@ -132,6 +132,11 @@ class CompanyAutocomplete {
         this.handleSelect()
         this.hideSuggestion()
       }
+      if ((<HTMLElement> e.target).id === 'remove-history-link') {
+        removeHistory(this.options.history)
+        this.clearSuggestion()
+        this.hideSuggestion()
+      }
     })
 
     this.inputClearElement = this.inputWrapElement.querySelector('.company-autocomplete__clear')
@@ -156,7 +161,7 @@ class CompanyAutocomplete {
     })
   }
 
-  private handleSuggestionDom (data: CompanyDataType[]) {
+  private handleSuggestionDom (data: CompanyDataType[], dataForm = 'fetch') {
     this.suggestions = data
     if (data.length === 0) {
       this.clearSuggestion()
@@ -176,6 +181,9 @@ class CompanyAutocomplete {
     })
     suggestionFragments.push('</div>')
     suggestionFragments.push('<div class="suggestion-popper__footer">')
+    if (dataForm === 'history') {
+      data.length > 0 && suggestionFragments.push('<a id="remove-history-link" href="javascript:;">删除历史</a>')
+    }
     suggestionFragments.push('</div>')
     this.suggestionElement.innerHTML = suggestionFragments.join('')
 

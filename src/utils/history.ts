@@ -23,3 +23,8 @@ export const getHistory = (options: HistoryOptions): CompanyDataType[] => {
   const content = storage.getItem(options.key) || ''
   return stringToJson(content)
 }
+
+export const removeHistory = (options: HistoryOptions) => {
+  const storage = options.type === 'localStorage' ? localStorage : sessionStorage
+  storage.removeItem(options.key)
+}
