@@ -7,7 +7,11 @@ export type LayoutDirection = 'ltr' | 'rtl'
 export interface HistoryOptions {
   enabled: boolean;
   type: HistoryType;
-  key: string
+  key: string,
+  /**
+   * show clear history link
+   */
+  showClear: boolean;
 }
 
 export interface CompanyAutocompleteOptions {

@@ -11,7 +11,8 @@ export const initialOptions: CompanyAutocompleteOptions = {
   history: {
     enabled: true,
     type: 'localStorage',
-    key: 'company-history'
+    key: 'company-history',
+    showClear: true
   },
   onFetch: () => {},
   onSelect: () => {},

@@ -181,7 +181,7 @@ class CompanyAutocomplete {
     })
     suggestionFragments.push('</div>')
     suggestionFragments.push('<div class="suggestion-popper__footer">')
-    if (dataForm === 'history') {
+    if (dataForm === 'history' && this.options.history?.showClear) {
       data.length > 0 && suggestionFragments.push('<a id="remove-history-link" href="javascript:;">删除历史</a>')
     }
     suggestionFragments.push('</div>')
