@@ -153,6 +153,12 @@
 
     a {
       color: var(--footer-text-default-color);
+      display: inline-flex;
+      align-items: center;
+
+      svg {
+        margin-right: 5px;
+      }
 
       &:hover {
         color: var(--footer-text-primary-color);

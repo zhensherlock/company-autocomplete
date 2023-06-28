@@ -12,6 +12,14 @@ export interface HistoryOptions {
    * show clear history link
    */
   showClear: boolean;
+  /**
+   * history item icon
+   */
+  itemIcon: string;
+  /**
+   * clear history link icon
+   */
+  clearIcon: string;
 }
 
 export interface CompanyAutocompleteOptions {

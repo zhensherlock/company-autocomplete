@@ -182,12 +182,16 @@ class CompanyAutocomplete {
     suggestionFragments.push('</div>')
     suggestionFragments.push('<div class="suggestion-popper__footer">')
     if (dataForm === 'history' && this.options.history?.showClear) {
-      data.length > 0 && suggestionFragments.push('<a id="remove-history-link" href="javascript:;">删除历史</a>')
+      data.length > 0 && suggestionFragments.push(`<a id="remove-history-link" href="javascript:;">${this.options.history?.clearIcon || ''}删除历史</a>`)
     }
     suggestionFragments.push('</div>')
     this.suggestionElement.innerHTML = suggestionFragments.join('')
 
     this.suggestionElement.querySelectorAll('img').forEach(img => {
+      // if (dataForm === 'history') {
+      //   img.src = this.options.history?.itemIcon
+      //   return
+      // }
       handleAvatar(img, this.options)
     })
     this.showSuggestion()
