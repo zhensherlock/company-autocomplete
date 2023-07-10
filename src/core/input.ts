@@ -20,6 +20,7 @@ class CompanyAutocomplete {
   private selectCompany?: CompanyDataType
   private keyboardActiveIndex?: number
   private keyDownHandler: any
+  private inputElement: HTMLInputElement
 
   constructor (args: Partial<CompanyAutocompleteOptions> = {}) {
     this.options = Object.assign({}, initialOptions, args)
@@ -52,7 +53,7 @@ class CompanyAutocomplete {
     this.clearSuggestion()
     document.body.appendChild(this.suggestionElement)
     this.inputWrapElement = <HTMLElement> this.target.querySelector('.company-autocomplete')
-    const inputElement = <HTMLInputElement> this.inputWrapElement.querySelector('input')
+    this.inputElement = <HTMLInputElement> this.inputWrapElement.querySelector('input')
     const buttonElement = <HTMLInputElement> this.inputWrapElement.querySelector('button')
     autoUpdate(this.inputWrapElement, this.suggestionElement, () => {
       computePosition(this.inputWrapElement, this.suggestionElement, {
@@ -81,22 +82,22 @@ class CompanyAutocomplete {
         })
       })
     })
-    inputElement?.addEventListener('input', () => {
+    this.inputElement?.addEventListener('input', () => {
       this.keyboardActiveIndex = undefined
       this.selectCompany = undefined
-      const value = inputElement.value
+      const value = this.inputElement.value
       this.inputWrapElement.classList[value.length > 0 ? 'add' : 'remove'](this.inputWrapHaveWordsClassName)
       if (value.length === 0) {
         this.clearSuggestion()
         this.hideSuggestion()
       }
     })
-    inputElement?.addEventListener('input', debounce(() => {
-      const value = inputElement.value
+    this.inputElement?.addEventListener('input', debounce(() => {
+      const value = this.inputElement.value
       value && this.handleQuerySuggestion(value)
     }, this.options.queryDelay))
 
-    inputElement?.addEventListener('click', (e) => {
+    this.inputElement?.addEventListener('click', (e) => {
       if (this.suggestions.length > 0) {
         this.showSuggestion()
         return
@@ -110,7 +111,7 @@ class CompanyAutocomplete {
     })
 
     buttonElement?.addEventListener('click', () => {
-      this.handleSubmit(inputElement.value)
+      this.handleSubmit(this.inputElement.value)
     })
 
     clickOutside(this.suggestionElement, () => {
@@ -123,7 +124,7 @@ class CompanyAutocomplete {
         // const labelElement = (<HTMLElement> e.target).closest('.suggestion')?.querySelector('.suggestion__label')
         // const text = labelElement?.textContent || ''
         const name = (<HTMLElement> suggestionElement)?.dataset.name || ''
-        inputElement.value = name
+        this.inputElement.value = name
         this.suggestions = []
         this.selectCompany = {
           id: (<HTMLElement> suggestionElement)?.dataset.id || '',
@@ -143,7 +144,7 @@ class CompanyAutocomplete {
     if (this.inputClearElement) {
       this.inputClearElement?.addEventListener('click', () => {
         this.selectCompany = undefined
-        inputElement.value = ''
+        this.inputElement.value = ''
         this.clearSuggestion()
         this.inputWrapElement.classList.remove(this.inputWrapHaveWordsClassName)
         this.options.onClear()
@@ -151,7 +152,7 @@ class CompanyAutocomplete {
     }
 
     if (this.options.autoFocus) {
-      inputElement.focus()
+      this.inputElement.focus()
     }
   }
 
@@ -248,6 +249,7 @@ class CompanyAutocomplete {
           this.keyboardActiveIndex,
           'suggestion--keyboard-active'
         )
+        this.handleBackFill()
         break
       case 'ArrowDown':
         if (this.keyboardActiveIndex === undefined || this.keyboardActiveIndex >= this.suggestions.length - 1) {
@@ -261,7 +263,14 @@ class CompanyAutocomplete {
           this.keyboardActiveIndex,
           'suggestion--keyboard-active'
         )
+        this.handleBackFill()
         break
+    }
+  }
+
+  private handleBackFill () {
+    if (this.options.backFill) {
+      this.inputElement.value = removeHtmlTags(this.selectCompany?.name)
     }
   }
 }

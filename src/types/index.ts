@@ -44,6 +44,10 @@ export interface CompanyAutocompleteOptions {
    */
   clearable: Boolean;
   /**
+   * if backFill selected item the input when using keyboard
+   */
+  backFill: boolean;
+  /**
    * clear icon
    */
   clearIcon: string;
