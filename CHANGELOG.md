@@ -1,8 +1,18 @@
+# [0.3.0](https://github.com/zhensherlock/company-autocomplete/compare/v0.2.3...v0.3.0) (2023-07-10)
+
+
+### ✨ Features | 新功能
+
+* add backFill option ([65a686d](https://github.com/zhensherlock/company-autocomplete/commit/65a686d84482948adcd9a5ccb84d0d7c91c09019))
+
+
+
 ## [0.2.3](https://github.com/zhensherlock/company-autocomplete/compare/v0.2.2...v0.2.3) (2023-07-07)
 
 
 ### 🎫 Chores | 其他更新
 
+* update dependencies ([08c5199](https://github.com/zhensherlock/company-autocomplete/commit/08c51993ff478170bb9f4d458ad0d15fc34a58ce))
 * update dependencies ([be7ee5e](https://github.com/zhensherlock/company-autocomplete/commit/be7ee5ea4fa8c7bb0f2c314689e4fb89f889f9e4))
 
 
