@@ -1,3 +1,18 @@
+# [0.4.0](https://github.com/zhensherlock/company-autocomplete/compare/v0.3.0...v0.4.0) (2023-07-13)
+
+
+### ✨ Features | 新功能
+
+* perfect typescript ([08187ef](https://github.com/zhensherlock/company-autocomplete/commit/08187efa4ab9fca8f37ad691541f1f335543aab0))
+* support keyboard ESC clear text ([9f21d42](https://github.com/zhensherlock/company-autocomplete/commit/9f21d423b093b081f496f52c0bcf7260c6ebb307))
+
+
+### 🎫 Chores | 其他更新
+
+* update dependencies ([780b0e7](https://github.com/zhensherlock/company-autocomplete/commit/780b0e74074ad3c22f6bdb7a4c5ef8bc6c646b31))
+
+
+
 # [0.3.0](https://github.com/zhensherlock/company-autocomplete/compare/v0.2.3...v0.3.0) (2023-07-10)
 
 
