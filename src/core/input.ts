@@ -143,11 +143,7 @@ class CompanyAutocomplete {
     this.inputClearElement = this.inputWrapElement.querySelector('.company-autocomplete__clear')
     if (this.inputClearElement) {
       this.inputClearElement?.addEventListener('click', () => {
-        this.selectCompany = undefined
-        this.inputElement.value = ''
-        this.clearSuggestion()
-        this.inputWrapElement.classList.remove(this.inputWrapHaveWordsClassName)
-        this.options.onClear()
+        this.handleClear()
       })
     }
 
@@ -265,6 +261,9 @@ class CompanyAutocomplete {
         )
         this.handleBackFill()
         break
+      case 'Escape':
+        this.handleClear()
+        break
     }
   }
 
@@ -272,6 +271,14 @@ class CompanyAutocomplete {
     if (this.options.backFill) {
       this.inputElement.value = removeHtmlTags(this.selectCompany?.name)
     }
+  }
+
+  private handleClear () {
+    this.selectCompany = undefined
+    this.inputElement!.value = ''
+    this.clearSuggestion()
+    this.inputWrapElement.classList.remove(this.inputWrapHaveWordsClassName)
+    this.options.onClear()
   }
 }
 
