@@ -20,7 +20,7 @@ class CompanyAutocomplete {
   private selectCompany?: CompanyDataType
   private keyboardActiveIndex?: number
   private keyDownHandler: any
-  private inputElement: HTMLInputElement
+  private inputElement?: HTMLInputElement
 
   constructor (args: Partial<CompanyAutocompleteOptions> = {}) {
     this.options = Object.assign({}, initialOptions, args)
@@ -85,7 +85,7 @@ class CompanyAutocomplete {
     this.inputElement?.addEventListener('input', () => {
       this.keyboardActiveIndex = undefined
       this.selectCompany = undefined
-      const value = this.inputElement.value
+      const value = this.inputElement?.value || ''
       this.inputWrapElement.classList[value.length > 0 ? 'add' : 'remove'](this.inputWrapHaveWordsClassName)
       if (value.length === 0) {
         this.clearSuggestion()
@@ -93,7 +93,7 @@ class CompanyAutocomplete {
       }
     })
     this.inputElement?.addEventListener('input', debounce(() => {
-      const value = this.inputElement.value
+      const value = this.inputElement?.value || ''
       value && this.handleQuerySuggestion(value)
     }, this.options.queryDelay))
 
@@ -111,7 +111,7 @@ class CompanyAutocomplete {
     })
 
     buttonElement?.addEventListener('click', () => {
-      this.handleSubmit(this.inputElement.value)
+      this.handleSubmit(this.inputElement?.value || '')
     })
 
     clickOutside(this.suggestionElement, () => {
@@ -124,7 +124,7 @@ class CompanyAutocomplete {
         // const labelElement = (<HTMLElement> e.target).closest('.suggestion')?.querySelector('.suggestion__label')
         // const text = labelElement?.textContent || ''
         const name = (<HTMLElement> suggestionElement)?.dataset.name || ''
-        this.inputElement.value = name
+        this.inputElement!.value = name
         this.suggestions = []
         this.selectCompany = {
           id: (<HTMLElement> suggestionElement)?.dataset.id || '',
@@ -148,7 +148,7 @@ class CompanyAutocomplete {
     }
 
     if (this.options.autoFocus) {
-      this.inputElement.focus()
+      this.inputElement?.focus()
     }
   }
 
@@ -269,7 +269,7 @@ class CompanyAutocomplete {
 
   private handleBackFill () {
     if (this.options.backFill) {
-      this.inputElement.value = removeHtmlTags(this.selectCompany?.name)
+      this.inputElement!.value = removeHtmlTags(this.selectCompany?.name || '')
     }
   }
 
