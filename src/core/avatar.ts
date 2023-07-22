@@ -13,7 +13,7 @@ export const handleAvatar = async (img: HTMLImageElement, options: CompanyAutoco
     return
   }
   switch (options.api) {
-    case 'qcc_openapi':
+    case 'qcc_open':
       img.src = await getAvatar(id, qccAvatarUrls)
       break
   }

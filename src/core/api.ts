@@ -5,7 +5,7 @@ const searchUrl: string = 'https://c.qcc.com/embed/api/company/getCompanyName?se
 
 export const handleQueryData = async (keyword: string, options: CompanyAutocompleteOptions) => {
   switch (options.api) {
-    case 'qcc_openapi':
+    case 'qcc_open':
       return await queryQccOpenAPI(keyword, options)
     default:
       return []

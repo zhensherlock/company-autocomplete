@@ -1,4 +1,4 @@
-export type ApiType = 'qcc_openapi' | 'qcc_api' | 'qixin_api' | 'tianyancha_api'
+export type ApiType = 'qcc_open' | 'qcc' | 'qixin' | 'tianyancha'
 
 export type HistoryType = 'localStorage' | 'sessionStorage'
 
