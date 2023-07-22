@@ -1,3 +1,17 @@
+# [0.5.0](https://github.com/zhensherlock/company-autocomplete/compare/v0.4.2...v0.5.0) (2023-07-22)
+
+
+### ✨ Features | 新功能
+
+* update api name ([1539a8b](https://github.com/zhensherlock/company-autocomplete/commit/1539a8b3fdcfc062ffabb07059a0912e0c200058))
+
+
+### 🎫 Chores | 其他更新
+
+* update dependencies ([4c4b1cf](https://github.com/zhensherlock/company-autocomplete/commit/4c4b1cff247eb96fd4402e0a0de30d4adb457c9f))
+
+
+
 ## [0.4.2](https://github.com/zhensherlock/company-autocomplete/compare/v0.4.1...v0.4.2) (2023-07-19)
 
 
