@@ -13,7 +13,7 @@ export default {
     logo: '/logo.png',
     nav: [
       { text: 'Guide', link: '/guide/what-is-this', activeMatch: '/guide/' },
-      // { text: 'Configs', link: '/config/', activeMatch: '/config/' },
+      { text: 'Configs', link: '/config/', activeMatch: '/config/' },
       {
         text: version,
         items: [
@@ -36,6 +36,15 @@ export default {
             { text: 'Introduce', link: '/guide/what-is-this' },
             { text: 'Getting Started', link: '/guide/getting-started' },
             { text: 'Example', link: '/guide/example' }
+          ]
+        }
+      ],
+      '/config': [
+        {
+          text: 'Config',
+          // collapsible: true,
+          items: [
+            { text: 'Basic Config', link: '/config/' }
           ]
         }
       ]

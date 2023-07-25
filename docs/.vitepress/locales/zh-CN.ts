@@ -5,7 +5,7 @@ export default {
   lastUpdatedText: '上次更新',
   nav: [
     { text: '指南', link: '/zh/guide/what-is-this', activeMatch: '/guide/' },
-    // { text: '配置项', link: '/zh/config/', activeMatch: '/config/' },
+    { text: '配置项', link: '/zh/config/', activeMatch: '/config/' },
     {
       text: version,
       items: [
@@ -25,6 +25,15 @@ export default {
           { text: '介绍', link: '/zh/guide/what-is-this' },
           { text: '开始使用', link: '/zh/guide/getting-started' },
           { text: '示例', link: 'zh/guide/example' }
+        ]
+      }
+    ],
+    '/zh/config': [
+      {
+        text: '配置',
+        // collapsible: true,
+        items: [
+          { text: '基础配置项', link: '/zh/config/' }
         ]
       }
     ]

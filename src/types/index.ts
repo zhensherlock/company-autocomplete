@@ -5,8 +5,17 @@ export type HistoryType = 'localStorage' | 'sessionStorage'
 export type LayoutDirection = 'ltr' | 'rtl'
 
 export interface HistoryOptions {
+  /**
+   * history enabled
+   */
   enabled: boolean;
+  /**
+   * history save mode
+   */
   type: HistoryType;
+  /**
+   * history save key
+   */
   key: string,
   /**
    * show clear history link
@@ -128,5 +137,14 @@ export interface QccOpenAPIResponseType {
   result: {
     companyName: string;
     keyNo: string;
+  }[];
+}
+
+export interface QccResponseType {
+  status: string;
+  result: {
+    name: string;
+    keyNo: string;
+    avatar: string;
   }[];
 }
