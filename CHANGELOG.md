@@ -1,3 +1,17 @@
+## [0.5.1](https://github.com/zhensherlock/company-autocomplete/compare/v0.5.0...v0.5.1) (2023-07-25)
+
+
+### 🎫 Chores | 其他更新
+
+* update dependencies ([c886bb5](https://github.com/zhensherlock/company-autocomplete/commit/c886bb5e43ca0e3e0114b3b976fb59881b7d4531))
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* multiple execution onFetch ([ed6d58f](https://github.com/zhensherlock/company-autocomplete/commit/ed6d58ff40a5e5f8486e27af06480f267d78a9e4))
+
+
+
 # [0.5.0](https://github.com/zhensherlock/company-autocomplete/compare/v0.4.2...v0.5.0) (2023-07-22)
 
 
