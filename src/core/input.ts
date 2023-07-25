@@ -155,6 +155,7 @@ class CompanyAutocomplete {
   private handleQuerySuggestion (value: string) {
     handleQueryData(value, this.options).then(data => {
       this.handleSuggestionDom(data)
+      this.options.onFetch()
     })
   }
 
