@@ -1,3 +1,17 @@
+# [0.6.0](https://github.com/zhensherlock/company-autocomplete/compare/v0.5.1...v0.6.0) (2023-07-28)
+
+
+### ✨ Features | 新功能
+
+* add onFocus, onBlur, onDropdownVisibleChange ([18c1321](https://github.com/zhensherlock/company-autocomplete/commit/18c132107353d2f9c43d6a00704cb2aaf387e17e))
+
+
+### 🎫 Chores | 其他更新
+
+* update dependencies ([e8a0503](https://github.com/zhensherlock/company-autocomplete/commit/e8a05035c4fed1b3f340e36f61f0036bcd85acf7))
+
+
+
 ## [0.5.1](https://github.com/zhensherlock/company-autocomplete/compare/v0.5.0...v0.5.1) (2023-07-25)
 
 
