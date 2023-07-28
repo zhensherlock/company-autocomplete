@@ -1,6 +1,14 @@
 import type { CompanyAutocompleteOptions, CompanyDataType } from '../types'
 import { initialOptions } from '../utils/initialization'
-import { addHistory, getHistory, isString, removeHistory, removeHtmlTags, setSuggestionItemClass } from '../utils'
+import {
+  addHistory,
+  getHistory,
+  isFunction,
+  isString,
+  removeHistory,
+  removeHtmlTags,
+  setSuggestionItemClass
+} from '../utils'
 import { debounce } from '../utils/throttle'
 import { handleQueryData } from './api'
 import { computePosition, autoUpdate, size, offset, flip } from '@floating-ui/dom'
@@ -150,6 +158,14 @@ class CompanyAutocomplete {
     if (this.options.autoFocus) {
       this.inputElement?.focus()
     }
+
+    this.inputElement.addEventListener('focus', () => {
+      isFunction(this.options.onFocus) && this.options.onFocus()
+    })
+
+    this.inputElement.addEventListener('blur', () => {
+      isFunction(this.options.onBlur) && this.options.onBlur()
+    })
   }
 
   private handleQuerySuggestion (value: string) {
@@ -193,7 +209,6 @@ class CompanyAutocomplete {
       handleAvatar(img, this.options)
     })
     this.showSuggestion()
-    this.options.onFetch()
   }
 
   private handleSelect () {
@@ -216,12 +231,14 @@ class CompanyAutocomplete {
     this.keyDownHandler && this.inputWrapElement.removeEventListener('keydown', this.keyDownHandler)
     this.keyDownHandler = this.handleKeyDown.bind(this)
     this.inputWrapElement.addEventListener('keydown', this.keyDownHandler)
+    this.options.onDropdownVisibleChange(true)
   }
 
   private hideSuggestion () {
     this.inputWrapElement.classList.remove(this.inputWrapActivatedClassName)
     this.suggestionElement.classList.remove(this.suggestionActivatedClassName)
     this.inputWrapElement.removeEventListener('keydown', this.keyDownHandler)
+    this.options.onDropdownVisibleChange(false)
   }
 
   private clearSuggestion () {

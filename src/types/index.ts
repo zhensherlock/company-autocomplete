@@ -65,17 +65,29 @@ export interface CompanyAutocompleteOptions {
    */
   autoFocus: Boolean;
   /**
-   * fetch api event
+   * Called when searching items
    */
   onFetch: Function;
   /**
-   * select company event
+   * Called when an option is selected. param is option's value
    */
   onSelect: Function;
   /**
-   * input clear event
+   * Called when clear
    */
   onClear: Function;
+  /**
+   * Called when entering the component
+   */
+  onFocus: Function;
+  /**
+   * Called when leaving the component
+   */
+  onBlur: Function;
+  /**
+   * Call when dropdown open
+   */
+  onDropdownVisibleChange: Function;
   /**
    * search query api url
    */

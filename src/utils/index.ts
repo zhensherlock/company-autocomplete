@@ -3,6 +3,9 @@ export * from './history'
 export const isString = (value: any): boolean => {
   return typeof value === 'string'
 }
+export const isFunction = (value: Function): boolean => {
+  return typeof value === 'function'
+}
 
 export const getSearchUrl = (keyword: string, defaultUrl: string, customUrl?: string) => {
   const url = customUrl || defaultUrl
