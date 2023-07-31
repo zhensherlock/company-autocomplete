@@ -110,21 +110,42 @@ HTML元素标签的id
 - **Type:** `Function`
 - **Default:** `() => {}`
 
-请求API后调用
+在搜索时调用
 
 ## onSelect
 
 - **Type:** `Function`
 - **Default:** `() => {}`
 
-被选中时调用
+当选择选项时调用。参数是选项的值
 
 ## onClear
 
 - **Type:** `Function`
 - **Default:** `() => {}`
 
-点击清除后调用
+清除时调用
+
+## onFocus
+
+- **Type:** `Function`
+- **Default:** `() => {}`
+
+在进入组件时调用.
+
+## onBlur
+
+- **Type:** `Function`
+- **Default:** `() => {}`
+
+离开组件时调用.
+
+## onDropdownVisibleChange
+
+- **Type:** `Function`
+- **Default:** `() => {}`
+
+下拉菜单打开关闭时调用.
 
 ## history
 

@@ -110,21 +110,42 @@ Submit callback.
 - **Type:** `Function`
 - **Default:** `() => {}`
 
-Fetch api event.
+Called when searching items.
 
 ## onSelect
 
 - **Type:** `Function`
 - **Default:** `() => {}`
 
-Select company event.
+Called when an option is selected. param is option's value.
 
 ## onClear
 
 - **Type:** `Function`
 - **Default:** `() => {}`
 
-Input clear event.
+Called when clear.
+
+## onFocus
+
+- **Type:** `Function`
+- **Default:** `() => {}`
+
+Called when entering the component.
+
+## onBlur
+
+- **Type:** `Function`
+- **Default:** `() => {}`
+
+Called when leaving the component.
+
+## onDropdownVisibleChange
+
+- **Type:** `Function`
+- **Default:** `() => {}`
+
+Call when dropdown open.
 
 ## history
 
