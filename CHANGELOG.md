@@ -3,6 +3,7 @@
 
 ### ✨ Features | 新功能
 
+* add ClearBit api ([012fcfd](https://github.com/zhensherlock/company-autocomplete/commit/012fcfdb6f7955ee94ca6b4ad25ace84e8eb0b45))
 * add ClearBit api ([4a149cd](https://github.com/zhensherlock/company-autocomplete/commit/4a149cde0aa918cc3fd09dcaff690ab45d70ec32))
 * add history itemIcon ([56fc5f1](https://github.com/zhensherlock/company-autocomplete/commit/56fc5f180db78463917a4599cec3216de28022d4))
 
