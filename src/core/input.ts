@@ -206,7 +206,7 @@ class CompanyAutocomplete {
         img.outerHTML = this.options.history?.itemIcon
         return
       }
-      if (img.src) {
+      if (img.getAttribute('src')) {
         return
       }
       handleAvatar(img, this.options)
