@@ -4,30 +4,63 @@ layout: doc
 # Example
 
 <script setup lang="ts">
-import { getCurrentInstance, onMounted } from 'vue';
+import { getCurrentInstance, ref, onMounted } from 'vue';
 import { CompanyAutocomplete } from '../../src/main';
 
 const app = getCurrentInstance();
 
-let companyAutocomplete = null;
+const apiType = ref('clearbit');
 
 onMounted(() => {
-  companyAutocomplete = new CompanyAutocomplete({
-    target: '#example_ca'
+  new CompanyAutocomplete({
+    api: 'clearbit',
+    target: '#clearbit_input',
+    autoFocus: true,
+    // submitCallback: ({ company, text }) => {
+    //   console.log(company, text)
+    // },
+    // onFocus: () => {
+    //   console.log('onFocus')
+    // },
+    // onBlur: () => {
+    //   console.log('onBlur')
+    // },
+    // onDropdownVisibleChange: (open) => {
+    //   console.log('onDropdownVisibleChange', open)
+    // }
     // searchUrl: 'https://api-company.starmaverick.repl.co/qcc/search/{keyword}',
     // avatarUrl: 'https://api-company.starmaverick.repl.co/qcc/logo/{id}'
+  });
+  new CompanyAutocomplete({
+    api: 'qcc_open',
+    target: '#qcc_open_input',
+    autoFocus: true
   });
 })
 </script>
 
-## General
-<div id="example_ca">
+## ClearBit API
+<div id="clearbit_input">
 </div>
 
 ```js
 import { CompanyAutocomplete } from 'company-autocomplete' 
 
 const companyAutocomplete = new CompanyAutocomplete({
+  api: 'clearbit',
+  target: '#example'
+})
+```
+
+## QCC Open API
+<div id="qcc_open_input">
+</div>
+
+```js
+import { CompanyAutocomplete } from 'company-autocomplete' 
+
+const companyAutocomplete = new CompanyAutocomplete({
+  api: 'qcc_open',
   target: '#example'
 })
 ```

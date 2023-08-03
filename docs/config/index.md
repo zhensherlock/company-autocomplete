@@ -12,7 +12,7 @@ Id of the html element tag.
 ## api
 
 - **Type:** `string`
-- **available values**: `'qcc_open'`
+- **available values**: `'qcc_open' | 'clearbit'`
 
 Query data source.
 
