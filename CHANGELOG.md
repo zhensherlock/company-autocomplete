@@ -1,3 +1,18 @@
+# [1.0.0](https://github.com/zhensherlock/company-autocomplete/compare/v0.6.1...v1.0.0) (2023-08-03)
+
+
+### ✨ Features | 新功能
+
+* add ClearBit api ([4a149cd](https://github.com/zhensherlock/company-autocomplete/commit/4a149cde0aa918cc3fd09dcaff690ab45d70ec32))
+* add history itemIcon ([56fc5f1](https://github.com/zhensherlock/company-autocomplete/commit/56fc5f180db78463917a4599cec3216de28022d4))
+
+
+### 🎫 Chores | 其他更新
+
+* update dependencies ([6329987](https://github.com/zhensherlock/company-autocomplete/commit/632998719c1a2bbfbb1c4c884951bf970adaa553))
+
+
+
 ## [0.6.1](https://github.com/zhensherlock/company-autocomplete/compare/v0.6.0...v0.6.1) (2023-07-31)
 
 
