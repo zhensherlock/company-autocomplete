@@ -188,7 +188,7 @@ class CompanyAutocomplete {
     data.forEach((item: CompanyDataType) => {
       const name = removeHtmlTags(item.name)
       suggestionFragments.push(`<div class="suggestion" data-id="${item.id}" data-name="${name}">`)
-      suggestionFragments.push(`<div class="suggestion__avatar"><img data-id="${item.id}" alt="${name}"/></div>`)
+      suggestionFragments.push(`<div class="suggestion__avatar"><img data-id="${item.id || ''}" alt="${name}" src="${item.avatar || ''}"/></div>`)
       suggestionFragments.push(`<div class="suggestion__label">${item.name}</div>`)
       suggestionFragments.push('<div class="suggestion__extra"></div>')
       suggestionFragments.push('</div>')
@@ -202,10 +202,13 @@ class CompanyAutocomplete {
     this.suggestionElement.innerHTML = suggestionFragments.join('')
 
     this.suggestionElement.querySelectorAll('img').forEach(img => {
-      // if (dataForm === 'history') {
-      //   img.src = this.options.history?.itemIcon
-      //   return
-      // }
+      if (dataForm === 'history') {
+        img.outerHTML = this.options.history?.itemIcon
+        return
+      }
+      if (img.src) {
+        return
+      }
       handleAvatar(img, this.options)
     })
     this.showSuggestion()
