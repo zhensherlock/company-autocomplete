@@ -1,6 +1,6 @@
 {
   "name": "company-autocomplete",
-  "version": "0.6.1",
+  "version": "1.0.0",
   "description": "company-autocomplete",
   "scripts": {
     "clean:dist": "rimraf dist",
@@ -74,7 +74,7 @@
     "@rollup/plugin-typescript": "^11.1.2",
     "@types/markdown-it": "^12.2.3",
     "@typescript-eslint/parser": "^5.62.0",
-    "@vue/theme": "^2.2.3",
+    "@vue/theme": "^2.2.4",
     "autoprefixer": "^10.4.14",
     "concurrently": "^8.2.0",
     "conventional-changelog-angular": "^6.0.0",
