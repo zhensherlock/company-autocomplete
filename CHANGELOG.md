@@ -1,3 +1,12 @@
+## [1.0.1](https://github.com/zhensherlock/company-autocomplete/compare/v1.0.0...v1.0.1) (2023-08-06)
+
+
+### 🎫 Chores | 其他更新
+
+* update dependencies ([7b65442](https://github.com/zhensherlock/company-autocomplete/commit/7b6544201274560b671ac0ea9a508f3e7062583b))
+
+
+
 # [1.0.0](https://github.com/zhensherlock/company-autocomplete/compare/v0.6.1...v1.0.0) (2023-08-03)
 
 
