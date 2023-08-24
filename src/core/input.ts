@@ -188,7 +188,9 @@ class CompanyAutocomplete {
     data.forEach((item: CompanyDataType) => {
       const name = removeHtmlTags(item.name)
       suggestionFragments.push(`<div class="suggestion" data-id="${item.id}" data-name="${name}">`)
-      suggestionFragments.push(`<div class="suggestion__avatar"><img data-id="${item.id || ''}" alt="${name}" src="${item.avatar || ''}"/></div>`)
+      if (item.avatar) {
+        suggestionFragments.push(`<div class="suggestion__avatar"><img data-id="${item.id || ''}" alt="${name}" src="${item.avatar || ''}"/></div>`)
+      }
       suggestionFragments.push(`<div class="suggestion__label">${item.name}</div>`)
       suggestionFragments.push('<div class="suggestion__extra"></div>')
       suggestionFragments.push('</div>')
