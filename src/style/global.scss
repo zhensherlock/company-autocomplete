@@ -101,6 +101,12 @@
     border-radius: 0 var(--input-border-radius) var(--input-border-radius) 0;
     cursor: pointer;
 
+    button {
+      border: none;
+      background: transparent;
+      color: #fff;
+    }
+
     &:hover {
       background-color: #0069BF;
     }
@@ -119,6 +125,7 @@
   padding: 15px;
   background: #fff;
   z-index: 10;
+  box-sizing: border-box;
   border-radius: 2px;
   box-shadow: 0 6px 16px 0 rgba(0, 0, 0, .08), 0 3px 6px -4px rgba(0, 0, 0, .12), 0 9px 28px 8px rgba(0, 0, 0, .05);
   //border-radius: 0 0 4px 4px;
