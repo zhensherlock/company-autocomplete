@@ -1,3 +1,23 @@
+# [1.1.0](https://github.com/zhensherlock/company-autocomplete/compare/v1.0.6...v1.1.0) (2023-08-24)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update dependency @rollup/plugin-node-resolve to v15.2.1 ([36da8ee](https://github.com/zhensherlock/company-autocomplete/commit/36da8eebf1e62a5c4d7b691ad1decf9daf0e85c6))
+* **deps:** update dependency @typescript-eslint/parser to v6 ([e540a1f](https://github.com/zhensherlock/company-autocomplete/commit/e540a1f9f571ad7a6b7b1a2e65d159bdf77b471d))
+* **deps:** update dependency concurrently to v8.2.1 ([50aaf4b](https://github.com/zhensherlock/company-autocomplete/commit/50aaf4b1ea4f39f745b7d42e8586f99360a09a2b))
+* **deps:** update dependency lint-staged to v14.0.1 ([2bebc78](https://github.com/zhensherlock/company-autocomplete/commit/2bebc7823acfa925c4a37ac228cfd382d8e538a8))
+* **deps:** update dependency rollup to v3.28.1 ([b92ccd6](https://github.com/zhensherlock/company-autocomplete/commit/b92ccd612715b20eca0921a33ddeeec2d83ea2a6))
+* update dependencies ([fc20213](https://github.com/zhensherlock/company-autocomplete/commit/fc2021316927fccf9e17071e8d2eb71a530d7813))
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* avatar is empty ([f38432e](https://github.com/zhensherlock/company-autocomplete/commit/f38432e774f39805db727252553e5ec0023853eb))
+* update button default style ([c7126f8](https://github.com/zhensherlock/company-autocomplete/commit/c7126f89a3064a596f21e78e104e10f6f3b2b497))
+
+
+
 ## [1.0.6](https://github.com/zhensherlock/company-autocomplete/compare/v1.0.5...v1.0.6) (2023-08-21)
 
 
