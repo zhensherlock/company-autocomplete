@@ -1,3 +1,18 @@
+## [1.1.1](https://github.com/zhensherlock/company-autocomplete/compare/v1.1.0...v1.1.1) (2023-08-27)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update babel monorepo to v7.22.11 ([e62a66b](https://github.com/zhensherlock/company-autocomplete/commit/e62a66b7555926f184f9cea7e7195cde83c10cfb))
+* **deps:** update dependency @rollup/plugin-typescript to v11.1.3 ([e2b85ec](https://github.com/zhensherlock/company-autocomplete/commit/e2b85ecc3c74197b8f081be8c3fbe99ce6f62f72))
+* **deps:** update dependency @types/markdown-it to v13.0.1 ([819390e](https://github.com/zhensherlock/company-autocomplete/commit/819390eab31f5b3fd6159873cc79778301d012f2))
+* **deps:** update dependency element-plus to v2.3.12 ([97ce19a](https://github.com/zhensherlock/company-autocomplete/commit/97ce19aa0e55149453924cfcd10c28cf112e8807))
+* **deps:** update dependency eslint to v8.48.0 ([15aea7e](https://github.com/zhensherlock/company-autocomplete/commit/15aea7e7ff698b0390e21883aa75e88a30b27544))
+* **deps:** update dependency typescript to v5.2.2 ([22d0673](https://github.com/zhensherlock/company-autocomplete/commit/22d0673c26019007f6407333162502edf8bb097d))
+* update dependencies ([3998849](https://github.com/zhensherlock/company-autocomplete/commit/3998849c918de4a00692d037bd5943efc8d64ccc))
+
+
+
 # [1.1.0](https://github.com/zhensherlock/company-autocomplete/compare/v1.0.6...v1.1.0) (2023-08-24)
 
 
