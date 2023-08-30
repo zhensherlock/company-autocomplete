@@ -1,3 +1,24 @@
+# [1.2.0](https://github.com/zhensherlock/company-autocomplete/compare/v1.1.1...v1.2.0) (2023-08-30)
+
+
+### ✨ Features | 新功能
+
+* clear-bit api keyword length limit ([0c8eb0c](https://github.com/zhensherlock/company-autocomplete/commit/0c8eb0c91de5a4a8bccedfa381445b6fc1b0f79c))
+* update clear button style ([5379726](https://github.com/zhensherlock/company-autocomplete/commit/53797264ed380df861e1a3a8ae185a0b44712f2c))
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update dependency conventional-changelog-angular to v7 ([b0eaaa9](https://github.com/zhensherlock/company-autocomplete/commit/b0eaaa926d262898317a154b94d9da116fe5f55e))
+* **deps:** update dependency terser to v5.19.3 ([19ed842](https://github.com/zhensherlock/company-autocomplete/commit/19ed8424d99303e9b7188bb0f6e212c3ecfbb87b))
+* **deps:** update dependency vitepress to v1.0.0-rc.10 ([db3f632](https://github.com/zhensherlock/company-autocomplete/commit/db3f6328cb2abaa8b92cbdf3202060080e686ced))
+* the node version is upgraded to 16 ([985c9db](https://github.com/zhensherlock/company-autocomplete/commit/985c9db61be1f7db73f527a72b4d17670a10c036))
+* update dependencies ([626fb1f](https://github.com/zhensherlock/company-autocomplete/commit/626fb1f7a2aca2617dfcefe83b5e015fd570f091))
+* update dependencies ([64ca26a](https://github.com/zhensherlock/company-autocomplete/commit/64ca26ae3b3d795f1a8ae9c719d6838025f3b58f))
+* update dependencies ([bdff844](https://github.com/zhensherlock/company-autocomplete/commit/bdff844b52e45b50e569a9050e345daa22a38dd1))
+
+
+
 ## [1.1.1](https://github.com/zhensherlock/company-autocomplete/compare/v1.1.0...v1.1.1) (2023-08-27)
 
 
