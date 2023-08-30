@@ -1,6 +1,6 @@
 {
   "name": "company-autocomplete",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "company-autocomplete",
   "scripts": {
     "clean:dist": "rimraf dist",
@@ -97,10 +97,10 @@
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-sass": "^1.12.20",
     "rollup-plugin-your-function": "^0.5.3",
-    "terser": "^5.19.2",
+    "terser": "^5.19.3",
     "typescript": "^5.2.2",
     "unplugin-element-plus": "^0.8.0",
-    "vitepress": "^1.0.0-rc.4"
+    "vitepress": "^1.0.0-rc.10"
   },
   "dependencies": {
     "@floating-ui/dom": "^1.5.1"
