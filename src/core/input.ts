@@ -1,14 +1,16 @@
 import type { CompanyAutocompleteOptions, CompanyDataType } from '../types'
 import { initialOptions } from '../utils/initialization'
 import {
-  addHistory,
-  getHistory,
   isFunction,
   isString,
-  removeHistory,
   removeHtmlTags,
   setSuggestionItemClass
 } from '../utils'
+import {
+  addHistory,
+  getHistory,
+  removeHistory
+} from '../utils/history'
 import { debounce } from '../utils/throttle'
 import { handleQueryData } from './api'
 import { computePosition, autoUpdate, size, offset, flip } from '@floating-ui/dom'
