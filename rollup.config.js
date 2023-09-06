@@ -1,3 +1,4 @@
+import commonjs from '@rollup/plugin-commonjs'
 import filesize from 'rollup-plugin-filesize'
 import babel from '@rollup/plugin-babel'
 import resolve from '@rollup/plugin-node-resolve'
@@ -86,7 +87,11 @@ export default [
           cssnano()
         ]
       }),
-      babel({ babelHelpers: 'runtime', exclude: ['node_modules/**'] }),
+      commonjs(),
+      babel({
+        babelHelpers: 'runtime',
+        exclude: /node_modules/
+      }),
       filesize()
     ]
   }

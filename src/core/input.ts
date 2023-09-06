@@ -12,7 +12,7 @@ import {
   removeHistory
 } from '../utils/history'
 import { debounce } from '../utils/throttle'
-import { handleQueryData } from './api'
+import { handleQueryData } from './api/index'
 import { computePosition, autoUpdate, size, offset, flip } from '@floating-ui/dom'
 import { clickOutside } from '../utils/click-outside'
 import { handleAvatar } from './avatar'
