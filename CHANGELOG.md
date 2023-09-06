@@ -10,6 +10,10 @@
 
 ### 🎫 Chores | 其他更新
 
+* **deps:** update actions/checkout action to v4 ([88fe539](https://github.com/zhensherlock/company-autocomplete/commit/88fe539ee977d40a41f0ec1259cb39ce4d5ef63c))
+* **deps:** update babel monorepo to v7.22.15 ([45c6544](https://github.com/zhensherlock/company-autocomplete/commit/45c654406ee253ae2db073531f97d3f1b71c0ea4))
+* **deps:** update dependency @typescript-eslint/parser to v6.6.0 ([148b850](https://github.com/zhensherlock/company-autocomplete/commit/148b850972d00f07e07ec3a63b3074d2d7c8ae9f))
+* **deps:** update dependency terser to v5.19.4 ([2440fe6](https://github.com/zhensherlock/company-autocomplete/commit/2440fe631dac3a689c0301c58d9def18d7401540))
 * update dependencies ([17c5aaa](https://github.com/zhensherlock/company-autocomplete/commit/17c5aaac616338b3a414e9e5e7d12399f18e829b))
 * update dependencies ([#24](https://github.com/zhensherlock/company-autocomplete/issues/24)) ([01a97f3](https://github.com/zhensherlock/company-autocomplete/commit/01a97f36a218067526d958300957402219e9ec40))
 
