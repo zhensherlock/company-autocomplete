@@ -1,3 +1,40 @@
+# [2.0.0](https://github.com/zhensherlock/company-autocomplete/compare/v1.2.1...v2.0.0) (2023-09-06)
+
+
+### ✨ Features | 新功能
+
+* add dark mode ([f846c1a](https://github.com/zhensherlock/company-autocomplete/commit/f846c1ab63e5b8bc07c663c1861601b1b2683fc3))
+* add qcc open query validation parameters ([28268a6](https://github.com/zhensherlock/company-autocomplete/commit/28268a65a48d387f28bfb84df28d554b7dcd2a1f))
+* remove searchUrl option ([24744e4](https://github.com/zhensherlock/company-autocomplete/commit/24744e46ff27e8594b3cee8fe30ad642f8c2d274))
+
+
+### 🎫 Chores | 其他更新
+
+* update dependencies ([17c5aaa](https://github.com/zhensherlock/company-autocomplete/commit/17c5aaac616338b3a414e9e5e7d12399f18e829b))
+* update dependencies ([#24](https://github.com/zhensherlock/company-autocomplete/issues/24)) ([01a97f3](https://github.com/zhensherlock/company-autocomplete/commit/01a97f36a218067526d958300957402219e9ec40))
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* utils history circular reference ([87a2c4b](https://github.com/zhensherlock/company-autocomplete/commit/87a2c4bd9eeae738817e7acce7325be74889b722))
+
+
+### 💄 Styles | 风格
+
+* add banner ([c895759](https://github.com/zhensherlock/company-autocomplete/commit/c8957594221a884a8ed61735782ddd5899f514d0))
+
+
+
+## [1.2.1](https://github.com/zhensherlock/company-autocomplete/compare/v1.2.0...v1.2.1) (2023-09-02)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update dependency @babel/preset-env to v7.22.14 ([9b8d0dc](https://github.com/zhensherlock/company-autocomplete/commit/9b8d0dcab47d42fd79072f626ac8f6518c2ded41))
+* update dependencies ([77e56ae](https://github.com/zhensherlock/company-autocomplete/commit/77e56ae16b2beaf3d78bfb0ac3605d2fc12c0b30))
+
+
+
 # [1.2.0](https://github.com/zhensherlock/company-autocomplete/compare/v1.1.1...v1.2.0) (2023-08-30)
 
 
