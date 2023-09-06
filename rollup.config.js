@@ -8,31 +8,36 @@ import postcss from 'rollup-plugin-postcss'
 import strip from '@rollup/plugin-strip'
 import autoprefixer from 'autoprefixer'
 import cssnano from 'cssnano'
+import { banner } from './build/banner'
 
 const output = [
   {
     name: 'CompanyAutocomplete',
     format: 'esm',
     file: 'dist/index.esm.js',
-    sourcemap: true
+    sourcemap: true,
+    banner
   },
   {
     name: 'CompanyAutocomplete',
     format: 'umd',
     file: 'dist/index.umd.js',
-    sourcemap: true
+    sourcemap: true,
+    banner
   },
   {
     name: 'CompanyAutocomplete',
     format: 'iife',
     file: 'dist/index.iife.js',
-    sourcemap: true
+    sourcemap: true,
+    banner
   },
   {
     name: 'CompanyAutocomplete',
     format: 'cjs',
     file: 'dist/index.cjs.js',
-    sourcemap: true
+    sourcemap: true,
+    banner
   },
   // min
   {
