@@ -1,4 +1,4 @@
-export type ApiType = 'qcc_open' | 'qcc' | 'qixin' | 'tianyancha' | 'clearbit'
+export type ApiType = 'clearbit' | 'qcc_open' | 'qcc' | 'qixin' | 'tianyancha'
 
 export type HistoryType = 'localStorage' | 'sessionStorage'
 
@@ -91,7 +91,7 @@ export interface CompanyAutocompleteOptions {
   /**
    * search query api url
    */
-  searchUrl?: string;
+  // searchUrl?: string;
   /**
    * avatar url
    */
