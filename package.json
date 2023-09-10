@@ -1,6 +1,6 @@
 {
   "name": "company-autocomplete",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "company-autocomplete",
   "scripts": {
     "clean:dist": "rimraf dist",
@@ -57,7 +57,7 @@
     "README.md"
   ],
   "devDependencies": {
-    "@babel/core": "^7.22.15",
+    "@babel/core": "^7.22.17",
     "@babel/eslint-parser": "^7.22.15",
     "@babel/plugin-transform-runtime": "^7.22.15",
     "@babel/preset-env": "^7.22.15",
