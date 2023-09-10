@@ -1,4 +1,33 @@
+# [2.1.0](https://github.com/zhensherlock/company-autocomplete/compare/v2.0.0...v2.1.0) (2023-09-10)
+
+
+### ✨ Features | 新功能
+
+* update new theme ([e59e95a](https://github.com/zhensherlock/company-autocomplete/commit/e59e95a4dbc12e17882581bac043ea47ab0bcd1b))
+* update qcc open security logic ([425443c](https://github.com/zhensherlock/company-autocomplete/commit/425443ca19c7df283b16694b7928983210c9d6cd))
+
+
+### 🎫 Chores | 其他更新
+
+* update dependency @babel/core to v7.22.17 ([#30](https://github.com/zhensherlock/company-autocomplete/issues/30)) ([85b739e](https://github.com/zhensherlock/company-autocomplete/commit/85b739e930df220c5a79eb0d82684f9f135b810d))
+* update dependency conventional-changelog-cli to v4.1.0 ([#32](https://github.com/zhensherlock/company-autocomplete/issues/32)) ([5bd3e42](https://github.com/zhensherlock/company-autocomplete/commit/5bd3e425b925d0ad98d6b6acc7893babb8a3b96f))
+* update dependency core-js to v3.32.2 ([#31](https://github.com/zhensherlock/company-autocomplete/issues/31)) ([909fdbb](https://github.com/zhensherlock/company-autocomplete/commit/909fdbb2aecd851dd6786eb8e7760106e820f0f2))
+* update dependency eslint to v8.49.0 ([#33](https://github.com/zhensherlock/company-autocomplete/issues/33)) ([e196dc6](https://github.com/zhensherlock/company-autocomplete/commit/e196dc624b627ba292c9571c7140501e696bea30))
+* update dependency rollup to v3.29.0 ([#34](https://github.com/zhensherlock/company-autocomplete/issues/34)) ([64104f6](https://github.com/zhensherlock/company-autocomplete/commit/64104f6ae4c5b5446411fe41045053758c4e461c))
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* clear button not showing ([10ba115](https://github.com/zhensherlock/company-autocomplete/commit/10ba1152135d381fab173849129664709bf02add))
+
+
+
 # [2.0.0](https://github.com/zhensherlock/company-autocomplete/compare/v1.2.1...v2.0.0) (2023-09-06)
+
+
+### ⏪ Reverts | 回退
+
+* Revert "ci: update actions/checkout action to v4" ([cad9c36](https://github.com/zhensherlock/company-autocomplete/commit/cad9c36f685967326c8a881925a30c1101e1f77a))
 
 
 ### ✨ Features | 新功能
