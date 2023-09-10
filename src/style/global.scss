@@ -133,7 +133,7 @@
   width: max-content;
   top: 0;
   left: 0;
-  padding: 15px;
+  padding: 0;
   background: var(--popper-bg-color);
   z-index: 10;
   box-sizing: border-box;
@@ -155,15 +155,17 @@
   }
 
   &__body {
-    // padding: 5px 0;
-    background: var(--popper-body-bg-color);
+     padding: 5px;
+    //background: var(--popper-body-bg-color);
   }
 
   &__footer {
     line-height: 22px;
-    font-size: 14px;
-    padding: 10px 0;
-    margin-bottom: -15px;
+    font-size: 12px;
+    padding: 5px 10px;
+    //margin-bottom: -15px;
+    background: var(--popper-footer-bg-color);
+    border-radius: 0 0 2px 2px;
 
     &:empty {
       display: none;
@@ -190,7 +192,8 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    padding: 8px 10px;
+    padding: 5px 6px;
+    border-radius: var(--input-border-radius);
     color: var(--text-color-primary);
 
     &:hover {

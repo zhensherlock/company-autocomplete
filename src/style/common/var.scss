@@ -13,7 +13,7 @@
   var(--transition-function-ease-in-out-bezier);
   --transition-duration-fast: 0.2s;
   --transition-function-ease-in-out-bezier: cubic-bezier(0.645, 0.045, 0.355, 1);
-  --input-bg-color: '#fff';
+  --input-bg-color: #fff;
   --input-border-radius: 2px;
   --input-border-color: #d8d8d8;
   --input-focus-border-color: var(--color-primary);
@@ -30,11 +30,9 @@
   --button-hover-bg-color: var(--color-primary-light-3);
   --popper-bg-color: #fff;
   --popper-body-bg-color: #f8fbfe;
-  --popper-box-shadow: 0 6px 16px 0 rgb(0 0 0 / 8%),
-  0 3px 6px -4px rgb(0 0 0 / 12%),
+  --popper-footer-bg-color: #fafafa;
+  --popper-box-shadow: 0 6px 16px 0 rgb(0 0 0 / 8%), 0 3px 6px -4px rgb(0 0 0 / 12%),
   0 9px 28px 8px rgb(0 0 0 / 5%);
-
   --fill-color: #f2f8fe;
-
   --border-color: #eee;
 }
