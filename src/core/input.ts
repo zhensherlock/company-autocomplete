@@ -142,6 +142,7 @@ class CompanyAutocomplete {
         }
         this.handleSelect()
         this.hideSuggestion()
+        this.inputWrapElement.classList.add(this.inputWrapHaveWordsClassName)
       }
       if ((<HTMLElement> e.target).id === 'remove-history-link') {
         removeHistory(this.options.history)
