@@ -1,6 +1,6 @@
 import type { CompanyDataType, QccOpenAPIResponseType } from '../../types'
 import { generateRandomString, getPasswordBook, getPasswordVersion, crypto } from '../../utils/security'
-import { objectToQueryString } from '../../utils'
+import { objectToQueryString, removeHtmlTags } from '../../utils'
 
 const handleQueryUrl = (keyword: string) => {
   const params = {
@@ -37,9 +37,10 @@ export const queryQccOpenAPI = async (keyword: string): Promise<CompanyDataType[
     return result
   }
   return json.result.map((item) => {
+    const id = item.keyNo || removeHtmlTags(item.companyName)
     return {
       name: item.companyName,
-      id: item.keyNo
+      id
     }
   })
 }
