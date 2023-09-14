@@ -1,3 +1,21 @@
+# [2.2.0](https://github.com/zhensherlock/company-autocomplete/compare/v2.1.0...v2.2.0) (2023-09-14)
+
+
+### ✨ Features | 新功能
+
+* update qcc open data id ([0154616](https://github.com/zhensherlock/company-autocomplete/commit/0154616014b150f3a3dafe997b92b6738770c6aa))
+* update theme style ([cca78a2](https://github.com/zhensherlock/company-autocomplete/commit/cca78a2cdfca5b64c296971911081597965b9ced))
+
+
+### 🎫 Chores | 其他更新
+
+* update dependency @floating-ui/dom to v1.5.2 ([#40](https://github.com/zhensherlock/company-autocomplete/issues/40)) ([0f450cb](https://github.com/zhensherlock/company-autocomplete/commit/0f450cb19414c6003b1488e434b621ce4a83de8f))
+* update dependency @typescript-eslint/parser to v6.7.0 ([#41](https://github.com/zhensherlock/company-autocomplete/issues/41)) ([c4f0ad8](https://github.com/zhensherlock/company-autocomplete/commit/c4f0ad8a9c3f45f7df44efdef794cb7b18cc9c44))
+* update dependency rollup to v3.29.1 ([#38](https://github.com/zhensherlock/company-autocomplete/issues/38)) ([b4c7148](https://github.com/zhensherlock/company-autocomplete/commit/b4c7148e8dd5e5bc8a9a29cfecc18e1fdacc7ad5))
+* update dependency vitepress to v1.0.0-rc.13 ([#39](https://github.com/zhensherlock/company-autocomplete/issues/39)) ([5b7dfdc](https://github.com/zhensherlock/company-autocomplete/commit/5b7dfdc0a22ee02608fec10146b6d9cf2691a857))
+
+
+
 # [2.1.0](https://github.com/zhensherlock/company-autocomplete/compare/v2.0.0...v2.1.0) (2023-09-10)
 
 
