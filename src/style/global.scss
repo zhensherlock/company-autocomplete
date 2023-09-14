@@ -197,12 +197,16 @@
     color: var(--text-color-primary);
 
     &:hover {
-      color: var(--el-color-primary);
+      color: var(--color-primary);
+
+      em {
+        color: var(--color-primary);
+      }
     }
 
     &--keyboard-active {
       background-color: var(--fill-color);
-      color: var(--el-color-primary);
+      color: var(--color-primary);
     }
 
     &__avatar {
@@ -242,6 +246,10 @@
       em {
         color: var(--color-danger);
         font-style: normal;
+        line-height: inherit;
+        vertical-align: inherit;
+        display: initial;
+        font-weight: initial;
       }
     }
 
