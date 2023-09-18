@@ -1,18 +1,38 @@
-# [2.2.0](https://github.com/zhensherlock/company-autocomplete/compare/v2.1.0...v2.2.0) (2023-09-14)
+# [2.3.0](https://github.com/zhensherlock/company-autocomplete/compare/v2.2.0...v2.3.0) (2023-09-18)
 
 
 ### ✨ Features | 新功能
 
+* add popupAppendToBody option ([f225364](https://github.com/zhensherlock/company-autocomplete/commit/f225364521f6cd5318b42b99d010bcc0d1be5b3c))
 * update qcc open data id ([0154616](https://github.com/zhensherlock/company-autocomplete/commit/0154616014b150f3a3dafe997b92b6738770c6aa))
 * update theme style ([cca78a2](https://github.com/zhensherlock/company-autocomplete/commit/cca78a2cdfca5b64c296971911081597965b9ced))
 
 
 ### 🎫 Chores | 其他更新
 
+* **deps:** update babel monorepo to v7.22.20 ([1b5ac51](https://github.com/zhensherlock/company-autocomplete/commit/1b5ac518acf349b74973d29d409caa6fdf7be930))
+* **deps:** update dependency @typescript-eslint/parser to v6.7.0 ([7d72119](https://github.com/zhensherlock/company-autocomplete/commit/7d7211930170138d341e416ddade712ca9386c6a))
+* **deps:** update dependency element-plus to v2.3.14 ([373bf76](https://github.com/zhensherlock/company-autocomplete/commit/373bf76b504499dac7b49f92d690560adfd514ab))
+* **deps:** update dependency rollup to v3.29.1 ([37320b4](https://github.com/zhensherlock/company-autocomplete/commit/37320b42fabde671da06f38437645c33e306ff5c))
+* **deps:** update dependency rollup to v3.29.2 ([cdf33bc](https://github.com/zhensherlock/company-autocomplete/commit/cdf33bc018a8a30133c60319681e999533399729))
+* **deps:** update dependency vitepress to v1.0.0-rc.13 ([9527c18](https://github.com/zhensherlock/company-autocomplete/commit/9527c18ae1d84edddbf1ba0106cedff48d87115f))
+* **deps:** update dependency vitepress to v1.0.0-rc.14 ([556fc65](https://github.com/zhensherlock/company-autocomplete/commit/556fc6546f84e0529d96654644e079883dae772c))
+* update babel monorepo to v7.22.20 (@babel/core, @babel/preset-env) ([#50](https://github.com/zhensherlock/company-autocomplete/issues/50)) ([3db94bc](https://github.com/zhensherlock/company-autocomplete/commit/3db94bc7662a1342ac3090e63fad9b4619486071))
+* update commitlint config ([229be0c](https://github.com/zhensherlock/company-autocomplete/commit/229be0c075ab5f74f6605e4b2da16e9ede9a7f24))
 * update dependency @floating-ui/dom to v1.5.2 ([#40](https://github.com/zhensherlock/company-autocomplete/issues/40)) ([0f450cb](https://github.com/zhensherlock/company-autocomplete/commit/0f450cb19414c6003b1488e434b621ce4a83de8f))
 * update dependency @typescript-eslint/parser to v6.7.0 ([#41](https://github.com/zhensherlock/company-autocomplete/issues/41)) ([c4f0ad8](https://github.com/zhensherlock/company-autocomplete/commit/c4f0ad8a9c3f45f7df44efdef794cb7b18cc9c44))
+* update dependency element-plus to v2.3.14 ([#49](https://github.com/zhensherlock/company-autocomplete/issues/49)) ([daeed4c](https://github.com/zhensherlock/company-autocomplete/commit/daeed4ca773966cb8cddc7ec67f63267ba4036cb))
 * update dependency rollup to v3.29.1 ([#38](https://github.com/zhensherlock/company-autocomplete/issues/38)) ([b4c7148](https://github.com/zhensherlock/company-autocomplete/commit/b4c7148e8dd5e5bc8a9a29cfecc18e1fdacc7ad5))
+* update dependency rollup to v3.29.2 ([#48](https://github.com/zhensherlock/company-autocomplete/issues/48)) ([a212315](https://github.com/zhensherlock/company-autocomplete/commit/a212315ff3605c74861e7e657ef36975558f1599))
 * update dependency vitepress to v1.0.0-rc.13 ([#39](https://github.com/zhensherlock/company-autocomplete/issues/39)) ([5b7dfdc](https://github.com/zhensherlock/company-autocomplete/commit/5b7dfdc0a22ee02608fec10146b6d9cf2691a857))
+* update dependency vitepress to v1.0.0-rc.14 ([#47](https://github.com/zhensherlock/company-autocomplete/issues/47)) ([4c91e48](https://github.com/zhensherlock/company-autocomplete/commit/4c91e48a0da7a1780ed73ea503ac0e527dab54f7))
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* **deps:** update dependency @floating-ui/dom to v1.5.2 ([e61abf7](https://github.com/zhensherlock/company-autocomplete/commit/e61abf779857a592984e0e1e4b5ffa1b127ca712))
+* **deps:** update dependency @floating-ui/dom to v1.5.3 ([95cdf43](https://github.com/zhensherlock/company-autocomplete/commit/95cdf435c546498f705039daf422b448164c3e30))
+* update dependency @floating-ui/dom to v1.5.3 ([#46](https://github.com/zhensherlock/company-autocomplete/issues/46)) ([cb461e5](https://github.com/zhensherlock/company-autocomplete/commit/cb461e56d971416f2391e54cfc2c3af9556dd292))
 
 
 
