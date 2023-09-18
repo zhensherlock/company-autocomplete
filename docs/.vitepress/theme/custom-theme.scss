@@ -5,3 +5,26 @@
   --vp-c-brand-dark: #337ecc;
   --vp-c-brand-darker: #337ecc;
 }
+
+.VPHero {
+  .VPImage.image-src {
+    animation: blur-in 1s cubic-bezier(0, .55, .45, 1);
+  }
+}
+
+@keyframes blur-in {
+  0% {
+    filter: brightness(1) blur(10px);
+    transform: translate(-50%, -50%) scale(.94);
+  }
+
+  10% {
+    filter: brightness(1.15) blur(5px);
+    transform: translate(-50%, -50%) scale(.98);
+  }
+
+  to {
+    filter: brightness(1) blur(0);
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
