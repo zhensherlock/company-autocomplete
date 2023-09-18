@@ -57,6 +57,10 @@ export interface CompanyAutocompleteOptions {
    */
   backFill: boolean;
   /**
+   * whether to append the popup menu to body.
+   */
+  popupAppendToBody: boolean;
+  /**
    * clear icon
    */
   clearIcon: string;

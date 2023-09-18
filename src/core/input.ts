@@ -61,7 +61,11 @@ class CompanyAutocomplete {
     this.target.innerHTML = fragments.join('')
     this.suggestionElement.classList.add('suggestion-popper')
     this.clearSuggestion()
-    document.body.appendChild(this.suggestionElement)
+    if (this.options.popupAppendToBody) {
+      document.body.appendChild(this.suggestionElement)
+    } else {
+      this.target.appendChild(this.suggestionElement)
+    }
     this.inputWrapElement = <HTMLElement> this.target.querySelector('.company-autocomplete')
     this.inputElement = <HTMLInputElement> this.inputWrapElement.querySelector('input')
     const buttonElement = <HTMLInputElement> this.inputWrapElement.querySelector('button')
