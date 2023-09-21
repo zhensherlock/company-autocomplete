@@ -1,3 +1,13 @@
+## [2.3.1](https://github.com/zhensherlock/company-autocomplete/compare/v2.3.0...v2.3.1) (2023-09-21)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update dependency @typescript-eslint/parser to v6.7.2 ([163f672](https://github.com/zhensherlock/company-autocomplete/commit/163f67217e242eb0a2b101683a5891d44acf9b9f))
+* update dependency @typescript-eslint/parser to v6.7.2 ([#52](https://github.com/zhensherlock/company-autocomplete/issues/52)) ([f21b04a](https://github.com/zhensherlock/company-autocomplete/commit/f21b04af4d1018ae2a6d16e471ccb0d270d6e634))
+
+
+
 # [2.3.0](https://github.com/zhensherlock/company-autocomplete/compare/v2.2.0...v2.3.0) (2023-09-18)
 
 
