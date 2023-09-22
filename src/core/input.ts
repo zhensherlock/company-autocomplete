@@ -197,6 +197,8 @@ class CompanyAutocomplete {
       suggestionFragments.push(`<div class="suggestion" data-id="${item.id}" data-name="${name}">`)
       if (item.avatar) {
         suggestionFragments.push(`<div class="suggestion__avatar"><img data-id="${item.id || ''}" alt="${name}" src="${item.avatar || ''}"/></div>`)
+      } else if (dataForm === 'history') {
+        suggestionFragments.push(`<div class="suggestion__avatar"><i class="suggestion__avatar-icon">${this.options.history?.itemIcon}</i></div>`)
       }
       suggestionFragments.push(`<div class="suggestion__label">${item.name}</div>`)
       suggestionFragments.push('<div class="suggestion__extra"></div>')
@@ -211,10 +213,6 @@ class CompanyAutocomplete {
     this.suggestionElement.innerHTML = suggestionFragments.join('')
 
     this.suggestionElement.querySelectorAll('img').forEach(img => {
-      if (dataForm === 'history') {
-        img.outerHTML = this.options.history?.itemIcon
-        return
-      }
       if (img.getAttribute('src')) {
         return
       }
