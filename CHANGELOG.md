@@ -1,3 +1,24 @@
+# [3.0.0](https://github.com/zhensherlock/company-autocomplete/compare/v2.3.1...v3.0.0) (2023-09-22)
+
+
+### ✨ Features | 新功能
+
+* update the default value of the api parameter ([75b0a92](https://github.com/zhensherlock/company-autocomplete/commit/75b0a9252f44c59bc76b54cff63d1b2a727b0593))
+* update the icon layout structure ([f5921ed](https://github.com/zhensherlock/company-autocomplete/commit/f5921edb840c3f944dac25e4f1d571d709766264))
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update dependency terser to v5.20.0 ([ae668c4](https://github.com/zhensherlock/company-autocomplete/commit/ae668c44e1d8e62bc4d5185479c04177062fd7f2))
+* update dependency terser to v5.20.0 ([#56](https://github.com/zhensherlock/company-autocomplete/issues/56)) ([9518f56](https://github.com/zhensherlock/company-autocomplete/commit/9518f562e8bc20e73cf852c4a2ad1515a151254f))
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* avatar not work in history mode ([c394a06](https://github.com/zhensherlock/company-autocomplete/commit/c394a068ab04fc43b13dc39a6d56cd9c4c4eca4f))
+
+
+
 ## [2.3.1](https://github.com/zhensherlock/company-autocomplete/compare/v2.3.0...v2.3.1) (2023-09-21)
 
 
