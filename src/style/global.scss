@@ -67,9 +67,9 @@
     position: absolute;
     right: 10px;
     display: flex;
-    cursor: pointer;
-    top: 9px;
-    color: var(--input-icon-color);
+    align-items: center;
+    top: 0;
+    bottom: 0;
     opacity: 0;
     transition:
       color 0.2s ease,
@@ -77,8 +77,20 @@
     text-rendering: auto;
     visibility: hidden;
 
-    &:hover {
-      color: var(--input-hover-icon-color);
+    &-icon {
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+      color: var(--input-icon-color);
+
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+
+      &:hover {
+        color: var(--input-hover-icon-color);
+      }
     }
   }
 
@@ -186,6 +198,17 @@
     }
   }
 
+  &__icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
   .suggestion {
     line-height: 22px;
     font-size: 14px;
@@ -210,11 +233,22 @@
     }
 
     &__avatar {
-      margin-right: 8px;
+      margin-right: 5px;
       display: flex;
 
       &:empty {
         display: none;
+      }
+
+      &-icon {
+        width: 16px;
+        height: 16px;
+        color: var(--input-icon-color);
+
+        svg {
+          width: 100%;
+          height: 100%;
+        }
       }
 
       img {
