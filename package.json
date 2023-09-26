@@ -1,6 +1,6 @@
 {
   "name": "company-autocomplete",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "company-autocomplete",
   "scripts": {
     "clean:dist": "rimraf dist",

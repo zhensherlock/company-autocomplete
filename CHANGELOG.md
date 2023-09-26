@@ -1,3 +1,24 @@
+## [3.0.1](https://github.com/zhensherlock/company-autocomplete/compare/v3.0.0...v3.0.1) (2023-09-26)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update actions/checkout digest to 8ade135 ([366f803](https://github.com/zhensherlock/company-autocomplete/commit/366f803fc9d6ea15017b981d18856beed5c2e765))
+* **deps:** update dependency @babel/core to v7.23.0 ([b1a21de](https://github.com/zhensherlock/company-autocomplete/commit/b1a21de82b9dff425484939de5a5af251c6ebf24))
+* **deps:** update dependency autoprefixer to v10.4.16 ([e190aa2](https://github.com/zhensherlock/company-autocomplete/commit/e190aa29888172e2fb366dd16139048d2cf5840d))
+* **deps:** update dependency eslint to v8.50.0 ([3a8e6df](https://github.com/zhensherlock/company-autocomplete/commit/3a8e6dfd579d0d2689645876a5f5898784de18e1))
+* **deps:** update dependency rimraf to v5.0.4 ([e13880e](https://github.com/zhensherlock/company-autocomplete/commit/e13880e83d0950f1710b3bbde500318af9c15d63))
+* **deps:** update dependency rollup to v3.29.3 ([6ff9d02](https://github.com/zhensherlock/company-autocomplete/commit/6ff9d02d49de879805b76e4ec40938b9c77935f3))
+* **deps:** update dependency vitepress to v1.0.0-rc.20 ([422c53a](https://github.com/zhensherlock/company-autocomplete/commit/422c53a1fe2f485769f3a6ff7daf166dd2b49fbe))
+* update dependency @babel/core to v7.23.0 ([#65](https://github.com/zhensherlock/company-autocomplete/issues/65)) ([648cc6d](https://github.com/zhensherlock/company-autocomplete/commit/648cc6d4ead3896aedb9f770a5a3579fa22d8c18))
+* update dependency autoprefixer to v10.4.16 ([#68](https://github.com/zhensherlock/company-autocomplete/issues/68)) ([96d0da8](https://github.com/zhensherlock/company-autocomplete/commit/96d0da8180e7c291a072a45bdea390a0d719571f))
+* update dependency eslint to v8.50.0 ([#64](https://github.com/zhensherlock/company-autocomplete/issues/64)) ([bc6ef6b](https://github.com/zhensherlock/company-autocomplete/commit/bc6ef6bf87b9c5fa61f51e7bc46bb55bfc37602a))
+* update dependency rimraf to v5.0.4 ([#69](https://github.com/zhensherlock/company-autocomplete/issues/69)) ([0c212bd](https://github.com/zhensherlock/company-autocomplete/commit/0c212bdcec5eb81b258cda471b965c8b8113691a))
+* update dependency rollup to v3.29.3 ([#67](https://github.com/zhensherlock/company-autocomplete/issues/67)) ([35f0868](https://github.com/zhensherlock/company-autocomplete/commit/35f0868062e3c875ea7ed0b1ce6bad550c2e650d))
+* update dependency vitepress to v1.0.0-rc.20 ([#66](https://github.com/zhensherlock/company-autocomplete/issues/66)) ([2e10472](https://github.com/zhensherlock/company-autocomplete/commit/2e1047255d0f1378c9e3c8773d94a07fe184530c))
+
+
+
 # [3.0.0](https://github.com/zhensherlock/company-autocomplete/compare/v2.3.1...v3.0.0) (2023-09-22)
 
 
