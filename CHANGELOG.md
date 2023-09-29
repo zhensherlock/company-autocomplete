@@ -1,3 +1,26 @@
+# [3.1.0](https://github.com/zhensherlock/company-autocomplete/compare/v3.0.1...v3.1.0) (2023-09-29)
+
+
+### ✨ Features | 新功能
+
+* update qcc open api query params ([45a6578](https://github.com/zhensherlock/company-autocomplete/commit/45a6578247ceb535880f11bc819624c72df4ff47))
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update dependency @rollup/plugin-typescript to v11.1.4 ([a039a40](https://github.com/zhensherlock/company-autocomplete/commit/a039a403f93b7b4ef320c4170e0712a93c83c015))
+* **deps:** update dependency @typescript-eslint/parser to v6.7.3 ([3477c3b](https://github.com/zhensherlock/company-autocomplete/commit/3477c3b0fb7b526a2358be3ef7ad9fca968741a3))
+* **deps:** update dependency markdown-it to v13.0.2 ([1c8e7bc](https://github.com/zhensherlock/company-autocomplete/commit/1c8e7bc5d04a35daf07dd28fb88d3b08cc01d3ab))
+* **deps:** update dependency rimraf to v5.0.5 ([345d05d](https://github.com/zhensherlock/company-autocomplete/commit/345d05d8a876271edca67078ec79e0089644aa0e))
+* **deps:** update dependency rollup to v3.29.4 ([ac31333](https://github.com/zhensherlock/company-autocomplete/commit/ac3133322afec1b0ef8cf143aa54abd39be8dc7a))
+* update dependency @rollup/plugin-typescript to v11.1.4 ([#78](https://github.com/zhensherlock/company-autocomplete/issues/78)) ([6f9f22d](https://github.com/zhensherlock/company-autocomplete/commit/6f9f22df79c005fbf129dd234d03d8622d383a0f))
+* update dependency @typescript-eslint/parser to v6.7.3 ([#77](https://github.com/zhensherlock/company-autocomplete/issues/77)) ([ea5c2f2](https://github.com/zhensherlock/company-autocomplete/commit/ea5c2f2ec81f13ed558acb46301dc9713f35d9d0))
+* update dependency markdown-it to v13.0.2 (markdown-it, @types/markdown-it) ([#76](https://github.com/zhensherlock/company-autocomplete/issues/76)) ([bb10944](https://github.com/zhensherlock/company-autocomplete/commit/bb10944d339248bb3b0d46caefe2b8d1baf5ba32))
+* update dependency rimraf to v5.0.5 ([#75](https://github.com/zhensherlock/company-autocomplete/issues/75)) ([124aa22](https://github.com/zhensherlock/company-autocomplete/commit/124aa225f58df2ff410896705e14b6d38320664e))
+* update dependency rollup to v3.29.4 ([#74](https://github.com/zhensherlock/company-autocomplete/issues/74)) ([53e8dca](https://github.com/zhensherlock/company-autocomplete/commit/53e8dca5af3b34af10748543a3e9576bc846e0b1))
+
+
+
 ## [3.0.1](https://github.com/zhensherlock/company-autocomplete/compare/v3.0.0...v3.0.1) (2023-09-26)
 
 
