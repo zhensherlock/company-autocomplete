@@ -1,7 +1,9 @@
 import md5 from 'crypto-js/md5'
+import { splitArray } from './index'
 
-const passwordBooks = ['zzcscp7g', 'e6i8jtbl', 'eux6on67', 'h17dd8cq', 'b1ur65ky', 'ktzcn5bw', 'xtya6q26', 'g6fr429c', '50kks7sc', 'r71x7c6u', 'odouivjk', 'rsi9vpqy', 'kj6rksdy', '27w45dme', 'a769pvn7', 'ns84opu3', 'jdl9qs00', 'ogzjpunb', 'lo93uuin', 'yhlx8e4p', '6t6kpahe', 'v122ogxz', '46a0bnjx', 'eqnfjp7b', 't4b7pon5', 'xhgb7dcl', 'ydhoswq0', 'gy4ubl0w', 'bgvxuf71', 'ityjfac8', 'lbati1a4', 'wo5j9npq', 'jor1dbu5', 'aha53e8e', 'ei3y8a8f', 'pbc3rtvb', 'sc1ghnvh', '3ng27uhh', '4hl15zxr', '8fpxxpgy', 'cieadu1u', 'va7m26gv', 'h39vz873', 'nliabzs6', '24xvriaf', 'tyobyhea', 'k4y0tp6d', 'rqwft3lw', 'y7g10qjh', '5xpqdylr']
-const passwordVersion = 'v1.0'
+const passwordBooks = ['9y16cxzg', 'sr2z1z63', 'hk2ssit3', 'acsevi4u', 'nu38i9ej', '6m70kgre', 'hl8rvmhu', '30uzkxp0', 'v9jggair', '4ryav515', 'pgx6isvq', '6b3zumy7', 'bxureygp', 'jff4xbhb', '7j56lyfw', '2tctuvza', '8jfrswdr', 'r2as467y', 'jzye6ls1', 'bpi7fhat', 'ywp0p3qn', 'rzybga6p', '84u199q5', 'kktjaqis', 'amn5oud8', 'a0zs4b52', 'x16y3u37', 'xku2lp9m', 'n8eawc7q', 'gw68xkfw', '4wxtunev', 'ew2x6rzg', 'go9f3t54', '7d0fkx5i', 'ai6ol58k', '47jsslmm', '70mxfzcz', 'b90wzl0c', 'ua78bvmr', '7p60hdt4', 'ge5lw4u8', 'ref3rey2', 'wgay7vhx', 'b8l2u4mj', 'rk80y5ot', 'o37o4wq3', '0moweoh0', 'r10m9bpy', 'wjilkjhj', 'il27pnod']
+const passwordBooksSplitResult = splitArray(passwordBooks, 5)
+const passwordVersion = 'v2.0'
 const BASE_HASH = 31
 
 export const getPasswordVersion = () => {
@@ -14,8 +16,9 @@ export const generateRandomString = (length: number): string => {
 }
 
 export const getPasswordBook = (key: string): string => {
-  const index = calculateHash(key) % passwordBooks.length
-  return passwordBooks[index]
+  const base = calculateHash(key) % passwordBooks.length
+  const index = Math.floor(base / 5)
+  return passwordBooksSplitResult[index][base % 5]
 }
 
 export const crypto = (data: string): string => {

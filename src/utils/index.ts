@@ -72,3 +72,11 @@ export const objectToQueryString = (object: { [key: string]: any }, prefix = '')
     return `${key}=${object[key]}`
   }).join('&')
 }
+
+export const splitArray = <T>(arr: T[], size: number): T[][] => {
+  const result: T[][] = []
+  for (let i = 0; i < arr.length; i += size) {
+    result.push(arr.slice(i, i + size))
+  }
+  return result
+}
