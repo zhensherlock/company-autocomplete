@@ -1,3 +1,17 @@
+## [3.1.3](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.2...v3.1.3) (2023-10-12)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update babel monorepo to v7.23.2 ([d4c2549](https://github.com/zhensherlock/company-autocomplete/commit/d4c2549f6fa9ad61226379a7023ac7b91d476c51))
+* **deps:** update dependency @rollup/plugin-node-resolve to v15.2.3 ([77f73af](https://github.com/zhensherlock/company-autocomplete/commit/77f73af8a9480ea2749bdca48cbc947362361ee7))
+* **deps:** update dependency @typescript-eslint/parser to v6.7.5 ([8fdd78c](https://github.com/zhensherlock/company-autocomplete/commit/8fdd78c01d850fc61b94217c94f1336eefa19250))
+* update babel monorepo to v7.23.2 ([#110](https://github.com/zhensherlock/company-autocomplete/issues/110)) ([40c356a](https://github.com/zhensherlock/company-autocomplete/commit/40c356ab6c6f83acce17e2b3cf1947947dba4deb))
+* update dependency @rollup/plugin-node-resolve to v15.2.3 ([#111](https://github.com/zhensherlock/company-autocomplete/issues/111)) ([8ed24e4](https://github.com/zhensherlock/company-autocomplete/commit/8ed24e474b15cf831293cbf82e1f5b6cfb8d0ca8))
+* update dependency @typescript-eslint/parser to v6.7.5 ([#112](https://github.com/zhensherlock/company-autocomplete/issues/112)) ([c0cb32f](https://github.com/zhensherlock/company-autocomplete/commit/c0cb32f29ea95edc276a5d5e4b3a1c5e3659a7fd))
+
+
+
 ## [3.1.2](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.1...v3.1.2) (2023-10-08)
 
 
