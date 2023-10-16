@@ -1,3 +1,24 @@
+## [3.1.4](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.3...v3.1.4) (2023-10-16)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update commitlint monorepo to v17.8.0 ([c1444a1](https://github.com/zhensherlock/company-autocomplete/commit/c1444a190f13a435d59e228768e1aec3c9223ad8))
+* **deps:** update dependency @rollup/plugin-commonjs to v25.0.7 ([e97dd43](https://github.com/zhensherlock/company-autocomplete/commit/e97dd430c33196c42b33c856c1daaf9432654b99))
+* **deps:** update dependency @rollup/plugin-replace to v5.0.4 ([67de68a](https://github.com/zhensherlock/company-autocomplete/commit/67de68ab5c7ec2162af79eb2fe5506dc30b6ee67))
+* **deps:** update dependency @rollup/plugin-strip to v3.0.4 ([2dced0b](https://github.com/zhensherlock/company-autocomplete/commit/2dced0b435ae3829c32a82c36c23e414fb949f57))
+* **deps:** update dependency element-plus to v2.4.0 ([846a617](https://github.com/zhensherlock/company-autocomplete/commit/846a617cba8e9dea73f75b9c51929355250c2fdd))
+* **deps:** update dependency lint-staged to v15 ([8855c11](https://github.com/zhensherlock/company-autocomplete/commit/8855c1164ca805e339bea9a28eadd1107568e8bf))
+* **deps:** update dependency vitepress to v1.0.0-rc.22 ([6664975](https://github.com/zhensherlock/company-autocomplete/commit/6664975fa2f05fd5a56830bdb0401e29aa8cf1ab))
+* update commitlint monorepo to v17.8.0 ([#122](https://github.com/zhensherlock/company-autocomplete/issues/122)) ([0016f39](https://github.com/zhensherlock/company-autocomplete/commit/0016f39e233bc209c671ee44fcf075336a1db5fa))
+* update dependency @rollup/plugin-commonjs to v25.0.7 ([#120](https://github.com/zhensherlock/company-autocomplete/issues/120)) ([64ee5df](https://github.com/zhensherlock/company-autocomplete/commit/64ee5df1c2f014c5cb72940350b3d1fbd86853fe))
+* update dependency @rollup/plugin-replace to v5.0.4 ([#125](https://github.com/zhensherlock/company-autocomplete/issues/125)) ([0d998a2](https://github.com/zhensherlock/company-autocomplete/commit/0d998a2f75ee7549ba94694ac7cbfd40a13a7dd9))
+* update dependency @rollup/plugin-strip to v3.0.4 ([#124](https://github.com/zhensherlock/company-autocomplete/issues/124)) ([0ba7c52](https://github.com/zhensherlock/company-autocomplete/commit/0ba7c52d3fb44b332a00238e43124b8dfe4f0a11))
+* update dependency element-plus to v2.4.0 ([#121](https://github.com/zhensherlock/company-autocomplete/issues/121)) ([75160b1](https://github.com/zhensherlock/company-autocomplete/commit/75160b12b9babd5cbfbb93c99e7bd0ab4ac79f98))
+* update dependency vitepress to v1.0.0-rc.22 ([#123](https://github.com/zhensherlock/company-autocomplete/issues/123)) ([84a27ef](https://github.com/zhensherlock/company-autocomplete/commit/84a27efdf32039c29eecd3cb0610277faa46826a))
+
+
+
 ## [3.1.3](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.2...v3.1.3) (2023-10-12)
 
 
