@@ -1,3 +1,26 @@
+## [3.1.5](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.4...v3.1.5) (2023-10-20)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update actions/checkout digest to b4ffde6 ([5e975f1](https://github.com/zhensherlock/company-autocomplete/commit/5e975f1af039f1ca880426d1e34bbdb0fbc9274f))
+* **deps:** update dependency @types/crypto-js to v4.1.3 ([1d13fcd](https://github.com/zhensherlock/company-autocomplete/commit/1d13fcdc6084a43c9501202aeefa834ffc707c34))
+* **deps:** update dependency @types/markdown-it to v13.0.4 ([d73c637](https://github.com/zhensherlock/company-autocomplete/commit/d73c6373963664ad4b3703bd10bd4ada8fe0fefc))
+* **deps:** update dependency @typescript-eslint/parser to v6.8.0 ([7fe480b](https://github.com/zhensherlock/company-autocomplete/commit/7fe480bb812c9813cb7c2a3882f4ab6c93953135))
+* **deps:** update dependency concurrently to v8.2.2 ([46d67a7](https://github.com/zhensherlock/company-autocomplete/commit/46d67a7aaeceadf9e728bea2f2693725c513ab9d))
+* **deps:** update dependency element-plus to v2.4.1 ([2ac4e4c](https://github.com/zhensherlock/company-autocomplete/commit/2ac4e4c68a29a9ef1fc64b9a0c6c5dbdd8b40ed3))
+* **deps:** update dependency lint-staged to v15.0.2 ([5a2625f](https://github.com/zhensherlock/company-autocomplete/commit/5a2625fb38ea271570e24c2d9d437e256c8535e4))
+* **deps:** update dependency terser to v5.22.0 ([ccede94](https://github.com/zhensherlock/company-autocomplete/commit/ccede94521ca143ec7be36bf9716534c75bdc38f))
+* update dependency @types/crypto-js to v4.1.3 ([#141](https://github.com/zhensherlock/company-autocomplete/issues/141)) ([4cf3691](https://github.com/zhensherlock/company-autocomplete/commit/4cf3691cf81d5dd685e38fbceff13c57a5efc09e))
+* update dependency @types/markdown-it to v13.0.4 ([#140](https://github.com/zhensherlock/company-autocomplete/issues/140)) ([cb9b7a3](https://github.com/zhensherlock/company-autocomplete/commit/cb9b7a3371aa0eeb4573c0b388f5414cf044138c))
+* update dependency @typescript-eslint/parser to v6.8.0 ([#136](https://github.com/zhensherlock/company-autocomplete/issues/136)) ([3e18c74](https://github.com/zhensherlock/company-autocomplete/commit/3e18c747825db3d8ab6441bc39ba69004754443d))
+* update dependency concurrently to v8.2.2 ([#139](https://github.com/zhensherlock/company-autocomplete/issues/139)) ([08cc023](https://github.com/zhensherlock/company-autocomplete/commit/08cc0234b5204f37b518959df6e9929c62343ebb))
+* update dependency element-plus to v2.4.1 ([#138](https://github.com/zhensherlock/company-autocomplete/issues/138)) ([34fd2b4](https://github.com/zhensherlock/company-autocomplete/commit/34fd2b4645a89c215cf60db93b1b1ada918b5571))
+* update dependency lint-staged to v15.0.2 ([#137](https://github.com/zhensherlock/company-autocomplete/issues/137)) ([69b003e](https://github.com/zhensherlock/company-autocomplete/commit/69b003e9a9086a53099127c431d3fdc8d839dde5))
+* update dependency terser to v5.22.0 ([#135](https://github.com/zhensherlock/company-autocomplete/issues/135)) ([38b2af1](https://github.com/zhensherlock/company-autocomplete/commit/38b2af10ead9bfbbb7e0fe1433b4fbd5934da912))
+
+
+
 ## [3.1.4](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.3...v3.1.4) (2023-10-16)
 
 
