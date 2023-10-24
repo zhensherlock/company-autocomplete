@@ -1,3 +1,25 @@
+## [3.1.6](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.5...v3.1.6) (2023-10-24)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update actions/setup-node action to v4 ([e3b8701](https://github.com/zhensherlock/company-autocomplete/commit/e3b870120e8af68e6c8e6dccac9fbc07e471f7df))
+* **deps:** update commitlint monorepo to v18 ([565726e](https://github.com/zhensherlock/company-autocomplete/commit/565726e8b638eaadbae0a76ffa4c65e1275c61cb))
+* **deps:** update dependency @types/markdown-it to v13.0.5 ([cad0066](https://github.com/zhensherlock/company-autocomplete/commit/cad00664407af8f42851a6b7afaf7f968c962789))
+* **deps:** update dependency @typescript-eslint/parser to v6.9.0 ([bbc8a36](https://github.com/zhensherlock/company-autocomplete/commit/bbc8a3656d0f0f81da5ba05d8cb1d6dc93560d07))
+* **deps:** update dependency core-js to v3.33.1 ([6971278](https://github.com/zhensherlock/company-autocomplete/commit/697127813a462b07c2d80d6231e28fcdc2d8f117))
+* **deps:** update dependency eslint to v8.52.0 ([c686462](https://github.com/zhensherlock/company-autocomplete/commit/c6864629e81ebd257e8279818e5e2139758ffc5d))
+* **deps:** update dependency eslint-plugin-import to v2.29.0 ([9e5a96c](https://github.com/zhensherlock/company-autocomplete/commit/9e5a96cc61bfc597942f7f363860007ca234ca5d))
+* **deps:** update dependency vitepress to v1.0.0-rc.23 ([7bd65bc](https://github.com/zhensherlock/company-autocomplete/commit/7bd65bc65edd8aeefdefbf28e4cb7bccb3e1e70c))
+* update dependency @types/markdown-it to v13.0.5 ([#157](https://github.com/zhensherlock/company-autocomplete/issues/157)) ([016fab1](https://github.com/zhensherlock/company-autocomplete/commit/016fab11191c8b3b74a279493bc85f1905d36b5a))
+* update dependency @typescript-eslint/parser to v6.9.0 ([#154](https://github.com/zhensherlock/company-autocomplete/issues/154)) ([4777172](https://github.com/zhensherlock/company-autocomplete/commit/477717207fe74a4c98602b2476285a5ccd620719))
+* update dependency core-js to v3.33.1 ([#156](https://github.com/zhensherlock/company-autocomplete/issues/156)) ([20d2367](https://github.com/zhensherlock/company-autocomplete/commit/20d236737ffa179f420ca7042c64a29d112a40f9))
+* update dependency eslint to v8.52.0 ([#153](https://github.com/zhensherlock/company-autocomplete/issues/153)) ([c365fa4](https://github.com/zhensherlock/company-autocomplete/commit/c365fa4e4879b84058ca35908d7ec841f5ed8769))
+* update dependency eslint-plugin-import to v2.29.0 ([#152](https://github.com/zhensherlock/company-autocomplete/issues/152)) ([a4f4ad6](https://github.com/zhensherlock/company-autocomplete/commit/a4f4ad6ee9bdcc0799f298c11a1308fd65a4470c))
+* update dependency vitepress to v1.0.0-rc.23 ([#155](https://github.com/zhensherlock/company-autocomplete/issues/155)) ([4c2230d](https://github.com/zhensherlock/company-autocomplete/commit/4c2230db7d722005bdff3c1382f47f93eda75b57))
+
+
+
 ## [3.1.5](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.4...v3.1.5) (2023-10-20)
 
 
