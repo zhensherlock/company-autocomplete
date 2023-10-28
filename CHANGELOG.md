@@ -1,3 +1,23 @@
+## [3.1.7](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.6...v3.1.7) (2023-10-28)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update commitlint monorepo to v18.2.0 ([277f520](https://github.com/zhensherlock/company-autocomplete/commit/277f520e89038b33dd25c609f12a5b448a302c67))
+* **deps:** update dependency @vue/theme to v2.2.5 ([c95a14e](https://github.com/zhensherlock/company-autocomplete/commit/c95a14ed1e8a8bdf7e9d2fa71b8694a7ecb71dbf))
+* **deps:** update dependency vitepress to v1.0.0-rc.24 ([521d8f8](https://github.com/zhensherlock/company-autocomplete/commit/521d8f84c5b770bd89fd27f9e07cb1a878580210))
+* update commitlint monorepo to v18.2.0 ([#162](https://github.com/zhensherlock/company-autocomplete/issues/162)) ([9552ead](https://github.com/zhensherlock/company-autocomplete/commit/9552ead102c7195348c5b34d44ad838125696f8e))
+* update dependency @vue/theme to v2.2.5 ([#164](https://github.com/zhensherlock/company-autocomplete/issues/164)) ([2327774](https://github.com/zhensherlock/company-autocomplete/commit/23277742aa7cebabbff778f4166d225aff6fe06b))
+* update dependency vitepress to v1.0.0-rc.24 ([#163](https://github.com/zhensherlock/company-autocomplete/issues/163)) ([ab85c7d](https://github.com/zhensherlock/company-autocomplete/commit/ab85c7d18e934d5b2c29910e8b379b23698cdaf6))
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* **deps:** update dependency crypto-js to v4.2.0 ([6363995](https://github.com/zhensherlock/company-autocomplete/commit/6363995fdbe1d5369e48e472d2a53d95c6973e0d))
+* update dependency crypto-js to v4.2.0 ([#161](https://github.com/zhensherlock/company-autocomplete/issues/161)) ([e537a92](https://github.com/zhensherlock/company-autocomplete/commit/e537a92e8e4f1ab2a61cd30946c41d3ed5e5834f))
+
+
+
 ## [3.1.6](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.5...v3.1.6) (2023-10-24)
 
 
