@@ -1,3 +1,19 @@
+## [3.1.8](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.7...v3.1.8) (2023-11-01)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update dependency @rollup/plugin-replace to v5.0.5 ([6dd121d](https://github.com/zhensherlock/company-autocomplete/commit/6dd121dde72bde9d4abaa858903aa4d9cf525b1e))
+* **deps:** update dependency @typescript-eslint/parser to v6.9.1 ([61e8acf](https://github.com/zhensherlock/company-autocomplete/commit/61e8acfe636c04b96b1ebe38e269182b8620f5e2))
+* **deps:** update dependency core-js to v3.33.2 ([bea7965](https://github.com/zhensherlock/company-autocomplete/commit/bea79651a444ae708ad4a747314332726a517f8a))
+* **deps:** update dependency terser to v5.24.0 ([c1d7096](https://github.com/zhensherlock/company-autocomplete/commit/c1d70966f45d09e5322ff536522a45ae0ec15f36))
+* update dependency @rollup/plugin-replace to v5.0.5 ([#172](https://github.com/zhensherlock/company-autocomplete/issues/172)) ([dc1f633](https://github.com/zhensherlock/company-autocomplete/commit/dc1f6337e4ab2c1b21a0b79dede75d6a9ada5f15))
+* update dependency @typescript-eslint/parser to v6.9.1 ([#171](https://github.com/zhensherlock/company-autocomplete/issues/171)) ([072378f](https://github.com/zhensherlock/company-autocomplete/commit/072378fb2dd1f1763df1877f35d72e34a1b3c5e4))
+* update dependency core-js to v3.33.2 ([#170](https://github.com/zhensherlock/company-autocomplete/issues/170)) ([83a3afc](https://github.com/zhensherlock/company-autocomplete/commit/83a3afc88becd794aad41471b64e261b866c1293))
+* update dependency terser to v5.24.0 ([#169](https://github.com/zhensherlock/company-autocomplete/issues/169)) ([bce79b7](https://github.com/zhensherlock/company-autocomplete/commit/bce79b7417fb18a31d1e95abf1f2a12bb512f226))
+
+
+
 ## [3.1.7](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.6...v3.1.7) (2023-10-28)
 
 
