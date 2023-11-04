@@ -1,3 +1,15 @@
+## [3.1.9](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.8...v3.1.9) (2023-11-04)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update dependency element-plus to v2.4.2 ([2ff005e](https://github.com/zhensherlock/company-autocomplete/commit/2ff005e294eb70bdf8d56355e01cf5b2ba2777d4))
+* **deps:** update dependency eslint to v8.53.0 ([404aaf4](https://github.com/zhensherlock/company-autocomplete/commit/404aaf4899cc81274781e84a7ba1a1200e315b6b))
+* update dependency element-plus to v2.4.2 ([#176](https://github.com/zhensherlock/company-autocomplete/issues/176)) ([2fb900a](https://github.com/zhensherlock/company-autocomplete/commit/2fb900a7db6e8e84fbf04e3a6c7572d3762e6e52))
+* update dependency eslint to v8.53.0 ([#175](https://github.com/zhensherlock/company-autocomplete/issues/175)) ([f4d9eea](https://github.com/zhensherlock/company-autocomplete/commit/f4d9eea9c485aa5299883194d4c7e044d2a25c3a))
+
+
+
 ## [3.1.8](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.7...v3.1.8) (2023-11-01)
 
 
