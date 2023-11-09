@@ -1,3 +1,19 @@
+## [3.1.10](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.9...v3.1.10) (2023-11-09)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update dependency @types/crypto-js to v4.2.1 ([755e4bb](https://github.com/zhensherlock/company-autocomplete/commit/755e4bbc063bef87c4593e8ad2001aa52637c79c))
+* **deps:** update dependency @types/markdown-it to v13.0.6 ([be130cc](https://github.com/zhensherlock/company-autocomplete/commit/be130cc5badeae1d123d5a07861182741df1cc6d))
+* **deps:** update dependency @typescript-eslint/parser to v6.10.0 ([bc458d3](https://github.com/zhensherlock/company-autocomplete/commit/bc458d340d087cfc98cb104ebaa4fe1e67e2455a))
+* **deps:** update dependency vitepress to v1.0.0-rc.25 ([eb2e6fc](https://github.com/zhensherlock/company-autocomplete/commit/eb2e6fcf45231cd3064c0f8725e48ece3b43fdcc))
+* update dependency @types/crypto-js to v4.2.1 ([#182](https://github.com/zhensherlock/company-autocomplete/issues/182)) ([1abdb2b](https://github.com/zhensherlock/company-autocomplete/commit/1abdb2b2e02bbab204c681a9b8822c735ec299c0))
+* update dependency @types/markdown-it to v13.0.6 ([#184](https://github.com/zhensherlock/company-autocomplete/issues/184)) ([d820964](https://github.com/zhensherlock/company-autocomplete/commit/d8209642972e9278540aee28e04a31a9ee34f05c))
+* update dependency @typescript-eslint/parser to v6.10.0 ([#181](https://github.com/zhensherlock/company-autocomplete/issues/181)) ([fc52729](https://github.com/zhensherlock/company-autocomplete/commit/fc527292556525ce5ac51eec2016cb304029842f))
+* update dependency vitepress to v1.0.0-rc.25 ([#183](https://github.com/zhensherlock/company-autocomplete/issues/183)) ([228694f](https://github.com/zhensherlock/company-autocomplete/commit/228694f8fb7956ed85644cee5670e812f41619cc))
+
+
+
 ## [3.1.9](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.8...v3.1.9) (2023-11-04)
 
 
