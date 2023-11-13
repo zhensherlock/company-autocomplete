@@ -1,3 +1,17 @@
+## [3.1.11](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.10...v3.1.11) (2023-11-13)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update babel monorepo to v7.23.3 ([af7fe17](https://github.com/zhensherlock/company-autocomplete/commit/af7fe175178df688ae04b2dfac370c552317eef4))
+* **deps:** update commitlint monorepo ([5d1bab3](https://github.com/zhensherlock/company-autocomplete/commit/5d1bab360ccb63e5c454bb8cd8c612d339c34409))
+* **deps:** update dependency lint-staged to v15.1.0 ([e6c0192](https://github.com/zhensherlock/company-autocomplete/commit/e6c0192e3fe3ea0a0aaab8910a1728994870e122))
+* update babel monorepo to v7.23.3 ([#190](https://github.com/zhensherlock/company-autocomplete/issues/190)) ([2845745](https://github.com/zhensherlock/company-autocomplete/commit/28457454a6b822dddc4f782d9ccb459183c2e103))
+* update commitlint monorepo ([#189](https://github.com/zhensherlock/company-autocomplete/issues/189)) ([c495212](https://github.com/zhensherlock/company-autocomplete/commit/c4952128bd1a8f09f73f02cc6ed5a1463b12e18d))
+* update dependency lint-staged to v15.1.0 ([#188](https://github.com/zhensherlock/company-autocomplete/issues/188)) ([c97a28c](https://github.com/zhensherlock/company-autocomplete/commit/c97a28c86ae11b9094757256d180795a6fedcd47))
+
+
+
 ## [3.1.10](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.9...v3.1.10) (2023-11-09)
 
 
