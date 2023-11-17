@@ -1,3 +1,17 @@
+## [3.1.12](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.11...v3.1.12) (2023-11-17)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update commitlint monorepo to v18.4.2 ([d4f1e89](https://github.com/zhensherlock/company-autocomplete/commit/d4f1e8991a31d2bebc9d29225ad1997a9909ae7a))
+* **deps:** update dependency @typescript-eslint/parser to v6.11.0 ([d2bb456](https://github.com/zhensherlock/company-autocomplete/commit/d2bb4565957c9e54f1a0293924cdd47aff44cb97))
+* **deps:** update dependency vitepress to v1.0.0-rc.26 ([10c7fb0](https://github.com/zhensherlock/company-autocomplete/commit/10c7fb0d1868d16d6f38582aba0ca567b277237f))
+* update commitlint monorepo to v18.4.2 ([#196](https://github.com/zhensherlock/company-autocomplete/issues/196)) ([2671364](https://github.com/zhensherlock/company-autocomplete/commit/2671364973d20abaecac482fb8150a873b5582aa))
+* update dependency @typescript-eslint/parser to v6.11.0 ([#194](https://github.com/zhensherlock/company-autocomplete/issues/194)) ([9080fbe](https://github.com/zhensherlock/company-autocomplete/commit/9080fbe33fbb907495580afc6aa4d8a09e68bf67))
+* update dependency vitepress to v1.0.0-rc.26 ([#195](https://github.com/zhensherlock/company-autocomplete/issues/195)) ([81b8284](https://github.com/zhensherlock/company-autocomplete/commit/81b8284cba4afead0c0d819ed53ca978b7751e30))
+
+
+
 ## [3.1.11](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.10...v3.1.11) (2023-11-13)
 
 
