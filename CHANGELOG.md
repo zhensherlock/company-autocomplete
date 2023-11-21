@@ -1,3 +1,24 @@
+## [3.1.13](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.12...v3.1.13) (2023-11-21)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update dependency @babel/plugin-transform-runtime to v7.23.4 ([e47ed3b](https://github.com/zhensherlock/company-autocomplete/commit/e47ed3b8bfdddaecc6fad2a394357a0884501302))
+* **deps:** update dependency @types/markdown-it to v13.0.7 ([ee27c63](https://github.com/zhensherlock/company-autocomplete/commit/ee27c63f9ca535c618e12f4d13b2e28c87985af1))
+* **deps:** update dependency @typescript-eslint/parser to v6.12.0 ([3d083e7](https://github.com/zhensherlock/company-autocomplete/commit/3d083e7a9234d4d7ffb65a19779039973be33f93))
+* **deps:** update dependency core-js to v3.33.3 ([2619b2b](https://github.com/zhensherlock/company-autocomplete/commit/2619b2bb7552e383c72012ca1f2d125d8ff85935))
+* **deps:** update dependency eslint to v8.54.0 ([0223c5c](https://github.com/zhensherlock/company-autocomplete/commit/0223c5c478dfb9aacad71431af4ae2201b4b2f36))
+* **deps:** update dependency typescript to v5.3.2 ([b4dfd4c](https://github.com/zhensherlock/company-autocomplete/commit/b4dfd4c8c232bfdea683b2409f62380fc3d5b81b))
+* **deps:** update dependency vitepress to v1.0.0-rc.29 ([867d2db](https://github.com/zhensherlock/company-autocomplete/commit/867d2db860092f9be1738443bc3ea95d93088167))
+* update dependency @babel/plugin-transform-runtime ([#208](https://github.com/zhensherlock/company-autocomplete/issues/208)) ([37d5a9f](https://github.com/zhensherlock/company-autocomplete/commit/37d5a9fcb2ab7fce54243872978fd059b73e24c4))
+* update dependency @typescript-eslint/parser to v6.12.0 ([#205](https://github.com/zhensherlock/company-autocomplete/issues/205)) ([f2009b3](https://github.com/zhensherlock/company-autocomplete/commit/f2009b31bd8ca4cc57e7dcd74d2bfe07a37e0f7f))
+* update dependency core-js to v3.33.3 ([#207](https://github.com/zhensherlock/company-autocomplete/issues/207)) ([4f4a6ca](https://github.com/zhensherlock/company-autocomplete/commit/4f4a6ca8e24b35322b3c345f5f12aaa381c7332a))
+* update dependency eslint to v8.54.0 ([#204](https://github.com/zhensherlock/company-autocomplete/issues/204)) ([5040056](https://github.com/zhensherlock/company-autocomplete/commit/504005692b1f8a6908712dea02a12c40c2cf8108))
+* update dependency typescript to v5.3.2 ([#203](https://github.com/zhensherlock/company-autocomplete/issues/203)) ([4c0cf9a](https://github.com/zhensherlock/company-autocomplete/commit/4c0cf9ab874bffa330b4f93479d391739d1ef2f3))
+* update dependency vitepress to v1.0.0-rc.29 ([#206](https://github.com/zhensherlock/company-autocomplete/issues/206)) ([876263c](https://github.com/zhensherlock/company-autocomplete/commit/876263c4b2f0f8c0335e6ace9cfe7d9443be35bd))
+
+
+
 ## [3.1.12](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.11...v3.1.12) (2023-11-17)
 
 
