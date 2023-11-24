@@ -1,3 +1,15 @@
+## [3.1.14](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.13...v3.1.14) (2023-11-24)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update commitlint monorepo to v18.4.3 ([8dee2ed](https://github.com/zhensherlock/company-autocomplete/commit/8dee2ed854fc91e5161ffecbc17ef48bc964069e))
+* **deps:** update dependency vitepress to v1.0.0-rc.30 ([2960f26](https://github.com/zhensherlock/company-autocomplete/commit/2960f26041cbf170f398f13fc30aed385dff9ffc))
+* update commitlint monorepo to v18.4.3 ([#212](https://github.com/zhensherlock/company-autocomplete/issues/212)) ([4f96245](https://github.com/zhensherlock/company-autocomplete/commit/4f9624534c6c56d9e0a3d3747ed82f5be16b2381))
+* update dependency vitepress to v1.0.0-rc.30 ([#213](https://github.com/zhensherlock/company-autocomplete/issues/213)) ([df792f9](https://github.com/zhensherlock/company-autocomplete/commit/df792f9c9bd073ebd2c981a9ad4ebb822da1c649))
+
+
+
 ## [3.1.13](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.12...v3.1.13) (2023-11-21)
 
 
