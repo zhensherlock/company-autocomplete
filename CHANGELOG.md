@@ -1,3 +1,21 @@
+## [3.1.15](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.14...v3.1.15) (2023-11-29)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update babel monorepo to v7.23.5 ([717beb2](https://github.com/zhensherlock/company-autocomplete/commit/717beb2218f5f7873b4f27519e5e21202728f17a))
+* **deps:** update dependency @element-plus/icons-vue to v2.3.1 ([31fa780](https://github.com/zhensherlock/company-autocomplete/commit/31fa780462b552fac64214325225d11f595b334f))
+* **deps:** update dependency @typescript-eslint/parser to v6.13.1 ([612e281](https://github.com/zhensherlock/company-autocomplete/commit/612e2816c4e4706780525bd6258743ccdecc84b3))
+* **deps:** update dependency element-plus to v2.4.3 ([c7993c1](https://github.com/zhensherlock/company-autocomplete/commit/c7993c1120ce01adc628403ce90bd117c4425d11))
+* **deps:** update dependency vitepress to v1.0.0-rc.31 ([a18b4d1](https://github.com/zhensherlock/company-autocomplete/commit/a18b4d10cb1c512bcc29655be89134b94d400145))
+* update babel monorepo to v7.23.5 ([#223](https://github.com/zhensherlock/company-autocomplete/issues/223)) ([85d3a36](https://github.com/zhensherlock/company-autocomplete/commit/85d3a36949192cbc070f165df960711fdfca93c1))
+* update dependency @element-plus/icons-vue to v2.3.1 ([#220](https://github.com/zhensherlock/company-autocomplete/issues/220)) ([b78f96e](https://github.com/zhensherlock/company-autocomplete/commit/b78f96e1330c31c7e697bb3d66ad74fd986e62ff))
+* update dependency @typescript-eslint/parser to v6.13.1 ([#219](https://github.com/zhensherlock/company-autocomplete/issues/219)) ([51d0bb5](https://github.com/zhensherlock/company-autocomplete/commit/51d0bb5a5ce52dd42e9ce6cee85a74db085d1e55))
+* update dependency element-plus to v2.4.3 ([#222](https://github.com/zhensherlock/company-autocomplete/issues/222)) ([b016cce](https://github.com/zhensherlock/company-autocomplete/commit/b016cceed86e512db315727889ed5a4644304a4a))
+* update dependency vitepress to v1.0.0-rc.31 ([#221](https://github.com/zhensherlock/company-autocomplete/issues/221)) ([ea42294](https://github.com/zhensherlock/company-autocomplete/commit/ea42294639c35e61da1a6f5524fe5e63ce0873e4))
+
+
+
 ## [3.1.14](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.13...v3.1.14) (2023-11-24)
 
 
