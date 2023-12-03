@@ -1,3 +1,13 @@
+## [3.1.16](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.15...v3.1.16) (2023-12-03)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update dependency eslint to v8.55.0 ([2836a23](https://github.com/zhensherlock/company-autocomplete/commit/2836a23c25eb9bc4d7fbcc5803bb7540a769d016))
+* update dependency eslint to v8.55.0 ([#225](https://github.com/zhensherlock/company-autocomplete/issues/225)) ([100a5a9](https://github.com/zhensherlock/company-autocomplete/commit/100a5a9ed5412973a6288a0a4fb7cf7bf14c9a18))
+
+
+
 ## [3.1.15](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.14...v3.1.15) (2023-11-29)
 
 
