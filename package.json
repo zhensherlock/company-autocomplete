@@ -89,7 +89,7 @@
     "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-promise": "^6.1.1",
     "husky": "^8.0.3",
-    "lint-staged": "^15.1.0",
+    "lint-staged": "^15.2.0",
     "lodash": "^4.17.21",
     "markdown-it": "^13.0.2",
     "rimraf": "^5.0.5",
