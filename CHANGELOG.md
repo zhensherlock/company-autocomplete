@@ -1,3 +1,21 @@
+## [3.1.17](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.16...v3.1.17) (2023-12-07)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update dependency @typescript-eslint/parser to v6.13.2 ([d133a81](https://github.com/zhensherlock/company-autocomplete/commit/d133a81ed30913889ca914e236ac28d7baa0194a))
+* **deps:** update dependency core-js to v3.34.0 ([ee1e21e](https://github.com/zhensherlock/company-autocomplete/commit/ee1e21eda49a9eccafed775f4a9841bf27bb592b))
+* **deps:** update dependency lint-staged to v15.2.0 ([434e88f](https://github.com/zhensherlock/company-autocomplete/commit/434e88ff2936341e8d2fd09df85ae19a40f486f7))
+* **deps:** update dependency terser to v5.25.0 ([925758a](https://github.com/zhensherlock/company-autocomplete/commit/925758aab11057369e2222276e02f347aa220bdb))
+* **deps:** update dependency typescript to v5.3.3 ([0133eb2](https://github.com/zhensherlock/company-autocomplete/commit/0133eb217fc9f68ab5de41b2b5adf96770149f30))
+* update dependency @typescript-eslint/parser to v6.13.2 ([#235](https://github.com/zhensherlock/company-autocomplete/issues/235)) ([cd73633](https://github.com/zhensherlock/company-autocomplete/commit/cd736338c7fd9aedb43a57b5a268d1c9045fd66c))
+* update dependency core-js to v3.34.0 ([#233](https://github.com/zhensherlock/company-autocomplete/issues/233)) ([f783c21](https://github.com/zhensherlock/company-autocomplete/commit/f783c21aa89240ff9894a9cd627c180370261f17))
+* update dependency lint-staged to v15.2.0 ([#232](https://github.com/zhensherlock/company-autocomplete/issues/232)) ([80fbc16](https://github.com/zhensherlock/company-autocomplete/commit/80fbc1609a8e42d630e9c1d736dfdfe11b070ebc))
+* update dependency terser to v5.25.0 ([#231](https://github.com/zhensherlock/company-autocomplete/issues/231)) ([e29b8a7](https://github.com/zhensherlock/company-autocomplete/commit/e29b8a7ef6739f2c2d5ffa9123ea330a29cb2e11))
+* update dependency typescript to v5.3.3 ([#234](https://github.com/zhensherlock/company-autocomplete/issues/234)) ([5719f93](https://github.com/zhensherlock/company-autocomplete/commit/5719f935c5a7f35834115d3b0e56a8d874ecb0a3))
+
+
+
 ## [3.1.16](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.15...v3.1.16) (2023-12-03)
 
 
