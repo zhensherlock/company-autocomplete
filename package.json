@@ -91,7 +91,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
     "lodash": "^4.17.21",
-    "markdown-it": "^13.0.2",
+    "markdown-it": "^14.0.0",
     "rimraf": "^5.0.5",
     "rollup": "^3.29.4",
     "rollup-plugin-css-porter": "^1.0.2",
