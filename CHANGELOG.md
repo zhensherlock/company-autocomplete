@@ -1,3 +1,13 @@
+## [3.1.18](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.17...v3.1.18) (2023-12-11)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update dependency markdown-it to v14 ([e76810a](https://github.com/zhensherlock/company-autocomplete/commit/e76810a24f552f50235ad8a438200c5b56b42d37))
+* update dependency terser to v5.26.0 ([#238](https://github.com/zhensherlock/company-autocomplete/issues/238)) ([9f5bca3](https://github.com/zhensherlock/company-autocomplete/commit/9f5bca350541aed557ef56293420e7b3d9523790))
+
+
+
 ## [3.1.17](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.16...v3.1.17) (2023-12-07)
 
 
