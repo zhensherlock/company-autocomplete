@@ -1,3 +1,19 @@
+## [3.1.19](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.18...v3.1.19) (2023-12-15)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update babel monorepo to v7.23.6 ([3591dc9](https://github.com/zhensherlock/company-autocomplete/commit/3591dc9c72c3b9ceb6c7152bb8436f195aaaf9e8))
+* **deps:** update dependency @typescript-eslint/parser to v6.14.0 ([12d3027](https://github.com/zhensherlock/company-autocomplete/commit/12d302723f9d796fe66e65cc2707da240302545c))
+* **deps:** update dependency cssnano to v6.0.2 ([17b3fe3](https://github.com/zhensherlock/company-autocomplete/commit/17b3fe39d27e80778327e544168ab67a1656c0ef))
+* **deps:** update dependency eslint-plugin-import to v2.29.1 ([baf3697](https://github.com/zhensherlock/company-autocomplete/commit/baf369716c0d57b67b647b6dea5de350c4c56d0f))
+* update babel monorepo to v7.23.6 ([#246](https://github.com/zhensherlock/company-autocomplete/issues/246)) ([2196723](https://github.com/zhensherlock/company-autocomplete/commit/2196723ae4b03056d299183ef3b5b6dce49da6b3))
+* update dependency @typescript-eslint/parser to v6.14.0 ([#243](https://github.com/zhensherlock/company-autocomplete/issues/243)) ([582977e](https://github.com/zhensherlock/company-autocomplete/commit/582977e32558f6135abd6ed7ea052cd069185f1b))
+* update dependency cssnano to v6.0.2 ([#245](https://github.com/zhensherlock/company-autocomplete/issues/245)) ([3b12277](https://github.com/zhensherlock/company-autocomplete/commit/3b12277cc1020c76f1688ad28a4231b89055fe72))
+* update dependency eslint-plugin-import to v2.29.1 ([#244](https://github.com/zhensherlock/company-autocomplete/issues/244)) ([2dbe18a](https://github.com/zhensherlock/company-autocomplete/commit/2dbe18a7f61461cbb45a95e9a872c944e988fb1a))
+
+
+
 ## [3.1.18](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.17...v3.1.18) (2023-12-11)
 
 
