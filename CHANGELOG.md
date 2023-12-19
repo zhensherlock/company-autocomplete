@@ -1,3 +1,19 @@
+## [3.1.20](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.19...v3.1.20) (2023-12-19)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update dependency @typescript-eslint/parser to v6.15.0 ([f0f1c86](https://github.com/zhensherlock/company-autocomplete/commit/f0f1c866ba81e255463cfc8af049dc222beb591a))
+* **deps:** update dependency element-plus to v2.4.4 ([25ee110](https://github.com/zhensherlock/company-autocomplete/commit/25ee1104e3441b5437a301372738a77323f5bde9))
+* **deps:** update dependency eslint to v8.56.0 ([c5b376e](https://github.com/zhensherlock/company-autocomplete/commit/c5b376e12a4004fa270dcfc9f43856f523e9fe6c))
+* **deps:** update dependency vitepress to v1.0.0-rc.32 ([d5922b0](https://github.com/zhensherlock/company-autocomplete/commit/d5922b0a5de0ff288a1587ac6975512cb86d688d))
+* update dependency @typescript-eslint/parser to v6.15.0 ([#252](https://github.com/zhensherlock/company-autocomplete/issues/252)) ([538d153](https://github.com/zhensherlock/company-autocomplete/commit/538d153ce204b4881e4511827720b6fadf1e2f90))
+* update dependency element-plus to v2.4.4 ([#253](https://github.com/zhensherlock/company-autocomplete/issues/253)) ([5859f04](https://github.com/zhensherlock/company-autocomplete/commit/5859f04318f2a3e126b4f5a19fdf2f35ba97763f))
+* update dependency eslint to v8.56.0 ([#251](https://github.com/zhensherlock/company-autocomplete/issues/251)) ([f340216](https://github.com/zhensherlock/company-autocomplete/commit/f34021669cc845984f13af87e8c0986ee43f4a07))
+* update dependency vitepress to v1.0.0-rc.32 ([#254](https://github.com/zhensherlock/company-autocomplete/issues/254)) ([dfd9330](https://github.com/zhensherlock/company-autocomplete/commit/dfd9330607a78b1025e88465160c22ea0f8cd108))
+
+
+
 ## [3.1.19](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.18...v3.1.19) (2023-12-15)
 
 
