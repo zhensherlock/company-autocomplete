@@ -1,3 +1,12 @@
+## [3.1.21](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.20...v3.1.21) (2023-12-25)
+
+
+### 🎫 Chores | 其他更新
+
+* update dependency rollup to v4 ([4390a7e](https://github.com/zhensherlock/company-autocomplete/commit/4390a7e6b4c5595212f4ca6f05f37c152d5bd534))
+
+
+
 ## [3.1.20](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.19...v3.1.20) (2023-12-19)
 
 
