@@ -1,3 +1,15 @@
+## [3.1.22](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.21...v3.1.22) (2023-12-27)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update dependency @typescript-eslint/parser to v6.16.0 ([9763d6e](https://github.com/zhensherlock/company-autocomplete/commit/9763d6e3cdbd937d243cfb6c70fd7bece596d197))
+* **deps:** update dependency vitepress to v1.0.0-rc.33 ([5be1f81](https://github.com/zhensherlock/company-autocomplete/commit/5be1f81b50dd396a0d40e4317181ffbdb2ea2215))
+* update dependency @typescript-eslint/parser to v6.16.0 ([#257](https://github.com/zhensherlock/company-autocomplete/issues/257)) ([8ea0312](https://github.com/zhensherlock/company-autocomplete/commit/8ea03125ab6f28e985394bd8a5c64cd227f0076c))
+* update dependency vitepress to v1.0.0-rc.33 ([#258](https://github.com/zhensherlock/company-autocomplete/issues/258)) ([a4a20a3](https://github.com/zhensherlock/company-autocomplete/commit/a4a20a3585734126d31f02b6726b84efcc412041))
+
+
+
 ## [3.1.21](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.20...v3.1.21) (2023-12-25)
 
 
