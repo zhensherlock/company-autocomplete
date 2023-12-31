@@ -1,3 +1,25 @@
+## [3.1.23](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.22...v3.1.23) (2023-12-31)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update babel monorepo to v7.23.7 ([f5bfd90](https://github.com/zhensherlock/company-autocomplete/commit/f5bfd90f47361c4a99f7f2e415634b5e32f95d01))
+* **deps:** update dependency core-js to v3.35.0 ([aaecf8c](https://github.com/zhensherlock/company-autocomplete/commit/aaecf8c0c5ef46ed427d15f89bdfa9f5c731eebb))
+* **deps:** update dependency rollup to v4.9.2 ([e0922ac](https://github.com/zhensherlock/company-autocomplete/commit/e0922acf5433b3366d77c7c278b3e8d4e4e677bd))
+* **deps:** update dependency vitepress to v1.0.0-rc.34 ([8d15b92](https://github.com/zhensherlock/company-autocomplete/commit/8d15b92de2ac652ab0ec0f9e8de3d8367b885519))
+* update babel monorepo to v7.23.7 ([#266](https://github.com/zhensherlock/company-autocomplete/issues/266)) ([3ae4e81](https://github.com/zhensherlock/company-autocomplete/commit/3ae4e8177ddfa28145a06afe35d80153a5ec2402))
+* update dependency core-js to v3.35.0 ([#264](https://github.com/zhensherlock/company-autocomplete/issues/264)) ([1032eb4](https://github.com/zhensherlock/company-autocomplete/commit/1032eb4a3bbbe1be480f69e07b67fecd9ddf274d))
+* update dependency rollup to v4.9.2 ([#265](https://github.com/zhensherlock/company-autocomplete/issues/265)) ([c64c8be](https://github.com/zhensherlock/company-autocomplete/commit/c64c8be09b059880f970876aaea2a44d0a0827b9))
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* docs deploy error ([0a90e07](https://github.com/zhensherlock/company-autocomplete/commit/0a90e07d01117c882e2fb72e0410fed663ad92c9))
+* docs deploy error ([0240ee6](https://github.com/zhensherlock/company-autocomplete/commit/0240ee668d07db6c3e32c642e54a10d33bf70f78))
+* docs deploy error ([284df97](https://github.com/zhensherlock/company-autocomplete/commit/284df97ba57d8a8f2985e72bb81d75ee0bb54478))
+
+
+
 ## [3.1.22](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.21...v3.1.22) (2023-12-27)
 
 
