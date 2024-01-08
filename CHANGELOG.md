@@ -1,3 +1,28 @@
+# [3.2.0](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.24...v3.2.0) (2024-01-08)
+
+
+### ✨ Features | 新功能
+
+* add qcc-global api ([15a660f](https://github.com/zhensherlock/company-autocomplete/commit/15a660fba5220a7d2b2bc8e12e36977af76b1dec))
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update commitlint monorepo to v18.4.4 ([43ae634](https://github.com/zhensherlock/company-autocomplete/commit/43ae634f39b4ac8480cfdc91bd89d0ae4decb2dc))
+* **deps:** update dependency @typescript-eslint/parser to v6.18.0 ([ad99c0e](https://github.com/zhensherlock/company-autocomplete/commit/ad99c0ed6df4580120ff004e6342ad8c63d170bd))
+* **deps:** update dependency rollup to v4.9.4 ([63960ff](https://github.com/zhensherlock/company-autocomplete/commit/63960ff8de3ec2d837807df64a11788696338965))
+* update commitlint monorepo to v18.4.4 ([#280](https://github.com/zhensherlock/company-autocomplete/issues/280)) ([df62e22](https://github.com/zhensherlock/company-autocomplete/commit/df62e22b66d912ce3a8b485f3d4d5b79bebb847b))
+* update dependency @typescript-eslint/parser to v6.18.0 ([#277](https://github.com/zhensherlock/company-autocomplete/issues/277)) ([e492e74](https://github.com/zhensherlock/company-autocomplete/commit/e492e74953f7cc700a197d34de1718df9de871f8))
+* update dependency rollup to v4.9.4 ([#279](https://github.com/zhensherlock/company-autocomplete/issues/279)) ([e72b98b](https://github.com/zhensherlock/company-autocomplete/commit/e72b98b2f4ae1898fff5188d744f5a9619af3e77))
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* **deps:** update dependency @floating-ui/dom to v1.5.4 ([79fee22](https://github.com/zhensherlock/company-autocomplete/commit/79fee22181260ccf159fd0f05a9f69f6ad9ddf32))
+* update dependency @floating-ui/dom to v1.5.4 ([#278](https://github.com/zhensherlock/company-autocomplete/issues/278)) ([8f109e3](https://github.com/zhensherlock/company-autocomplete/commit/8f109e3ffc9f8b0926d017177909321dfcda3717))
+
+
+
 ## [3.1.24](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.23...v3.1.24) (2024-01-04)
 
 
