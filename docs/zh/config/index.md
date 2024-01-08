@@ -12,7 +12,7 @@ HTML元素标签的id
 ## api
 
 - **Type:** `string`
-- **available values**: `'qcc_open' | 'clearbit'`
+- **available values**: `'clearbit' | 'qcc_open' | 'qcc_global'`
 
 查询数据源
 

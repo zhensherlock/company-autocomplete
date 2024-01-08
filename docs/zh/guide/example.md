@@ -17,10 +17,17 @@ onMounted(() => {
     target: '#clearbit_input',
     autoFocus: true
   });
+
   new CompanyAutocomplete({
     api: 'qcc_open',
     target: '#qcc_open_input',
-    autoFocus: true
+    autoFocus: false
+  });
+
+  new CompanyAutocomplete({
+    api: 'qcc_global',
+    target: '#qcc_global_input',
+    autoFocus: false
   });
 })
 </script>
@@ -47,6 +54,19 @@ import { CompanyAutocomplete } from 'company-autocomplete'
 
 const companyAutocomplete = new CompanyAutocomplete({
   api: 'qcc_open',
+  target: '#example'
+})
+```
+
+## QCC Global API
+<div id="qcc_global_input">
+</div>
+
+```js
+import { CompanyAutocomplete } from 'company-autocomplete' 
+
+const companyAutocomplete = new CompanyAutocomplete({
+  api: 'qcc_global',
   target: '#example'
 })
 ```
