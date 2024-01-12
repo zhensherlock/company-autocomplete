@@ -1,3 +1,21 @@
+## [3.2.1](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.0...v3.2.1) (2024-01-12)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update dependency @babel/preset-env to v7.23.8 ([4981e5c](https://github.com/zhensherlock/company-autocomplete/commit/4981e5c5cdcfa86163099abc4859cbc21a10b1b5))
+* **deps:** update dependency @rollup/plugin-typescript to v11.1.6 ([b6b6368](https://github.com/zhensherlock/company-autocomplete/commit/b6b6368db4ea9bf9979cd22f36b1f1dd2206dbf7))
+* **deps:** update dependency @typescript-eslint/parser to v6.18.1 ([db23174](https://github.com/zhensherlock/company-autocomplete/commit/db2317430f827e247a598ed86b7c55e085be289a))
+* **deps:** update dependency element-plus to v2.5.1 ([26c349c](https://github.com/zhensherlock/company-autocomplete/commit/26c349c1d2a72ee3235dc897ea3aa13515551134))
+* **deps:** update dependency vitepress to v1.0.0-rc.36 ([40df03a](https://github.com/zhensherlock/company-autocomplete/commit/40df03a028b8bd299160f77d3c90f2ad92bd0cbd))
+* update dependency @babel/preset-env to v7.23.8 ([#290](https://github.com/zhensherlock/company-autocomplete/issues/290)) ([7d20c69](https://github.com/zhensherlock/company-autocomplete/commit/7d20c69593c30d60f19f54d5719f1b8c61798dce))
+* update dependency @rollup/plugin-typescript to v11.1.6 ([#289](https://github.com/zhensherlock/company-autocomplete/issues/289)) ([2f5d82c](https://github.com/zhensherlock/company-autocomplete/commit/2f5d82c767ea12d5928a8e97d6152e84c3e53fd0))
+* update dependency @typescript-eslint/parser to v6.18.1 ([#288](https://github.com/zhensherlock/company-autocomplete/issues/288)) ([6c6a4b9](https://github.com/zhensherlock/company-autocomplete/commit/6c6a4b9e52f3edafd4f69c324969d497139bcc0d))
+* update dependency element-plus to v2.5.1 ([#286](https://github.com/zhensherlock/company-autocomplete/issues/286)) ([1ae4de1](https://github.com/zhensherlock/company-autocomplete/commit/1ae4de130a9b1e1c5f328bccb661ed938bf893d5))
+* update dependency vitepress to v1.0.0-rc.36 ([#287](https://github.com/zhensherlock/company-autocomplete/issues/287)) ([70c0555](https://github.com/zhensherlock/company-autocomplete/commit/70c055525fe7fa4fe8b1c53831966a3b62889c7d))
+
+
+
 # [3.2.0](https://github.com/zhensherlock/company-autocomplete/compare/v3.1.24...v3.2.0) (2024-01-08)
 
 
