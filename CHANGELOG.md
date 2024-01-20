@@ -1,3 +1,18 @@
+## [3.2.3](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.2...v3.2.3) (2024-01-20)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update dependency autoprefixer to v10.4.17 ([6c50c68](https://github.com/zhensherlock/company-autocomplete/commit/6c50c68f7cf13a7edfccf9d4c705fbfe618dfb7f))
+* **deps:** update dependency element-plus to v2.5.2 ([c48c552](https://github.com/zhensherlock/company-autocomplete/commit/c48c552494500641ee21c8bef3ffbbb4d71112d2))
+* **deps:** update dependency terser to v5.27.0 ([6dce481](https://github.com/zhensherlock/company-autocomplete/commit/6dce4811371f71121d7fc36ac622411f1982f247))
+* **deps:** update dependency vitepress to v1.0.0-rc.39 ([2723086](https://github.com/zhensherlock/company-autocomplete/commit/2723086e66441048ee991cb741b7fc67d993d426))
+* update dependency autoprefixer to v10.4.17 ([#303](https://github.com/zhensherlock/company-autocomplete/issues/303)) ([762f040](https://github.com/zhensherlock/company-autocomplete/commit/762f0401109681b69a047c2088aaaba71ad34d23))
+* update dependency element-plus to v2.5.2 ([#302](https://github.com/zhensherlock/company-autocomplete/issues/302)) ([15e10f6](https://github.com/zhensherlock/company-autocomplete/commit/15e10f6dee92a08ff28e0fd9b29b8b17fb107545))
+* update dependency terser to v5.27.0 ([#301](https://github.com/zhensherlock/company-autocomplete/issues/301)) ([1ae361e](https://github.com/zhensherlock/company-autocomplete/commit/1ae361e6719cdb76702cb123d588397073d08c2c))
+
+
+
 ## [3.2.2](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.1...v3.2.2) (2024-01-16)
 
 
