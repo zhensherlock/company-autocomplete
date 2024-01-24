@@ -1,3 +1,24 @@
+## [3.2.4](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.3...v3.2.4) (2024-01-24)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update commitlint monorepo to v18.5.0 ([60e2491](https://github.com/zhensherlock/company-autocomplete/commit/60e2491d5303cf0a061d4dfc488e76578bf288b1))
+* **deps:** update dependency @types/crypto-js to v4.2.2 ([698825c](https://github.com/zhensherlock/company-autocomplete/commit/698825cdae3f8c91bf03869f6a6e768b0a1988e2))
+* **deps:** update dependency @typescript-eslint/parser to v6.19.1 ([6a49de6](https://github.com/zhensherlock/company-autocomplete/commit/6a49de651fef46a0446af5b7a93399f5cd14f2af))
+* **deps:** update dependency core-js to v3.35.1 ([e574951](https://github.com/zhensherlock/company-autocomplete/commit/e574951119ad07d9a5ce5e0abc081b54eec138a5))
+* **deps:** update dependency element-plus to v2.5.3 ([dc03594](https://github.com/zhensherlock/company-autocomplete/commit/dc03594ab5ea6983f92fbbdf7af8375584191fd5))
+* **deps:** update dependency rollup to v4.9.6 ([9501e5c](https://github.com/zhensherlock/company-autocomplete/commit/9501e5c4a0463a1a5f67fac2d586f3a68d0b5e97))
+* **deps:** update dependency vitepress to v1.0.0-rc.40 ([140ad03](https://github.com/zhensherlock/company-autocomplete/commit/140ad03694f1e713b42670386df636dd1185386e))
+* update commitlint monorepo to v18.5.0 ([#311](https://github.com/zhensherlock/company-autocomplete/issues/311)) ([b2abfd2](https://github.com/zhensherlock/company-autocomplete/commit/b2abfd2460f599bb2ee2cced0d1b0bc3f8985f11))
+* update dependency @typescript-eslint/parser to v6.19.1 ([#316](https://github.com/zhensherlock/company-autocomplete/issues/316)) ([3597183](https://github.com/zhensherlock/company-autocomplete/commit/359718306bc1f05c61f68ac42de269fa03413bae))
+* update dependency core-js to v3.35.1 ([#315](https://github.com/zhensherlock/company-autocomplete/issues/315)) ([85bc768](https://github.com/zhensherlock/company-autocomplete/commit/85bc7683191d606f75d3f34c56726bb4fc673402))
+* update dependency element-plus to v2.5.3 ([#314](https://github.com/zhensherlock/company-autocomplete/issues/314)) ([9792924](https://github.com/zhensherlock/company-autocomplete/commit/97929244f5e95336fb630a18697011956573ea21))
+* update dependency rollup to v4.9.6 ([#313](https://github.com/zhensherlock/company-autocomplete/issues/313)) ([39df649](https://github.com/zhensherlock/company-autocomplete/commit/39df649383e89c48c059e007d9729e0a89062ab7))
+* update dependency vitepress to v1.0.0-rc.40 ([#312](https://github.com/zhensherlock/company-autocomplete/issues/312)) ([2b31214](https://github.com/zhensherlock/company-autocomplete/commit/2b312147e2fdd2796c1314ff3a05cf6cc844dab9))
+
+
+
 ## [3.2.3](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.2...v3.2.3) (2024-01-20)
 
 
