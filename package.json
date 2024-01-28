@@ -105,7 +105,7 @@
     "vitepress": "^1.0.0-rc.40"
   },
   "dependencies": {
-    "@floating-ui/dom": "^1.5.4",
+    "@floating-ui/dom": "^1.6.1",
     "crypto-js": "^4.2.0"
   }
 }
