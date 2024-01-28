@@ -1,3 +1,24 @@
+## [3.2.5](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.4...v3.2.5) (2024-01-28)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update babel monorepo to v7.23.9 ([974c782](https://github.com/zhensherlock/company-autocomplete/commit/974c782bd69f9459141ad6a6a53670a6fdb07214))
+* **deps:** update commitlint monorepo to v18.6.0 ([befb254](https://github.com/zhensherlock/company-autocomplete/commit/befb2540ab6539aca0f83de9bd5e31ccf6d0f1c3))
+* **deps:** update dependency husky to v9 ([5f571a6](https://github.com/zhensherlock/company-autocomplete/commit/5f571a67e795f70b0ba6ff7606464e0b378ad798))
+* **deps:** update dependency husky to v9.0.6 ([5ef4bdd](https://github.com/zhensherlock/company-autocomplete/commit/5ef4bdd9db3786f18cb80600d5f435dbf5cd12a4))
+* update babel monorepo to v7.23.9 ([#324](https://github.com/zhensherlock/company-autocomplete/issues/324)) ([05f770e](https://github.com/zhensherlock/company-autocomplete/commit/05f770ef4a62c1e6825fdde0a8444a4b322463fd))
+* update commitlint monorepo to v18.6.0 ([#323](https://github.com/zhensherlock/company-autocomplete/issues/323)) ([37e6dc8](https://github.com/zhensherlock/company-autocomplete/commit/37e6dc8096a702708537a1f0613e05b4405a049e))
+* update dependency husky to v9 ([#321](https://github.com/zhensherlock/company-autocomplete/issues/321)) ([974bd37](https://github.com/zhensherlock/company-autocomplete/commit/974bd372786a07677a387a6ce49d3b7cb4d37a63))
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* **deps:** update dependency @floating-ui/dom to v1.6.1 ([e9e86ab](https://github.com/zhensherlock/company-autocomplete/commit/e9e86abe74a27e30d295f90a47ce638403e4d820))
+* update dependency @floating-ui/dom to v1.6.1 ([#322](https://github.com/zhensherlock/company-autocomplete/issues/322)) ([67443e9](https://github.com/zhensherlock/company-autocomplete/commit/67443e919820c790f22c79c7ca32d4d82166d12d))
+
+
+
 ## [3.2.4](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.3...v3.2.4) (2024-01-24)
 
 
