@@ -74,7 +74,7 @@
     "@rollup/plugin-typescript": "^11.1.6",
     "@types/crypto-js": "^4.2.1",
     "@types/markdown-it": "^13.0.6",
-    "@typescript-eslint/parser": "^6.19.1",
+    "@typescript-eslint/parser": "^6.20.0",
     "@vue/theme": "^2.2.5",
     "autoprefixer": "^10.4.17",
     "concurrently": "^8.2.2",
