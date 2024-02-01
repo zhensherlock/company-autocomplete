@@ -1,3 +1,19 @@
+## [3.2.6](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.5...v3.2.6) (2024-02-01)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update dependency @babel/eslint-parser to v7.23.10 ([7d8dab2](https://github.com/zhensherlock/company-autocomplete/commit/7d8dab28cf532e10234aea46cbb139623bfc6399))
+* **deps:** update dependency @typescript-eslint/parser to v6.20.0 ([714bf85](https://github.com/zhensherlock/company-autocomplete/commit/714bf8599db01391773e6ec9500d8a5d39eba76c))
+* **deps:** update dependency husky to v9.0.7 ([9fba735](https://github.com/zhensherlock/company-autocomplete/commit/9fba735f07f198c4f4d438358bdb53802b2d4a25))
+* **deps:** update dependency lint-staged to v15.2.1 ([60629c2](https://github.com/zhensherlock/company-autocomplete/commit/60629c2500e829f28297ad3ffcb8cd45865bb68f))
+* update dependency @babel/eslint-parser to v7.23.10 ([#333](https://github.com/zhensherlock/company-autocomplete/issues/333)) ([b2d91a1](https://github.com/zhensherlock/company-autocomplete/commit/b2d91a1a02341b86111083a2960198adc55bb48a))
+* update dependency @typescript-eslint/parser to v6.20.0 ([#330](https://github.com/zhensherlock/company-autocomplete/issues/330)) ([45b2f00](https://github.com/zhensherlock/company-autocomplete/commit/45b2f00b3daaa0448bf0daae9d00ccd4fa9f96ef))
+* update dependency husky to v9.0.7 ([#332](https://github.com/zhensherlock/company-autocomplete/issues/332)) ([3bdcd46](https://github.com/zhensherlock/company-autocomplete/commit/3bdcd46a4612dc1ba36a343868e5059295230291))
+* update dependency lint-staged to v15.2.1 ([#331](https://github.com/zhensherlock/company-autocomplete/issues/331)) ([f196e6c](https://github.com/zhensherlock/company-autocomplete/commit/f196e6c4d5f3fd49ed4a062a39fcaae9aca34777))
+
+
+
 ## [3.2.5](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.4...v3.2.5) (2024-01-28)
 
 
