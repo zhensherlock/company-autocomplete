@@ -1,3 +1,17 @@
+## [3.2.7](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.6...v3.2.7) (2024-02-05)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update dependency element-plus to v2.5.5 ([473655f](https://github.com/zhensherlock/company-autocomplete/commit/473655f7b00473d1fcdf0122854ebac034b2b008))
+* **deps:** update dependency husky to v9.0.10 ([8734cad](https://github.com/zhensherlock/company-autocomplete/commit/8734cad80cf348ccada845ff1d010ed1cd0b06fb))
+* **deps:** update dependency vitepress to v1.0.0-rc.41 ([d7a5dcc](https://github.com/zhensherlock/company-autocomplete/commit/d7a5dccbe49c01366b074f690b22596be58ca459))
+* update dependency element-plus to v2.5.5 ([#339](https://github.com/zhensherlock/company-autocomplete/issues/339)) ([8d41701](https://github.com/zhensherlock/company-autocomplete/commit/8d41701884f6636205081dd2bd107ddb3d8b39a8))
+* update dependency husky to v9.0.10 ([#338](https://github.com/zhensherlock/company-autocomplete/issues/338)) ([97fe1f1](https://github.com/zhensherlock/company-autocomplete/commit/97fe1f1be5536613068d5ab658c8caba1c77aad5))
+* update dependency vitepress to v1.0.0-rc.41 ([#337](https://github.com/zhensherlock/company-autocomplete/issues/337)) ([846e6dd](https://github.com/zhensherlock/company-autocomplete/commit/846e6dd1d1b67a2c21cb43d12ebdf9e4b08ba7f6))
+
+
+
 ## [3.2.6](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.5...v3.2.6) (2024-02-01)
 
 
