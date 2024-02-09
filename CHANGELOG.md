@@ -1,3 +1,17 @@
+## [3.2.8](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.7...v3.2.8) (2024-02-09)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update dependency @typescript-eslint/parser to v6.21.0 ([1b27a7f](https://github.com/zhensherlock/company-autocomplete/commit/1b27a7f2f096ad6c28b04e00caf03096f901a5ef))
+* **deps:** update dependency lint-staged to v15.2.2 ([790856c](https://github.com/zhensherlock/company-autocomplete/commit/790856c553f1ce96ddad24c6ddbbd6a657179e5c))
+* **deps:** update dependency vitepress to v1.0.0-rc.42 ([e66f42b](https://github.com/zhensherlock/company-autocomplete/commit/e66f42b03e868930f54aa0cdd6df930078f3f885))
+* update dependency @typescript-eslint/parser to v6.21.0 ([#343](https://github.com/zhensherlock/company-autocomplete/issues/343)) ([28627fe](https://github.com/zhensherlock/company-autocomplete/commit/28627fe5cda952810c0659b2306132dab1b8ed1d))
+* update dependency lint-staged to v15.2.2 ([#345](https://github.com/zhensherlock/company-autocomplete/issues/345)) ([135721b](https://github.com/zhensherlock/company-autocomplete/commit/135721b63229f2e33244072bc409c7adc1342e5f))
+* update dependency vitepress to v1.0.0-rc.42 ([#344](https://github.com/zhensherlock/company-autocomplete/issues/344)) ([ed2e1fa](https://github.com/zhensherlock/company-autocomplete/commit/ed2e1fabf0d792336ed0587fa028517cb46b398c))
+
+
+
 ## [3.2.7](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.6...v3.2.7) (2024-02-05)
 
 
