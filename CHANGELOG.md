@@ -1,3 +1,19 @@
+## [3.2.9](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.8...v3.2.9) (2024-02-12)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update dependency rollup to v4.10.0 ([ee662fb](https://github.com/zhensherlock/company-autocomplete/commit/ee662fbdd8e2ef8b18a132fc4b25a537e1256bbf))
+* update dependency rollup to v4.10.0 ([#349](https://github.com/zhensherlock/company-autocomplete/issues/349)) ([7fe1c83](https://github.com/zhensherlock/company-autocomplete/commit/7fe1c83a5f9e3d71d926d65b90e6f2ac6f46c83e))
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* **deps:** update dependency @floating-ui/dom to v1.6.3 ([917d8ad](https://github.com/zhensherlock/company-autocomplete/commit/917d8ada63ef9d82e2eca94592a8c3a3c41f90f8))
+* update dependency @floating-ui/dom to v1.6.3 ([#348](https://github.com/zhensherlock/company-autocomplete/issues/348)) ([4740930](https://github.com/zhensherlock/company-autocomplete/commit/474093006cb44c0856a930f789bc4231184e332d))
+
+
+
 ## [3.2.8](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.7...v3.2.8) (2024-02-09)
 
 
