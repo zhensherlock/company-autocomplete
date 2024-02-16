@@ -1,3 +1,22 @@
+## [3.2.10](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.9...v3.2.10) (2024-02-16)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update commitlint monorepo to v18.6.1 ([d7aa8ed](https://github.com/zhensherlock/company-autocomplete/commit/d7aa8edf7d556bdc1f60413fed62d53a68ba28e3))
+* **deps:** update dependency @typescript-eslint/parser to v7 ([a5ae3ed](https://github.com/zhensherlock/company-autocomplete/commit/a5ae3edf35b71b7d485ba9827b7bfc41b2ed8ac1))
+* **deps:** update dependency core-js to v3.36.0 ([617c294](https://github.com/zhensherlock/company-autocomplete/commit/617c2949e217085f9b17d57eaf090789ad12fc15))
+* **deps:** update dependency husky to v9.0.11 ([56df7e8](https://github.com/zhensherlock/company-autocomplete/commit/56df7e81ca90105429788179444720c88009998b))
+* **deps:** update dependency rollup to v4.12.0 ([677f605](https://github.com/zhensherlock/company-autocomplete/commit/677f6057823c2aeeb9ba426c5a10ded4ee66408e))
+* **deps:** update dependency terser to v5.27.1 ([323ca1f](https://github.com/zhensherlock/company-autocomplete/commit/323ca1f9a8bd8393dc184a1dd732bede00d60afb))
+* update commitlint monorepo to v18.6.1 ([#360](https://github.com/zhensherlock/company-autocomplete/issues/360)) ([d07256b](https://github.com/zhensherlock/company-autocomplete/commit/d07256ba18c6d15a8158e3b4a5ed3a3dfaff63f3))
+* update dependency core-js to v3.36.0 ([#357](https://github.com/zhensherlock/company-autocomplete/issues/357)) ([e6c23cf](https://github.com/zhensherlock/company-autocomplete/commit/e6c23cff353b53973718bbf758991bfce4847dc2))
+* update dependency husky to v9.0.11 ([#359](https://github.com/zhensherlock/company-autocomplete/issues/359)) ([a9abe89](https://github.com/zhensherlock/company-autocomplete/commit/a9abe892028c04373c72b72eec600f9d3254a199))
+* update dependency rollup to v4.12.0 ([#356](https://github.com/zhensherlock/company-autocomplete/issues/356)) ([ad44ead](https://github.com/zhensherlock/company-autocomplete/commit/ad44ead02bd4f46eb276b24e43330ea0966ff511))
+* update dependency terser to v5.27.1 ([#358](https://github.com/zhensherlock/company-autocomplete/issues/358)) ([b728104](https://github.com/zhensherlock/company-autocomplete/commit/b728104582325cae58b704ebb114ee2de9154b49))
+
+
+
 ## [3.2.9](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.8...v3.2.9) (2024-02-12)
 
 
