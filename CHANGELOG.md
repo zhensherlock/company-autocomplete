@@ -1,3 +1,19 @@
+## [3.2.11](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.10...v3.2.11) (2024-02-21)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update dependency @typescript-eslint/parser to v7.0.2 ([a8a8c1d](https://github.com/zhensherlock/company-autocomplete/commit/a8a8c1d9dac0f9604967dcd85936eabaf7d997c0))
+* **deps:** update dependency element-plus to v2.5.6 ([2ce809d](https://github.com/zhensherlock/company-autocomplete/commit/2ce809d6e21889736814561cd7c8e2dae5085df0))
+* **deps:** update dependency terser to v5.27.2 ([8ee65b6](https://github.com/zhensherlock/company-autocomplete/commit/8ee65b6d60a098cce2503a98e6e685758cc45275))
+* **deps:** update dependency vitepress to v1.0.0-rc.44 ([0125b56](https://github.com/zhensherlock/company-autocomplete/commit/0125b56cfbab6d916becc7c6b7dcc9d72bb847a7))
+* update dependency @typescript-eslint/parser to v7.0.2 ([#368](https://github.com/zhensherlock/company-autocomplete/issues/368)) ([d9e9b11](https://github.com/zhensherlock/company-autocomplete/commit/d9e9b11b91fd7d0eae3193b532e67964b88b1a7c))
+* update dependency element-plus to v2.5.6 ([#367](https://github.com/zhensherlock/company-autocomplete/issues/367)) ([3cb5df9](https://github.com/zhensherlock/company-autocomplete/commit/3cb5df9f97800b8d7df12de5f28b7d889e053192))
+* update dependency terser to v5.27.2 ([#366](https://github.com/zhensherlock/company-autocomplete/issues/366)) ([196be49](https://github.com/zhensherlock/company-autocomplete/commit/196be49dc3b90e8685cab8d86cd30d496b48e2f9))
+* update dependency vitepress to v1.0.0-rc.44 ([#365](https://github.com/zhensherlock/company-autocomplete/issues/365)) ([c196963](https://github.com/zhensherlock/company-autocomplete/commit/c196963bb7e3f0d806e9cc77a2572e8d48cd45ce))
+
+
+
 ## [3.2.10](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.9...v3.2.10) (2024-02-16)
 
 
