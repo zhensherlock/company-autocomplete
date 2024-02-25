@@ -1,3 +1,16 @@
+## [3.2.12](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.11...v3.2.12) (2024-02-25)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update dependency cssnano to v6.0.5 ([63c799d](https://github.com/zhensherlock/company-autocomplete/commit/63c799de33ddf87da5fd9c58d47d403325824141))
+* **deps:** update dependency eslint to v8.57.0 ([6fe3874](https://github.com/zhensherlock/company-autocomplete/commit/6fe387414f40fa9ce7cf1390e95d04db42de762e))
+* **deps:** update dependency terser to v5.28.1 ([b03a152](https://github.com/zhensherlock/company-autocomplete/commit/b03a1528340e0405ee7870091c3e0f250162fb52))
+* update dependency eslint to v8.57.0 ([#373](https://github.com/zhensherlock/company-autocomplete/issues/373)) ([881ce69](https://github.com/zhensherlock/company-autocomplete/commit/881ce69d73df8cb43e81c849d6e0ea3975e29c3b))
+* update dependency terser to v5.28.1 ([#372](https://github.com/zhensherlock/company-autocomplete/issues/372)) ([8ae043b](https://github.com/zhensherlock/company-autocomplete/commit/8ae043b08d3b32f733c77b0d0a7eada5e7854157))
+
+
+
 ## [3.2.11](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.10...v3.2.11) (2024-02-21)
 
 
