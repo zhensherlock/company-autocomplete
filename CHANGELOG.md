@@ -1,3 +1,18 @@
+## [3.2.13](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.12...v3.2.13) (2024-02-29)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update babel monorepo to v7.24.0 ([782b91a](https://github.com/zhensherlock/company-autocomplete/commit/782b91a8d264b55b1d872996e0107c53fd55eb3f))
+* **deps:** update commitlint monorepo to v19 ([5786e35](https://github.com/zhensherlock/company-autocomplete/commit/5786e35794de69b0ec7ec0ef62a6efa634f392fa))
+* **deps:** update commitlint monorepo to v19.0.3 ([45c3e10](https://github.com/zhensherlock/company-autocomplete/commit/45c3e1072c4e7be72d773a9cfb1944141369a95e))
+* **deps:** update dependency @typescript-eslint/parser to v7.1.0 ([432d2d6](https://github.com/zhensherlock/company-autocomplete/commit/432d2d6cb703236de51b35994e79969c6bf5148d))
+* update babel monorepo to v7.24.0 ([#379](https://github.com/zhensherlock/company-autocomplete/issues/379)) ([b0ae097](https://github.com/zhensherlock/company-autocomplete/commit/b0ae097aef7e1baa749b6e96e8f11cae81243142))
+* update commitlint monorepo to v19.0.3 ([#380](https://github.com/zhensherlock/company-autocomplete/issues/380)) ([a7a0e23](https://github.com/zhensherlock/company-autocomplete/commit/a7a0e23ebeaecb68b5165ee2cdb5b6cfd3f02375))
+* update dependency @typescript-eslint/parser to v7.1.0 ([#378](https://github.com/zhensherlock/company-autocomplete/issues/378)) ([0ac3a7d](https://github.com/zhensherlock/company-autocomplete/commit/0ac3a7dc3a599ae424ffe31d55406885b1047cf8))
+
+
+
 ## [3.2.12](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.11...v3.2.12) (2024-02-25)
 
 
