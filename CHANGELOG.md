@@ -1,3 +1,15 @@
+## [3.2.14](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.13...v3.2.14) (2024-03-04)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update dependency autoprefixer to v10.4.18 ([78568be](https://github.com/zhensherlock/company-autocomplete/commit/78568be70d709eb6675ffc53513290a90616cb80))
+* **deps:** update dependency element-plus to v2.6.0 ([de8fd39](https://github.com/zhensherlock/company-autocomplete/commit/de8fd39cc99bceb67e2ace9d06d53afc6d57ca31))
+* update dependency autoprefixer to v10.4.18 ([#383](https://github.com/zhensherlock/company-autocomplete/issues/383)) ([35c581b](https://github.com/zhensherlock/company-autocomplete/commit/35c581bb044e2ef7bf01b4a6970169bc3e3e6864))
+* update dependency element-plus to v2.6.0 ([#384](https://github.com/zhensherlock/company-autocomplete/issues/384)) ([48e6a70](https://github.com/zhensherlock/company-autocomplete/commit/48e6a70052d44d015a486c809a295e494ea49210))
+
+
+
 ## [3.2.13](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.12...v3.2.13) (2024-02-29)
 
 
