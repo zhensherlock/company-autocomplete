@@ -1,3 +1,17 @@
+## [3.2.17](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.16...v3.2.17) (2024-03-16)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update commitlint monorepo to v19.2.0 ([40e4db6](https://github.com/zhensherlock/company-autocomplete/commit/40e4db6f32f2cced562314cc17962ade290634d1))
+* **deps:** update dependency rollup to v4.13.0 ([3441884](https://github.com/zhensherlock/company-autocomplete/commit/3441884b738fe3f8a080d77e54cba58356190e87))
+* **deps:** update dependency terser to v5.29.2 ([2382732](https://github.com/zhensherlock/company-autocomplete/commit/23827327b3251f4a7ded8d2465ae4cba8dd11057))
+* update commitlint monorepo to v19.2.0 ([#405](https://github.com/zhensherlock/company-autocomplete/issues/405)) ([03d7be1](https://github.com/zhensherlock/company-autocomplete/commit/03d7be18e3be6fedbc37248aa73580d42940188a))
+* update dependency rollup to v4.13.0 ([#406](https://github.com/zhensherlock/company-autocomplete/issues/406)) ([6ad02ac](https://github.com/zhensherlock/company-autocomplete/commit/6ad02accf4bc437b95bff89918d05eef7258da5b))
+* update dependency terser to v5.29.2 ([#404](https://github.com/zhensherlock/company-autocomplete/issues/404)) ([61ff92e](https://github.com/zhensherlock/company-autocomplete/commit/61ff92efba0ec1e9531739f5e3bd2f97d61ef36f))
+
+
+
 ## [3.2.16](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.15...v3.2.16) (2024-03-12)
 
 
