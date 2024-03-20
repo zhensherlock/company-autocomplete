@@ -1,3 +1,21 @@
+## [3.2.18](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.17...v3.2.18) (2024-03-20)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update babel monorepo to v7.24.1 ([ec0d11d](https://github.com/zhensherlock/company-autocomplete/commit/ec0d11d08333c1c87199b3a563348467655a8a46))
+* **deps:** update dependency @commitlint/cli to v19.2.1 ([b77a69d](https://github.com/zhensherlock/company-autocomplete/commit/b77a69d6dfb3237c9f783e4091a3229e89a1bdd1))
+* **deps:** update dependency @typescript-eslint/parser to v7.3.1 ([83d79f9](https://github.com/zhensherlock/company-autocomplete/commit/83d79f9a4f56d88f4c170415be373d826257e953))
+* **deps:** update dependency core-js to v3.36.1 ([64118c5](https://github.com/zhensherlock/company-autocomplete/commit/64118c59f3abfed093890abaa9c8b00948d45dd8))
+* **deps:** update dependency markdown-it to v14.1.0 ([1a4f3e1](https://github.com/zhensherlock/company-autocomplete/commit/1a4f3e196086b969da579637ca0b55647062c00b))
+* update babel monorepo to v7.24.1 ([#412](https://github.com/zhensherlock/company-autocomplete/issues/412)) ([1aa64bc](https://github.com/zhensherlock/company-autocomplete/commit/1aa64bcdcb6ddf13cba0df785de05ed556d16735))
+* update dependency @commitlint/cli to v19.2.1 ([#413](https://github.com/zhensherlock/company-autocomplete/issues/413)) ([b44c31e](https://github.com/zhensherlock/company-autocomplete/commit/b44c31ed0512622ce080df81f647cf1dba7db923))
+* update dependency @typescript-eslint/parser to v7.3.1 ([#415](https://github.com/zhensherlock/company-autocomplete/issues/415)) ([74ddf43](https://github.com/zhensherlock/company-autocomplete/commit/74ddf43a6c783539ff95ca1674e6d94252f8fc40))
+* update dependency core-js to v3.36.1 ([#414](https://github.com/zhensherlock/company-autocomplete/issues/414)) ([7c44530](https://github.com/zhensherlock/company-autocomplete/commit/7c445304e66e35ef4eedea4c019ec2386db614b7))
+* update dependency markdown-it to v14.1.0 ([#416](https://github.com/zhensherlock/company-autocomplete/issues/416)) ([413cc99](https://github.com/zhensherlock/company-autocomplete/commit/413cc9944f6b756ac285b6295c8af5d254dcea73))
+
+
+
 ## [3.2.17](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.16...v3.2.17) (2024-03-16)
 
 
