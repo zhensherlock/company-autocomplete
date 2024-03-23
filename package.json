@@ -102,7 +102,7 @@
     "terser": "^5.29.2",
     "typescript": "^5.4.2",
     "unplugin-element-plus": "^0.8.0",
-    "vitepress": "^1.0.0-rc.45"
+    "vitepress": "^1.0.1"
   },
   "dependencies": {
     "@floating-ui/dom": "^1.6.3",
