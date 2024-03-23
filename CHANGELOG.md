@@ -1,3 +1,23 @@
+## [3.2.19](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.18...v3.2.19) (2024-03-23)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update babel monorepo to v7.24.3 ([c8a20a1](https://github.com/zhensherlock/company-autocomplete/commit/c8a20a1f477de852c80295dc130b7b6da1e711c0))
+* **deps:** update dependency autoprefixer to v10.4.19 ([93feb7c](https://github.com/zhensherlock/company-autocomplete/commit/93feb7c2749a1fb652a05a3933d70fb81c339bfa))
+* **deps:** update dependency cssnano to v6.1.1 ([ba62db6](https://github.com/zhensherlock/company-autocomplete/commit/ba62db669a0a28a799529e68f645f8240bec233c))
+* **deps:** update dependency element-plus to v2.6.2 ([75d3270](https://github.com/zhensherlock/company-autocomplete/commit/75d327001cf394d7f6546748e0c7b410c4de679a))
+* **deps:** update dependency typescript to v5.4.3 ([55c8551](https://github.com/zhensherlock/company-autocomplete/commit/55c8551b8b8878c996514f4d312c0a7542db3935))
+* **deps:** update dependency vitepress to v1.0.1 ([33f252f](https://github.com/zhensherlock/company-autocomplete/commit/33f252f511b877c2fc77973696cafd1dc00ce900))
+* update babel monorepo to v7.24.3 ([#423](https://github.com/zhensherlock/company-autocomplete/issues/423)) ([679852b](https://github.com/zhensherlock/company-autocomplete/commit/679852bf442aff0624212a876cf2398bc01afa5b))
+* update dependency autoprefixer to v10.4.19 ([#424](https://github.com/zhensherlock/company-autocomplete/issues/424)) ([ae8e7da](https://github.com/zhensherlock/company-autocomplete/commit/ae8e7da2bcab9ce72351122f054e3e21e7b2a201))
+* update dependency cssnano to v6.1.1 ([#425](https://github.com/zhensherlock/company-autocomplete/issues/425)) ([d240907](https://github.com/zhensherlock/company-autocomplete/commit/d240907ff4b705ca1470a097e903ab2c92e57596))
+* update dependency element-plus to v2.6.2 ([#426](https://github.com/zhensherlock/company-autocomplete/issues/426)) ([6bd08ab](https://github.com/zhensherlock/company-autocomplete/commit/6bd08ab4661ed7d960903030ae3b7d0543330219))
+* update dependency typescript to v5.4.3 ([#427](https://github.com/zhensherlock/company-autocomplete/issues/427)) ([3aacd46](https://github.com/zhensherlock/company-autocomplete/commit/3aacd465688341c880c536bd466a15fd29ef632f))
+* update dependency vitepress to v1.0.1 ([#428](https://github.com/zhensherlock/company-autocomplete/issues/428)) ([86bcbaf](https://github.com/zhensherlock/company-autocomplete/commit/86bcbafe7165d858816ef89801a1ac760c15ef63))
+
+
+
 ## [3.2.18](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.17...v3.2.18) (2024-03-20)
 
 
