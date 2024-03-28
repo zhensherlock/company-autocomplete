@@ -1,3 +1,19 @@
+## [3.2.20](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.19...v3.2.20) (2024-03-28)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update dependency @typescript-eslint/parser to v7.4.0 ([f7066bb](https://github.com/zhensherlock/company-autocomplete/commit/f7066bbd0c8e24699a9102b75140c2b6d4667b29))
+* **deps:** update dependency cssnano to v6.1.2 ([366c82c](https://github.com/zhensherlock/company-autocomplete/commit/366c82cf627298f454ef43ef7cd78b630e8e8536))
+* **deps:** update dependency rollup to v4.13.1 ([b847aa6](https://github.com/zhensherlock/company-autocomplete/commit/b847aa62c0e2e7d765df144cc16f5c394282c011))
+* **deps:** update dependency terser to v5.30.0 ([c354240](https://github.com/zhensherlock/company-autocomplete/commit/c35424084f5198c7f4436c5411dcba3bedf123d4))
+* update dependency @typescript-eslint/parser to v7.4.0 ([#435](https://github.com/zhensherlock/company-autocomplete/issues/435)) ([63b5bc6](https://github.com/zhensherlock/company-autocomplete/commit/63b5bc64888f003878ae16dfce3ef1c8b5036301))
+* update dependency cssnano to v6.1.2 ([#433](https://github.com/zhensherlock/company-autocomplete/issues/433)) ([052c8ee](https://github.com/zhensherlock/company-autocomplete/commit/052c8ee1a72105ef747f585b01460486352a7ab0))
+* update dependency rollup to v4.13.1 ([#434](https://github.com/zhensherlock/company-autocomplete/issues/434)) ([1fbd063](https://github.com/zhensherlock/company-autocomplete/commit/1fbd0634f4ed1cf7941ae885c55b65bb3b85a965))
+* update dependency terser to v5.30.0 ([#436](https://github.com/zhensherlock/company-autocomplete/issues/436)) ([75cfa59](https://github.com/zhensherlock/company-autocomplete/commit/75cfa5992b78c6927967cb02fac82fc2c192eb5d))
+
+
+
 ## [3.2.19](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.18...v3.2.19) (2024-03-23)
 
 
