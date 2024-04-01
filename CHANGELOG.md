@@ -1,3 +1,15 @@
+## [3.2.21](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.20...v3.2.21) (2024-04-01)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update dependency element-plus to v2.6.3 ([e02ef13](https://github.com/zhensherlock/company-autocomplete/commit/e02ef13497ae274926af67fd62b4b9634c088089))
+* **deps:** update dependency rollup to v4.13.2 ([515f2fd](https://github.com/zhensherlock/company-autocomplete/commit/515f2fd2b6ac17dc505784a7901747ebd6d8859a))
+* update dependency element-plus to v2.6.3 ([#439](https://github.com/zhensherlock/company-autocomplete/issues/439)) ([2c82510](https://github.com/zhensherlock/company-autocomplete/commit/2c825107f11944d3966d7210252787062d230bcb))
+* update dependency rollup to v4.13.2 ([#440](https://github.com/zhensherlock/company-autocomplete/issues/440)) ([051c32c](https://github.com/zhensherlock/company-autocomplete/commit/051c32c453925400c9dbc3f70a275884f4ed1bca))
+
+
+
 ## [3.2.20](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.19...v3.2.20) (2024-03-28)
 
 
