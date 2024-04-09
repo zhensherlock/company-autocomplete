@@ -1,3 +1,17 @@
+## [3.2.23](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.22...v3.2.23) (2024-04-09)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update dependency @types/markdown-it to v14 ([1b3e240](https://github.com/zhensherlock/company-autocomplete/commit/1b3e240f7b6c9465e553ee32b5bc4fe1a8963fc4))
+* **deps:** update dependency @typescript-eslint/parser to v7.6.0 ([c40cf36](https://github.com/zhensherlock/company-autocomplete/commit/c40cf36a96bc158bea33a3bc718f98740a556a59))
+* **deps:** update dependency rollup to v4.14.1 ([4c6d2c7](https://github.com/zhensherlock/company-autocomplete/commit/4c6d2c765d28dcc6c5fc12830f1a4484375a1512))
+* **deps:** update peaceiris/actions-gh-pages action to v4 ([9e7ef59](https://github.com/zhensherlock/company-autocomplete/commit/9e7ef59cd010e06921736527483daaf3ae956f99))
+* update dependency @typescript-eslint/parser to v7.6.0 ([#459](https://github.com/zhensherlock/company-autocomplete/issues/459)) ([b8a4239](https://github.com/zhensherlock/company-autocomplete/commit/b8a4239dc3cad5716de98d5621f8bfc473f8fd63))
+* update dependency rollup to v4.14.1 ([#458](https://github.com/zhensherlock/company-autocomplete/issues/458)) ([4d4c193](https://github.com/zhensherlock/company-autocomplete/commit/4d4c193e208bbf520c75623c922c9a739b15efd6))
+
+
+
 ## [3.2.22](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.21...v3.2.22) (2024-04-05)
 
 
