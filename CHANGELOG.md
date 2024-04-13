@@ -1,3 +1,19 @@
+## [3.2.24](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.23...v3.2.24) (2024-04-13)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update dependency element-plus to v2.7.0 ([5c586ac](https://github.com/zhensherlock/company-autocomplete/commit/5c586ac5a1359e00c45e7bceaaa08563c761cbb6))
+* **deps:** update dependency rollup to v4.14.2 ([8fbf8cf](https://github.com/zhensherlock/company-autocomplete/commit/8fbf8cf939c3a4064b91e4edb1245fef27070901))
+* **deps:** update dependency typescript to v5.4.5 ([22bd2ac](https://github.com/zhensherlock/company-autocomplete/commit/22bd2ac8eaf0843194d6204d2365928786eacc5b))
+* **deps:** update dependency vitepress to v1.1.0 ([7a0efee](https://github.com/zhensherlock/company-autocomplete/commit/7a0efee7cd64026be516a4a18f0bbb64c657bcde))
+* update dependency element-plus to v2.7.0 ([#466](https://github.com/zhensherlock/company-autocomplete/issues/466)) ([3539eb1](https://github.com/zhensherlock/company-autocomplete/commit/3539eb1f34358cbacc6246aefe986d165473d655))
+* update dependency rollup to v4.14.2 ([#464](https://github.com/zhensherlock/company-autocomplete/issues/464)) ([81bb558](https://github.com/zhensherlock/company-autocomplete/commit/81bb5584c661c7d0bb20b7a12e1bcc9bb621973b))
+* update dependency typescript to v5.4.5 ([#465](https://github.com/zhensherlock/company-autocomplete/issues/465)) ([f0f8f67](https://github.com/zhensherlock/company-autocomplete/commit/f0f8f67f2221ab0fc989e7df94ec8f0f602f604d))
+* update dependency vitepress to v1.1.0 ([#467](https://github.com/zhensherlock/company-autocomplete/issues/467)) ([c86d1ff](https://github.com/zhensherlock/company-autocomplete/commit/c86d1ffbc2290b4b12a61cc4c22a564e7bf43cf1))
+
+
+
 ## [3.2.23](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.22...v3.2.23) (2024-04-09)
 
 
