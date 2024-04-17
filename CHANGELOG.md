@@ -1,3 +1,23 @@
+## [3.2.25](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.24...v3.2.25) (2024-04-17)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update commitlint monorepo to v19.2.2 ([69feecb](https://github.com/zhensherlock/company-autocomplete/commit/69feecb1180bf19595e1a7b7ccdfbedf82ca7554))
+* **deps:** update dependency @types/markdown-it to v14.0.1 ([5a2689d](https://github.com/zhensherlock/company-autocomplete/commit/5a2689d178f1688bf227d92d964807b3ec929b39))
+* **deps:** update dependency @typescript-eslint/parser to v7.7.0 ([98442b8](https://github.com/zhensherlock/company-autocomplete/commit/98442b854edad4bc6c45964e32b26a99c187082f))
+* **deps:** update dependency core-js to v3.37.0 ([706aa71](https://github.com/zhensherlock/company-autocomplete/commit/706aa71f67c86cf137da68ee669c636f9541e5d3))
+* **deps:** update dependency rollup to v4.14.3 ([8a84103](https://github.com/zhensherlock/company-autocomplete/commit/8a84103bf18ea27ddde6921182fb1ccb187aa791))
+* **deps:** update dependency rollup-plugin-sass to v1.12.22 ([e811aa1](https://github.com/zhensherlock/company-autocomplete/commit/e811aa171bdcca357d3ee07c1d6f54963c485d90))
+* update commitlint monorepo to v19.2.2 ([#474](https://github.com/zhensherlock/company-autocomplete/issues/474)) ([b8975e9](https://github.com/zhensherlock/company-autocomplete/commit/b8975e91f4b43a06fa7584e498407dfcb8e661bb))
+* update dependency @types/markdown-it to v14.0.1 ([#475](https://github.com/zhensherlock/company-autocomplete/issues/475)) ([6e1b88b](https://github.com/zhensherlock/company-autocomplete/commit/6e1b88b3da92cab879385fd1e8f5eb93d31bd3a6))
+* update dependency @typescript-eslint/parser to v7.7.0 ([#478](https://github.com/zhensherlock/company-autocomplete/issues/478)) ([9231c9a](https://github.com/zhensherlock/company-autocomplete/commit/9231c9a98d69da31958e4ab7de4fe7cddf40ba26))
+* update dependency core-js to v3.37.0 ([#479](https://github.com/zhensherlock/company-autocomplete/issues/479)) ([5bbfbab](https://github.com/zhensherlock/company-autocomplete/commit/5bbfbab8edf47430c0b45d4b055be594810a3598))
+* update dependency rollup to v4.14.3 ([#476](https://github.com/zhensherlock/company-autocomplete/issues/476)) ([aa85896](https://github.com/zhensherlock/company-autocomplete/commit/aa85896b6051e22e72c0232c4e6990bd46ace251))
+* update dependency rollup-plugin-sass to v1.12.22 ([#477](https://github.com/zhensherlock/company-autocomplete/issues/477)) ([5a920d9](https://github.com/zhensherlock/company-autocomplete/commit/5a920d9ab52ee225baeff74d68cb7fba47dbab64))
+
+
+
 ## [3.2.24](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.23...v3.2.24) (2024-04-13)
 
 
