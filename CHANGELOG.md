@@ -1,3 +1,17 @@
+## [3.2.26](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.25...v3.2.26) (2024-04-22)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update dependency element-plus to v2.7.1 ([2adf0ec](https://github.com/zhensherlock/company-autocomplete/commit/2adf0ec07d2b5191a3c8f7699af72c7b9a20db1e))
+* **deps:** update dependency rollup to v4.16.1 ([a9b32d3](https://github.com/zhensherlock/company-autocomplete/commit/a9b32d3cc698250dadcbfe18f31aa0f06b9beaec))
+* **deps:** update dependency vitepress to v1.1.3 ([eb3dd74](https://github.com/zhensherlock/company-autocomplete/commit/eb3dd7455def616ee88fefb55aa2dd5225837883))
+* update dependency element-plus to v2.7.1 ([#483](https://github.com/zhensherlock/company-autocomplete/issues/483)) ([567ddb4](https://github.com/zhensherlock/company-autocomplete/commit/567ddb45831291e64a4edda8d2924e0a58e6be9b))
+* update dependency rollup to v4.16.1 ([#485](https://github.com/zhensherlock/company-autocomplete/issues/485)) ([ed062a9](https://github.com/zhensherlock/company-autocomplete/commit/ed062a99a2ed1ae79d4f2627ff62b98c1ea40a08))
+* update dependency vitepress to v1.1.3 ([#484](https://github.com/zhensherlock/company-autocomplete/issues/484)) ([5616ea2](https://github.com/zhensherlock/company-autocomplete/commit/5616ea25dcb88f1aca4e02f4ecc2a13e2535f303))
+
+
+
 ## [3.2.25](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.24...v3.2.25) (2024-04-17)
 
 
