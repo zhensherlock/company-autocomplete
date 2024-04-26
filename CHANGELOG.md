@@ -1,3 +1,21 @@
+## [3.2.27](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.26...v3.2.27) (2024-04-26)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update actions/checkout digest to 0ad4b8f ([f70e7ad](https://github.com/zhensherlock/company-autocomplete/commit/f70e7ad79711498af4e3fbd0441ccf94995c96e9))
+* **deps:** update dependency @commitlint/cli to v19.3.0 ([ad464ae](https://github.com/zhensherlock/company-autocomplete/commit/ad464aea0aea56361283f1e1647b0923501dc4bb))
+* **deps:** update dependency @typescript-eslint/parser to v7.7.1 ([6ecb5c0](https://github.com/zhensherlock/company-autocomplete/commit/6ecb5c08e8e4b5a4f5d47e8251eee696cd92cd23))
+* **deps:** update dependency cssnano to v7 ([c8538ff](https://github.com/zhensherlock/company-autocomplete/commit/c8538ff93724649b618c26797d79db5c394853c0))
+* **deps:** update dependency rollup to v4.16.4 ([0e43bfb](https://github.com/zhensherlock/company-autocomplete/commit/0e43bfbfe4e6eb708dd1a44479e2eb261c5de1c0))
+* **deps:** update dependency terser to v5.30.4 ([15fa7a1](https://github.com/zhensherlock/company-autocomplete/commit/15fa7a1b03ff2bcc02100eeb3b7a4338d033163f))
+* update dependency @commitlint/cli to v19.3.0 ([#495](https://github.com/zhensherlock/company-autocomplete/issues/495)) ([f77afed](https://github.com/zhensherlock/company-autocomplete/commit/f77afed8a367ac8b9672a51a66d4bca5561ce2cd))
+* update dependency @typescript-eslint/parser to v7.7.1 ([#492](https://github.com/zhensherlock/company-autocomplete/issues/492)) ([dda03fe](https://github.com/zhensherlock/company-autocomplete/commit/dda03fe3130168ade71322098048eecfc9265ccd))
+* update dependency rollup to v4.16.4 ([#493](https://github.com/zhensherlock/company-autocomplete/issues/493)) ([15df651](https://github.com/zhensherlock/company-autocomplete/commit/15df65195ca02de2370283df20feacb648b9ad12))
+* update dependency terser to v5.30.4 ([#494](https://github.com/zhensherlock/company-autocomplete/issues/494)) ([e2b3d93](https://github.com/zhensherlock/company-autocomplete/commit/e2b3d9395742edc4a775131555443f20d64f0c38))
+
+
+
 ## [3.2.26](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.25...v3.2.26) (2024-04-22)
 
 
