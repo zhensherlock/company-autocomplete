@@ -1,3 +1,31 @@
+## [3.2.28](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.27...v3.2.28) (2024-04-30)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update babel monorepo to v7.24.5 ([0040d83](https://github.com/zhensherlock/company-autocomplete/commit/0040d83a40163128db0dd57c3c9771de553e38a6))
+* **deps:** update dependency @typescript-eslint/parser to v7.8.0 ([4312f1c](https://github.com/zhensherlock/company-autocomplete/commit/4312f1ce47fc9b365e6a50ac58e97213edc8fac8))
+* **deps:** update dependency cssnano to v7.0.1 ([d646120](https://github.com/zhensherlock/company-autocomplete/commit/d6461205046043f1a556d424d1d923e60f9d9ebc))
+* **deps:** update dependency element-plus to v2.7.2 ([3434077](https://github.com/zhensherlock/company-autocomplete/commit/343407718d34af09efbfd7edaeaca841bf80e875))
+* **deps:** update dependency rollup to v4.17.1 ([b3e14bd](https://github.com/zhensherlock/company-autocomplete/commit/b3e14bd8b63316263bdb0dc6feb4877839301fc8))
+* **deps:** update dependency terser to v5.31.0 ([0e1878c](https://github.com/zhensherlock/company-autocomplete/commit/0e1878c13900471de53bff7e78df80df1a708572))
+* **deps:** update dependency vitepress to v1.1.4 ([4f183e9](https://github.com/zhensherlock/company-autocomplete/commit/4f183e9d1ad6719bf71e36f4ed43f8f8aa3d47d8))
+* update babel monorepo to v7.24.5 ([#504](https://github.com/zhensherlock/company-autocomplete/issues/504)) ([a84c33f](https://github.com/zhensherlock/company-autocomplete/commit/a84c33f144856ae8c0032c2815c2ad3dbccc557e))
+* update dependency @typescript-eslint/parser to v7.8.0 ([#509](https://github.com/zhensherlock/company-autocomplete/issues/509)) ([9c907c2](https://github.com/zhensherlock/company-autocomplete/commit/9c907c2aace46ea8002eab1c73251c6892c7ebdb))
+* update dependency cssnano to v7.0.1 ([#505](https://github.com/zhensherlock/company-autocomplete/issues/505)) ([9ebaf00](https://github.com/zhensherlock/company-autocomplete/commit/9ebaf006039dc73f707b7b1d91c3aea923f953a9))
+* update dependency element-plus to v2.7.2 ([#506](https://github.com/zhensherlock/company-autocomplete/issues/506)) ([ae8cf27](https://github.com/zhensherlock/company-autocomplete/commit/ae8cf2764e90e2ab78509812b05ab0de95a2f16d))
+* update dependency rollup to v4.17.1 ([#510](https://github.com/zhensherlock/company-autocomplete/issues/510)) ([e8c05c7](https://github.com/zhensherlock/company-autocomplete/commit/e8c05c7042c8fa2762d6f87842351ab7e0ff6433))
+* update dependency terser to v5.31.0 ([#511](https://github.com/zhensherlock/company-autocomplete/issues/511)) ([61aeaaa](https://github.com/zhensherlock/company-autocomplete/commit/61aeaaa656de3e583ecfca75363ae8d3abe84d02))
+* update dependency vitepress to v1.1.4 ([#507](https://github.com/zhensherlock/company-autocomplete/issues/507)) ([a3e4a13](https://github.com/zhensherlock/company-autocomplete/commit/a3e4a13724b757ad5a8c217c0e2d644bb1a6239f))
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* **deps:** update dependency @floating-ui/dom to v1.6.4 ([0ad1412](https://github.com/zhensherlock/company-autocomplete/commit/0ad1412d4326da836229eed9516d1048f1a1635c))
+* update dependency @floating-ui/dom to v1.6.4 ([#508](https://github.com/zhensherlock/company-autocomplete/issues/508)) ([946dbd7](https://github.com/zhensherlock/company-autocomplete/commit/946dbd704c7d0bf3df683e509a9b6d9a7f234c78))
+
+
+
 ## [3.2.27](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.26...v3.2.27) (2024-04-26)
 
 
