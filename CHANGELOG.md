@@ -1,3 +1,16 @@
+## [3.2.29](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.28...v3.2.29) (2024-05-04)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update dependency @types/markdown-it to v14.1.1 ([96f0e65](https://github.com/zhensherlock/company-autocomplete/commit/96f0e6553fe18d7d066950b7f0b187384be9243a))
+* **deps:** update dependency conventional-changelog-angular to v8 ([bba1fa9](https://github.com/zhensherlock/company-autocomplete/commit/bba1fa91d20ddc141e0703fdddc5b579cf4a1086))
+* **deps:** update dependency conventional-changelog-cli to v5 ([fef54e7](https://github.com/zhensherlock/company-autocomplete/commit/fef54e7e2138ba482d3644b2eae48222974ef35a))
+* **deps:** update dependency rollup to v4.17.2 ([67421b8](https://github.com/zhensherlock/company-autocomplete/commit/67421b8bc4d9f5caffa0ffa33ea074fe73ac01a0))
+* update dependency @types/markdown-it to v14.1.1 ([#517](https://github.com/zhensherlock/company-autocomplete/issues/517)) ([7a1df0d](https://github.com/zhensherlock/company-autocomplete/commit/7a1df0dc3c62ed2d13f7e8bf0fb0ba3a7addeb1f))
+
+
+
 ## [3.2.28](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.27...v3.2.28) (2024-04-30)
 
 
