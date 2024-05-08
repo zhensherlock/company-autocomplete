@@ -43,7 +43,10 @@
   "exports": {
     ".": {
       "types": "./dist/types/src/index.d.ts",
-      "import": "./dist/index.cjs.js",
+      "import": {
+        "node": "./index.mjs",
+        "default": "./dist/index.esm.js"
+      },
       "require": "./dist/index.cjs.js"
     },
     "./package.json": "./package.json",
@@ -52,6 +55,7 @@
   "files": [
     "dist",
     "index.js",
+    "index.mjs",
     "index.cjs",
     "LICENSE",
     "README.md"
