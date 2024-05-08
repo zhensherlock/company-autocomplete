@@ -1,3 +1,14 @@
+## [3.2.30](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.29...v3.2.30) (2024-05-08)
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* **deps:** update dependency @floating-ui/dom to v1.6.5 ([7cef9c3](https://github.com/zhensherlock/company-autocomplete/commit/7cef9c314ebe09b9aead8120397c74512ad4d006))
+* Unexpected token 'export' ([1eacefb](https://github.com/zhensherlock/company-autocomplete/commit/1eacefba8e6476b458f5e3fa190cee5993212b8d))
+* update dependency @floating-ui/dom to v1.6.5 ([#521](https://github.com/zhensherlock/company-autocomplete/issues/521)) ([a7716bc](https://github.com/zhensherlock/company-autocomplete/commit/a7716bca49e53ff44723a907ded636b073d7f418))
+
+
+
 ## [3.2.29](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.28...v3.2.29) (2024-05-04)
 
 
