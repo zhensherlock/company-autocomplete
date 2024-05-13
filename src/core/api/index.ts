@@ -7,8 +7,8 @@ export const handleQueryData = async (keyword: string, options: CompanyAutocompl
   switch (options.api) {
     case 'qcc_open':
       return await queryQccOpenAPI(keyword)
-    case 'qcc_global':
-      return await queryQccGlobalAPI(keyword)
+    // case 'qcc_global':
+    //   return await queryQccGlobalAPI(keyword)
     case 'clearbit':
       return await queryClearBitAPI(keyword)
     default:

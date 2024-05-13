@@ -58,15 +58,24 @@ const companyAutocomplete = new CompanyAutocomplete({
 })
 ```
 
-## QCC Global API
-<div id="qcc_global_input">
-</div>
+[//]: # (## QCC Global API)
 
-```js
-import { CompanyAutocomplete } from 'company-autocomplete' 
+[//]: # (<div id="qcc_global_input">)
 
-const companyAutocomplete = new CompanyAutocomplete({
-  api: 'qcc_global',
-  target: '#example'
-})
-```
+[//]: # (</div>)
+
+[//]: # ()
+[//]: # (```js)
+
+[//]: # (import { CompanyAutocomplete } from 'company-autocomplete' )
+
+[//]: # ()
+[//]: # (const companyAutocomplete = new CompanyAutocomplete&#40;{)
+
+[//]: # (  api: 'qcc_global',)
+
+[//]: # (  target: '#example')
+
+[//]: # (}&#41;)
+
+[//]: # (```)
