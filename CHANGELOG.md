@@ -1,3 +1,18 @@
+## [3.2.31](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.30...v3.2.31) (2024-05-13)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update dependency rimraf to v5.0.7 ([0fdb3ee](https://github.com/zhensherlock/company-autocomplete/commit/0fdb3ee18d576103973ddcf2dd8c933629865025))
+* update dependency rimraf to v5.0.7 ([#525](https://github.com/zhensherlock/company-autocomplete/issues/525)) ([7645880](https://github.com/zhensherlock/company-autocomplete/commit/7645880183fefc4abacf1a1aa3a278724db356fe))
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* remove qcc_global api ([8dc2e4d](https://github.com/zhensherlock/company-autocomplete/commit/8dc2e4d773b797e52ed7634aba742a6bc4a97eac))
+
+
+
 ## [3.2.30](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.29...v3.2.30) (2024-05-08)
 
 
