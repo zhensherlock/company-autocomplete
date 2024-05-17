@@ -84,7 +84,7 @@
     "concurrently": "^8.2.2",
     "conventional-changelog-angular": "^7.0.0",
     "conventional-changelog-cli": "^4.1.0",
-    "core-js": "^3.37.0",
+    "core-js": "^3.37.1",
     "cssnano": "^7.0.1",
     "element-plus": "^2.7.2",
     "eslint": "^8.57.0",
