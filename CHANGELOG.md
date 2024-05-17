@@ -1,3 +1,17 @@
+## [3.2.32](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.31...v3.2.32) (2024-05-17)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update dependency @typescript-eslint/parser to v7.9.0 ([1024eae](https://github.com/zhensherlock/company-autocomplete/commit/1024eae3c0dd2e540be96e460b6a1aeba72f48d2))
+* **deps:** update dependency core-js to v3.37.1 ([c393801](https://github.com/zhensherlock/company-autocomplete/commit/c393801f5772fd4ceca98ba0ed9a90c123f4b737))
+* **deps:** update dependency element-plus to v2.7.3 ([5e2c7a1](https://github.com/zhensherlock/company-autocomplete/commit/5e2c7a17896e32dde4b219b2ce9c409f84b67fd3))
+* update dependency @typescript-eslint/parser to v7.9.0 ([#531](https://github.com/zhensherlock/company-autocomplete/issues/531)) ([59ad443](https://github.com/zhensherlock/company-autocomplete/commit/59ad443eb93d14119bb666e37a37e19a0bf04825))
+* update dependency core-js to v3.37.1 ([#529](https://github.com/zhensherlock/company-autocomplete/issues/529)) ([8da84aa](https://github.com/zhensherlock/company-autocomplete/commit/8da84aa37ad6e18f8deed2614708103b089cb9fd))
+* update dependency element-plus to v2.7.3 ([#530](https://github.com/zhensherlock/company-autocomplete/issues/530)) ([d00a289](https://github.com/zhensherlock/company-autocomplete/commit/d00a289bdd593b1949fa29fa7783c1d2e650eba0))
+
+
+
 ## [3.2.31](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.30...v3.2.31) (2024-05-13)
 
 
