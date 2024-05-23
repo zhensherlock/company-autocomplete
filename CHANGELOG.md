@@ -1,3 +1,24 @@
+## [3.2.33](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.32...v3.2.33) (2024-05-23)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update actions/checkout digest to a5ac7e5 ([e58d34b](https://github.com/zhensherlock/company-autocomplete/commit/e58d34bdde011c1232db977f17fc1d65e6037c69))
+* **deps:** update dependency @rollup/plugin-commonjs to v25.0.8 ([5b32619](https://github.com/zhensherlock/company-autocomplete/commit/5b326194608faa70940e88e272f764c6a538d862))
+* **deps:** update dependency @typescript-eslint/parser to v7.10.0 ([bb05c75](https://github.com/zhensherlock/company-autocomplete/commit/bb05c75820ade1afa1caf00efde0f0337a757e9d))
+* **deps:** update dependency @vue/theme to v2.2.11 ([022004f](https://github.com/zhensherlock/company-autocomplete/commit/022004fbc06d6fbe3632bc05c1496799576c5e24))
+* **deps:** update dependency lint-staged to v15.2.4 ([fffedcf](https://github.com/zhensherlock/company-autocomplete/commit/fffedcfdeb8efd921c9490292265864e6ac8d9fe))
+* **deps:** update dependency rollup to v4.18.0 ([b0a73f5](https://github.com/zhensherlock/company-autocomplete/commit/b0a73f5fb8302cb1b32e8159656d5ec50b119864))
+* **deps:** update dependency vitepress to v1.2.2 ([0c43183](https://github.com/zhensherlock/company-autocomplete/commit/0c431835b2497052abb6dee5ff6bf36dfcf03bd9))
+* update dependency @rollup/plugin-commonjs to v25.0.8 ([#539](https://github.com/zhensherlock/company-autocomplete/issues/539)) ([c26a5ff](https://github.com/zhensherlock/company-autocomplete/commit/c26a5ff5a3ddc6f76b84d8c4d1ec93d1f6797f61))
+* update dependency @typescript-eslint/parser to v7.10.0 ([#542](https://github.com/zhensherlock/company-autocomplete/issues/542)) ([dfa67a5](https://github.com/zhensherlock/company-autocomplete/commit/dfa67a53ca831b735fed04174cdd440da455f176))
+* update dependency @vue/theme to v2.2.11 ([#540](https://github.com/zhensherlock/company-autocomplete/issues/540)) ([d804e42](https://github.com/zhensherlock/company-autocomplete/commit/d804e4266da04d3bb211c2c4970dfc1e39543d8e))
+* update dependency lint-staged to v15.2.4 ([#541](https://github.com/zhensherlock/company-autocomplete/issues/541)) ([ad83a5e](https://github.com/zhensherlock/company-autocomplete/commit/ad83a5e3db2d56bf75271483f7cb1fda78312006))
+* update dependency rollup to v4.18.0 ([#543](https://github.com/zhensherlock/company-autocomplete/issues/543)) ([b99870e](https://github.com/zhensherlock/company-autocomplete/commit/b99870edcee67636c797d4a27dbe237b0d2051ab))
+* update dependency vitepress to v1.2.2 ([#544](https://github.com/zhensherlock/company-autocomplete/issues/544)) ([fe69365](https://github.com/zhensherlock/company-autocomplete/commit/fe693651844d89216ad1e796d8c0b3cbe608891d))
+
+
+
 ## [3.2.32](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.31...v3.2.32) (2024-05-17)
 
 
