@@ -1,3 +1,17 @@
+## [3.2.34](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.33...v3.2.34) (2024-05-31)
+
+
+### 🎫 Chores | 其他更新
+
+* **deps:** update babel monorepo to v7.24.6 ([843049d](https://github.com/zhensherlock/company-autocomplete/commit/843049df860fdce4cc53d90f9fdf3115f9bf0f5c))
+* **deps:** update dependency @typescript-eslint/parser to v7.11.0 ([6c48c92](https://github.com/zhensherlock/company-autocomplete/commit/6c48c9264eccf6428d329df94945e9b886af7e98))
+* **deps:** update dependency @vue/theme to v2.2.12 ([33f6f01](https://github.com/zhensherlock/company-autocomplete/commit/33f6f01654683f203931c9d5458332cfc934aef3))
+* **deps:** update dependency eslint-plugin-promise to v6.2.0 ([c547f1a](https://github.com/zhensherlock/company-autocomplete/commit/c547f1a0b5a862dff2ece60c784216badfdb90b7))
+* **deps:** update dependency lint-staged to v15.2.5 ([41ad705](https://github.com/zhensherlock/company-autocomplete/commit/41ad705ff1ee713f77aec867fb890595c8a85166))
+* update dependencies ([#550](https://github.com/zhensherlock/company-autocomplete/issues/550), [#551](https://github.com/zhensherlock/company-autocomplete/issues/551), [#552](https://github.com/zhensherlock/company-autocomplete/issues/552), [#553](https://github.com/zhensherlock/company-autocomplete/issues/553), [#554](https://github.com/zhensherlock/company-autocomplete/issues/554)) ([71300a5](https://github.com/zhensherlock/company-autocomplete/commit/71300a52e9b8a73dad02afdaf870acc1a5bee030))
+
+
+
 ## [3.2.33](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.32...v3.2.33) (2024-05-23)
 
 
