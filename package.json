@@ -78,7 +78,7 @@
     "@rollup/plugin-typescript": "^11.1.6",
     "@types/crypto-js": "^4.2.2",
     "@types/markdown-it": "^14.1.1",
-    "@typescript-eslint/parser": "^7.14.1",
+    "@typescript-eslint/parser": "^7.15.0",
     "@vue/theme": "^2.2.12",
     "autoprefixer": "^10.4.19",
     "concurrently": "^8.2.2",
@@ -91,7 +91,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-semistandard": "^17.0.0",
     "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-promise": "^6.2.0",
+    "eslint-plugin-promise": "^6.4.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.7",
     "lodash": "^4.17.21",
@@ -101,15 +101,15 @@
     "rollup-plugin-css-porter": "^1.0.2",
     "rollup-plugin-filesize": "^10.0.0",
     "rollup-plugin-postcss": "^4.0.2",
-    "rollup-plugin-sass": "^1.13.0",
+    "rollup-plugin-sass": "^1.13.1",
     "rollup-plugin-your-function": "^0.5.3",
     "terser": "^5.31.1",
-    "typescript": "^5.5.2",
+    "typescript": "^5.5.3",
     "unplugin-element-plus": "^0.8.0",
     "vitepress": "^1.2.3"
   },
   "dependencies": {
-    "@floating-ui/dom": "^1.6.6",
+    "@floating-ui/dom": "^1.6.7",
     "crypto-js": "^4.2.0"
   }
 }
