@@ -41,4 +41,11 @@ export default {
   footer: {
     message: '本中文文档内容版权为 Michael Sun 所有，保留所有权利。'
   },
+  algolia: {
+    appId: 'V6CF28P0PS',
+    apiKey: '692752b7b3c6f794997d8ae22aed79fa',
+    indexName: 'company-autocomplete-docs',
+    placeholder: '请输入关键词',
+    buttonText: '搜索',
+  },
 }
