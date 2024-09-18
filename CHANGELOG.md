@@ -107,6 +107,7 @@
 * **deps:** update dependency vitepress to v1.3.2 ([b17a6e1](https://github.com/zhensherlock/company-autocomplete/commit/b17a6e17ef6c84cd5ba5e77081c435e0c249d10c))
 * **deps:** update dependency vitepress to v1.3.3 ([537a43f](https://github.com/zhensherlock/company-autocomplete/commit/537a43fe9e7f8c3c0c3fb1846796e55ade2eb1a3))
 * **deps:** update dependency vitepress to v1.3.4 ([30e0e40](https://github.com/zhensherlock/company-autocomplete/commit/30e0e404747a6547aac0c4edce80ba5c95552884))
+* update dependencies ([70c143d](https://github.com/zhensherlock/company-autocomplete/commit/70c143dc7f0d8fcccdf210ff8a2940f59ab397cb))
 * update dependencies ([028d251](https://github.com/zhensherlock/company-autocomplete/commit/028d2511d14261d602246a5381a15fff4246be52))
 * update dependencies ([a3be718](https://github.com/zhensherlock/company-autocomplete/commit/a3be7188657ddae40cbe012d346b812f8f0f32a4))
 
