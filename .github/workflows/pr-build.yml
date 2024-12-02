@@ -1,12 +1,13 @@
-name: deploy
+name: PR Build
 
 on:
-  push:
+  pull_request:
     branches:
       - main
+      - dev
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -23,12 +24,8 @@ jobs:
       - name: Install Package
         run: npm ci
 
-      - name: Build Docs Package
-        run: npm run docs:build
+      - name: Build Package
+        run: npm run build
 
-      - name: Deploy Docs
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs/.vitepress/dist
-          # cname: example.com # if wanna deploy to custom domain
+      - name: Test Package
+        run: npm run test
