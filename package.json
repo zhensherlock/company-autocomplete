@@ -91,7 +91,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-semistandard": "^17.0.0",
     "eslint-plugin-import": "^2.30.0",
-    "eslint-plugin-promise": "^6.6.0",
+    "eslint-plugin-promise": "^7.0.0",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
     "lodash": "^4.17.21",
