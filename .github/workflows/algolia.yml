@@ -5,6 +5,7 @@ on:
       - main
 jobs:
   algolia:
+    if: github.repository == 'zhensherlock/company-autocomplete'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

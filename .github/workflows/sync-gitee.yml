@@ -6,6 +6,7 @@ on:
 
 jobs:
   build:
+    if: github.repository == 'zhensherlock/company-autocomplete'
     runs-on: ubuntu-latest
     steps:
       - name: Sync to Gitee
