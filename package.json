@@ -83,7 +83,7 @@
     "autoprefixer": "^10.4.20",
     "concurrently": "^8.2.2",
     "conventional-changelog-angular": "^7.0.0",
-    "conventional-changelog-cli": "^4.1.0",
+    "conventional-changelog-cli": "^5.0.0",
     "core-js": "^3.38.1",
     "cssnano": "^7.0.6",
     "element-plus": "^2.8.3",
