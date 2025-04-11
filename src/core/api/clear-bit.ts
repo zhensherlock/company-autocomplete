@@ -7,14 +7,14 @@ export const queryClearBitAPI = async (keyword: string): Promise<CompanyDataType
   const url: string = `https://autocomplete.clearbit.com/v1/companies/suggest?query=${keyword}`
   const res: Response = await fetch(url, {
     method: 'GET',
-    mode: 'cors'
+    mode: 'cors',
   })
-  const json = <ClearBitResponseType[]> await res.json()
-  return json.map((item) => {
+  const json = <ClearBitResponseType[]>await res.json()
+  return json.map(item => {
     return {
       name: item.name,
       id: item.domain,
-      avatar: item.logo
+      avatar: item.logo,
     }
   })
 }

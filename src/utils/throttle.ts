@@ -18,16 +18,16 @@ interface Throttler<T extends unknown[]> {
   cancel(): void
 }
 
-export function throttle<T extends unknown[]> (
+export function throttle<T extends unknown[]>(
   callback: (...args: T) => unknown,
   wait = 0,
-  { start = true, middle = true, once = false }: ThrottleOptions = {}
+  { start = true, middle = true, once = false }: ThrottleOptions = {},
 ): Throttler<T> {
   let innerStart = start
   let last = 0
   let timer: ReturnType<typeof setTimeout>
   let cancelled = false
-  function fn (this: unknown, ...args: T) {
+  function fn(this: unknown, ...args: T) {
     if (cancelled) return
     const delta = Date.now() - last
     last = Date.now()
@@ -48,7 +48,7 @@ export function throttle<T extends unknown[]> (
           callback.apply(this, args)
           if (once) fn.cancel()
         },
-        !middle ? wait : wait - delta
+        !middle ? wait : wait - delta,
       )
     }
   }
@@ -59,10 +59,10 @@ export function throttle<T extends unknown[]> (
   return fn
 }
 
-export function debounce<T extends unknown[]> (
+export function debounce<T extends unknown[]>(
   callback: (...args: T) => unknown,
   wait = 0,
-  { start = false, middle = false, once = false }: ThrottleOptions = {}
+  { start = false, middle = false, once = false }: ThrottleOptions = {},
 ): Throttler<T> {
   return throttle(callback, wait, { start, middle, once })
 }

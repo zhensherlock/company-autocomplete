@@ -9,7 +9,7 @@ import postcss from 'rollup-plugin-postcss'
 import strip from '@rollup/plugin-strip'
 import autoprefixer from 'autoprefixer'
 import cssnano from 'cssnano'
-import { banner } from './build/banner'
+import { banner } from './tools/banner'
 
 const output = [
   {
@@ -17,54 +17,54 @@ const output = [
     format: 'esm',
     file: 'dist/index.esm.js',
     sourcemap: true,
-    banner
+    banner,
   },
   {
     name: 'CompanyAutocomplete',
     format: 'umd',
     file: 'dist/index.umd.js',
     sourcemap: true,
-    banner
+    banner,
   },
   {
     name: 'CompanyAutocomplete',
     format: 'iife',
     file: 'dist/index.iife.js',
     sourcemap: true,
-    banner
+    banner,
   },
   {
     name: 'CompanyAutocomplete',
     format: 'cjs',
     file: 'dist/index.cjs.js',
     sourcemap: true,
-    banner
+    banner,
   },
   // min
   {
     name: 'CompanyAutocomplete',
     format: 'esm',
     file: 'dist/index.esm.min.js',
-    plugins: [terser()]
+    plugins: [terser()],
   },
   {
     name: 'CompanyAutocomplete',
     format: 'umd',
     file: 'dist/index.umd.min.js',
-    plugins: [terser()]
+    plugins: [terser()],
   },
   {
     name: 'CompanyAutocomplete',
     format: 'iife',
     file: 'dist/index.iife.min.js',
-    plugins: [terser()]
+    plugins: [terser()],
   },
   {
     name: 'CompanyAutocomplete',
     format: 'cjs',
     file: 'dist/index.cjs.min.js',
-    plugins: [terser()]
-  }
+    plugins: [terser()],
+  },
 ]
 
 export default [
@@ -76,23 +76,24 @@ export default [
         throwOnError: true,
         throwOnWarning: true,
         include: ['src/**'],
-        exclude: ['node_modules/**', 'src/style/**']
+        exclude: ['node_modules/**', 'src/style/**'],
       }),
       resolve(),
       strip(),
-      typescript(),
+      typescript({
+        declaration: true,
+        declarationDir: './dist/types',
+        outDir: './dist',
+      }),
       postcss({
-        plugins: [
-          autoprefixer(),
-          cssnano()
-        ]
+        plugins: [autoprefixer(), cssnano()],
       }),
       commonjs(),
       babel({
         babelHelpers: 'runtime',
-        exclude: /node_modules/
+        exclude: /node_modules/,
       }),
-      filesize()
-    ]
-  }
+      filesize(),
+    ],
+  },
 ]

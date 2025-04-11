@@ -32,7 +32,7 @@ export const replaceAll = (str: string, find: string, replace: string) => {
 
 export const getSiblings = (element: HTMLElement): HTMLElement[] => {
   const siblings = Array.from(element.parentNode ? element.parentNode.children : [])
-  return siblings.filter((sibling) => sibling !== element) as HTMLElement[]
+  return siblings.filter(sibling => sibling !== element) as HTMLElement[]
 }
 
 export const setSuggestionItemClass = (suggestions: HTMLElement[], index: number, className: string) => {
@@ -62,15 +62,20 @@ export const stringToJson = (str: string): any[] => {
     } else {
       return []
     }
-  } catch (e) {
+  } catch {
     return []
   }
 }
 
 export const objectToQueryString = (object: { [key: string]: any }, prefix = '') => {
-  return prefix + Object.keys(object).map(key => {
-    return `${key}=${object[key]}`
-  }).join('&')
+  return (
+    prefix +
+    Object.keys(object)
+      .map(key => {
+        return `${key}=${object[key]}`
+      })
+      .join('&')
+  )
 }
 
 export const splitArray = <T>(arr: T[], size: number): T[][] => {
