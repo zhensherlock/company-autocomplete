@@ -11,6 +11,9 @@ jobs:
   build:
     if: github.repository == 'zhensherlock/company-autocomplete'
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -20,7 +23,7 @@ jobs:
       - name: Install Node
         uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 20
           registry-url: https://registry.npmjs.org/
           cache: npm
 
@@ -31,6 +34,6 @@ jobs:
         run: npm run build
 
       - name: Publish NPM Package
-        run: npm publish
+        run: npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}

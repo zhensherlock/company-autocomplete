@@ -1,16 +1,7 @@
 import type { CompanyAutocompleteOptions, CompanyDataType } from '../types'
 import { initialOptions } from '../utils/initialization'
-import {
-  isFunction,
-  isString,
-  removeHtmlTags,
-  setSuggestionItemClass
-} from '../utils'
-import {
-  addHistory,
-  getHistory,
-  removeHistory
-} from '../utils/history'
+import { isFunction, isString, removeHtmlTags, setSuggestionItemClass } from '../utils'
+import { addHistory, getHistory, removeHistory } from '../utils/history'
 import { debounce } from '../utils/throttle'
 import { handleQueryData } from './api/index'
 import { computePosition, autoUpdate, size, offset, flip } from '@floating-ui/dom'
@@ -32,17 +23,17 @@ class CompanyAutocomplete {
   private keyDownHandler: any
   private inputElement?: HTMLInputElement
 
-  constructor (args: Partial<CompanyAutocompleteOptions> = {}) {
+  constructor(args: Partial<CompanyAutocompleteOptions> = {}) {
     this.options = Object.assign({}, initialOptions, args)
     if (isString(this.options.target)) {
-      this.target = document.querySelector(<string> this.options.target)
+      this.target = document.querySelector(<string>this.options.target)
     } else {
-      this.target = <Element> this.options.target
+      this.target = <Element>this.options.target
     }
     this.render()
   }
 
-  private render (): void {
+  private render(): void {
     if (!this.target) {
       return
     }
@@ -51,12 +42,14 @@ class CompanyAutocomplete {
       `<div class="company-autocomplete ${this.options.showSubmitButton ? 'company-autocomplete--show-submit' : ''}">`,
       '<div class="company-autocomplete__input">',
       `<input type="text" placeholder="${this.options.placeholder}" />`,
-      this.options.clearable ? `<div class="company-autocomplete__clear"><i class="company-autocomplete__clear-icon">${this.options.clearIcon}</i></div>` : '',
+      this.options.clearable
+        ? `<div class="company-autocomplete__clear"><i class="company-autocomplete__clear-icon">${this.options.clearIcon}</i></div>`
+        : '',
       '</div>',
       this.options.showSubmitButton ? '<div class="company-autocomplete__submit">' : '',
       this.options.showSubmitButton ? `<button type="button">${this.options.submitButtonLabel}</button>` : '',
       this.options.showSubmitButton ? '</div>' : '',
-      '</div>'
+      '</div>',
     ]
     this.target.innerHTML = fragments.join('')
     this.suggestionElement.classList.add('suggestion-popper')
@@ -66,9 +59,9 @@ class CompanyAutocomplete {
     } else {
       this.target.appendChild(this.suggestionElement)
     }
-    this.inputWrapElement = <HTMLElement> this.target.querySelector('.company-autocomplete')
-    this.inputElement = <HTMLInputElement> this.inputWrapElement.querySelector('input')
-    const buttonElement = <HTMLInputElement> this.inputWrapElement.querySelector('button')
+    this.inputWrapElement = <HTMLElement>this.target.querySelector('.company-autocomplete')
+    this.inputElement = <HTMLInputElement>this.inputWrapElement.querySelector('input')
+    const buttonElement = <HTMLInputElement>this.inputWrapElement.querySelector('button')
     autoUpdate(this.inputWrapElement, this.suggestionElement, () => {
       computePosition(this.inputWrapElement, this.suggestionElement, {
         middleware: [
@@ -76,23 +69,22 @@ class CompanyAutocomplete {
           size({
             apply: ({ rects }) => {
               Object.assign(this.suggestionElement.style, {
-                width: `${rects.reference.width}px`
+                width: `${rects.reference.width}px`,
               })
-            }
+            },
           }),
           ...(this.options.autoFlip
             ? [
                 flip({
-                  fallbackPlacements: ['top']
-                })
+                  fallbackPlacements: ['top'],
+                }),
               ]
-            : []
-          )
-        ]
+            : []),
+        ],
       }).then(({ x, y }) => {
         Object.assign(this.suggestionElement.style, {
           left: `${x}px`,
-          top: `${y}px`
+          top: `${y}px`,
         })
       })
     })
@@ -106,17 +98,20 @@ class CompanyAutocomplete {
         this.hideSuggestion()
       }
     })
-    this.inputElement?.addEventListener('input', debounce(() => {
-      const value = this.inputElement?.value || ''
-      value && this.handleQuerySuggestion(value)
-    }, this.options.queryDelay))
+    this.inputElement?.addEventListener(
+      'input',
+      debounce(() => {
+        const value = this.inputElement?.value || ''
+        value && this.handleQuerySuggestion(value)
+      }, this.options.queryDelay),
+    )
 
-    this.inputElement?.addEventListener('click', (e) => {
+    this.inputElement?.addEventListener('click', e => {
       if (this.suggestions.length > 0) {
         this.showSuggestion()
         return
       }
-      const value = (<HTMLInputElement> e.target).value
+      const value = (<HTMLInputElement>e.target).value
       if (value) {
         this.handleQuerySuggestion(value)
       } else if (this.options.history.enabled) {
@@ -133,22 +128,22 @@ class CompanyAutocomplete {
     })
 
     this.suggestionElement.addEventListener('click', (e: MouseEvent) => {
-      if ((<HTMLElement> e.target).closest('.suggestion')) {
-        const suggestionElement = (<HTMLElement> e.target).closest('.suggestion')
+      if ((<HTMLElement>e.target).closest('.suggestion')) {
+        const suggestionElement = (<HTMLElement>e.target).closest('.suggestion')
         // const labelElement = (<HTMLElement> e.target).closest('.suggestion')?.querySelector('.suggestion__label')
         // const text = labelElement?.textContent || ''
-        const name = (<HTMLElement> suggestionElement)?.dataset.name || ''
+        const name = (<HTMLElement>suggestionElement)?.dataset.name || ''
         this.inputElement!.value = name
         this.suggestions = []
         this.selectCompany = {
-          id: (<HTMLElement> suggestionElement)?.dataset.id || '',
-          name
+          id: (<HTMLElement>suggestionElement)?.dataset.id || '',
+          name,
         }
         this.handleSelect()
         this.hideSuggestion()
         this.inputWrapElement.classList.add(this.inputWrapHaveWordsClassName)
       }
-      if ((<HTMLElement> e.target).id === 'remove-history-link') {
+      if ((<HTMLElement>e.target).id === 'remove-history-link') {
         removeHistory(this.options.history)
         this.clearSuggestion()
         this.hideSuggestion()
@@ -175,30 +170,32 @@ class CompanyAutocomplete {
     })
   }
 
-  private handleQuerySuggestion (value: string) {
+  private handleQuerySuggestion(value: string) {
     handleQueryData(value, this.options).then(data => {
       this.handleSuggestionDom(data)
       this.options.onFetch()
     })
   }
 
-  private handleSuggestionDom (data: CompanyDataType[], dataForm = 'fetch') {
+  private handleSuggestionDom(data: CompanyDataType[], dataForm = 'fetch') {
     this.suggestions = data
     if (data.length === 0) {
       this.clearSuggestion()
       this.hideSuggestion()
       return
     }
-    const suggestionFragments: string[] = [
-      '<div class="suggestion-popper__body">'
-    ]
+    const suggestionFragments: string[] = ['<div class="suggestion-popper__body">']
     data.forEach((item: CompanyDataType) => {
       const name = removeHtmlTags(item.name)
       suggestionFragments.push(`<div class="suggestion" data-id="${item.id}" data-name="${name}">`)
       if (item.avatar) {
-        suggestionFragments.push(`<div class="suggestion__avatar"><img data-id="${item.id || ''}" alt="${name}" src="${item.avatar || ''}"/></div>`)
+        suggestionFragments.push(
+          `<div class="suggestion__avatar"><img data-id="${item.id || ''}" alt="${name}" src="${item.avatar || ''}"/></div>`,
+        )
       } else if (dataForm === 'history') {
-        suggestionFragments.push(`<div class="suggestion__avatar"><i class="suggestion__avatar-icon">${this.options.history?.itemIcon}</i></div>`)
+        suggestionFragments.push(
+          `<div class="suggestion__avatar"><i class="suggestion__avatar-icon">${this.options.history?.itemIcon}</i></div>`,
+        )
       }
       suggestionFragments.push(`<div class="suggestion__label">${item.name}</div>`)
       suggestionFragments.push('<div class="suggestion__extra"></div>')
@@ -207,7 +204,10 @@ class CompanyAutocomplete {
     suggestionFragments.push('</div>')
     suggestionFragments.push('<div class="suggestion-popper__footer">')
     if (dataForm === 'history' && this.options.history?.showClear) {
-      data.length > 0 && suggestionFragments.push(`<a id="remove-history-link" href="javascript:;"><i class="suggestion-popper__icon">${this.options.history?.clearIcon || ''}</i>删除历史</a>`)
+      data.length > 0 &&
+        suggestionFragments.push(
+          `<a id="remove-history-link" href="javascript:;"><i class="suggestion-popper__icon">${this.options.history?.clearIcon || ''}</i>删除历史</a>`,
+        )
     }
     suggestionFragments.push('</div>')
     this.suggestionElement.innerHTML = suggestionFragments.join('')
@@ -221,21 +221,21 @@ class CompanyAutocomplete {
     this.showSuggestion()
   }
 
-  private handleSelect () {
+  private handleSelect() {
     if (this.options.history.enabled && this.selectCompany) {
       addHistory(this.selectCompany, this.options.history)
     }
     this.options.onSelect(this.selectCompany)
   }
 
-  private handleSubmit (text: string) {
+  private handleSubmit(text: string) {
     this.options.submitCallback({
       company: this.selectCompany,
-      text
+      text,
     })
   }
 
-  private showSuggestion () {
+  private showSuggestion() {
     this.inputWrapElement.classList.add(this.inputWrapActivatedClassName)
     this.suggestionElement.classList.add(this.suggestionActivatedClassName)
     this.keyDownHandler && this.inputWrapElement.removeEventListener('keydown', this.keyDownHandler)
@@ -244,22 +244,22 @@ class CompanyAutocomplete {
     this.options.onDropdownVisibleChange(true)
   }
 
-  private hideSuggestion () {
+  private hideSuggestion() {
     this.inputWrapElement.classList.remove(this.inputWrapActivatedClassName)
     this.suggestionElement.classList.remove(this.suggestionActivatedClassName)
     this.inputWrapElement.removeEventListener('keydown', this.keyDownHandler)
     this.options.onDropdownVisibleChange(false)
   }
 
-  private clearSuggestion () {
+  private clearSuggestion() {
     this.suggestionElement.textContent = ''
     this.suggestions = []
   }
 
-  private handleKeyDown (event: KeyboardEvent) {
+  private handleKeyDown(event: KeyboardEvent) {
     switch (event.key) {
       case 'Enter':
-        this.handleSubmit((<HTMLInputElement> event.target)?.value)
+        this.handleSubmit((<HTMLInputElement>event.target)?.value)
         break
       case 'ArrowUp':
         if (!this.keyboardActiveIndex) {
@@ -271,7 +271,7 @@ class CompanyAutocomplete {
         setSuggestionItemClass(
           Array.from(this.suggestionElement.querySelectorAll('.suggestion')),
           this.keyboardActiveIndex,
-          'suggestion--keyboard-active'
+          'suggestion--keyboard-active',
         )
         this.handleBackFill()
         break
@@ -285,7 +285,7 @@ class CompanyAutocomplete {
         setSuggestionItemClass(
           Array.from(this.suggestionElement.querySelectorAll('.suggestion')),
           this.keyboardActiveIndex,
-          'suggestion--keyboard-active'
+          'suggestion--keyboard-active',
         )
         this.handleBackFill()
         break
@@ -295,13 +295,13 @@ class CompanyAutocomplete {
     }
   }
 
-  private handleBackFill () {
+  private handleBackFill() {
     if (this.options.backFill) {
       this.inputElement!.value = removeHtmlTags(this.selectCompany?.name || '')
     }
   }
 
-  private handleClear () {
+  private handleClear() {
     this.selectCompany = undefined
     this.inputElement!.value = ''
     this.clearSuggestion()
@@ -310,6 +310,4 @@ class CompanyAutocomplete {
   }
 }
 
-export {
-  CompanyAutocomplete
-}
+export { CompanyAutocomplete }
