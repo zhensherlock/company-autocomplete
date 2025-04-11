@@ -1,8 +1,9 @@
-## [3.3.1](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.34...v3.3.1) (2025-03-01)
+## [3.3.1](https://github.com/zhensherlock/company-autocomplete/compare/v3.2.34...v3.3.1) (2025-04-11)
 
 
 ### ✨ Features | 新功能
 
+* **dark-theme:** add --border-color variable ([cd1f1b6](https://github.com/zhensherlock/company-autocomplete/commit/cd1f1b695fb83b96da4c40349a16e9119f47c4ac))
 * update api ([b8882f2](https://github.com/zhensherlock/company-autocomplete/commit/b8882f2463d8cc1a0335bab1c56dc4276548c8f1))
 
 
@@ -171,9 +172,11 @@
 * **deps:** update dependency vitepress to v1.4.1 ([8d32ff6](https://github.com/zhensherlock/company-autocomplete/commit/8d32ff6c1bdff9668741c8315dab7ce24488ced5))
 * **deps:** update dependency vitepress to v1.4.3 ([2b310b6](https://github.com/zhensherlock/company-autocomplete/commit/2b310b65ddfbdfaf1760a448efc603e510d30a0c))
 * **deps:** update dependency vitepress to v1.5.0 ([685c451](https://github.com/zhensherlock/company-autocomplete/commit/685c451483e927b00d1ec2088f46d74aa29e03ae))
+* update dependencies ([cb7f62d](https://github.com/zhensherlock/company-autocomplete/commit/cb7f62d8b036255ec7cccf41b0be2d9699e00e85))
 * update dependencies ([70c143d](https://github.com/zhensherlock/company-autocomplete/commit/70c143dc7f0d8fcccdf210ff8a2940f59ab397cb))
 * update dependencies ([028d251](https://github.com/zhensherlock/company-autocomplete/commit/028d2511d14261d602246a5381a15fff4246be52))
 * update dependencies ([a3be718](https://github.com/zhensherlock/company-autocomplete/commit/a3be7188657ddae40cbe012d346b812f8f0f32a4))
+* update eslint v9 ([6b272c0](https://github.com/zhensherlock/company-autocomplete/commit/6b272c059f3b824a9c5810e85ea6246131c86855))
 
 
 ### 🐛 Bug Fixes | Bug 修复
