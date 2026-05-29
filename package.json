@@ -67,7 +67,7 @@
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "@element-plus/icons-vue": "^2.3.1",
-    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-babel": "^7.0.0",
     "@rollup/plugin-commonjs": "^28.0.3",
     "@rollup/plugin-eslint": "^9.0.5",
     "@rollup/plugin-node-resolve": "^16.0.1",
