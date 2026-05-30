@@ -1,7 +1,9 @@
-import packageJson from '../package.json'
+const packageJson = require('../package.json')
 
-export const banner = `/*!
+const banner = `/*!
  * ${packageJson.name} v${packageJson.version}
- * (c) 2022-2023 Michael Sun
+ * (c) 2022-2026 Michael Sun
  * Released under the ${packageJson.license} License.
  */`
+
+module.exports = { banner }

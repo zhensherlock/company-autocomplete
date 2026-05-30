@@ -12,7 +12,7 @@
     "noUnusedLocals": true,
     "resolveJsonModule": true,
     "jsx": "preserve",
-    "lib": ["ES5", "DOM"]
+    "lib": ["ES2015", "DOM"]
   },
   "exclude": ["**/node_modules/**", "**/dist/**"]
 }
