@@ -1,25 +1,25 @@
-export const isString = (value: any): boolean => {
+export const isString = (value: unknown): value is string => {
   return typeof value === 'string'
-}
-export const isFunction = (value: Function): boolean => {
-  return typeof value === 'function'
 }
 
 export const getSearchUrl = (keyword: string, defaultUrl: string, customUrl?: string) => {
   const url = customUrl || defaultUrl
-  return replaceAll(url, '{keyword}', keyword)
+  return replaceAll(url, '{keyword}', encodeURIComponent(keyword))
 }
 
-export const getAvatar = async (id: string, urls: string[]) => {
+export const getAvatar = async (id: string, urls: string[], signal?: AbortSignal) => {
   for (const url of urls) {
     try {
-      const truthUrl = replaceAll(url, '{id}', id)
-      const response = await fetch(truthUrl)
-      if (response.status === 200) {
+      const truthUrl = replaceAll(url, '{id}', encodeURIComponent(id))
+      const response = await fetch(truthUrl, { signal })
+      if (response.ok) {
         const blob = await response.blob()
         return URL.createObjectURL(blob)
       }
     } catch (error) {
+      if (error instanceof DOMException && error.name === 'AbortError') {
+        throw error
+      }
       console.error(error)
     }
   }
@@ -27,7 +27,7 @@ export const getAvatar = async (id: string, urls: string[]) => {
 }
 
 export const replaceAll = (str: string, find: string, replace: string) => {
-  return str.replace(new RegExp(find, 'g'), replace)
+  return str.split(find).join(replace)
 }
 
 export const getSiblings = (element: HTMLElement): HTMLElement[] => {
@@ -38,23 +38,17 @@ export const getSiblings = (element: HTMLElement): HTMLElement[] => {
 export const setSuggestionItemClass = (suggestions: HTMLElement[], index: number, className: string) => {
   suggestions.forEach(item => {
     item.classList.remove(className)
+    item.setAttribute('aria-selected', 'false')
   })
-  suggestions[index].classList.add(className)
+  suggestions[index]?.classList.add(className)
+  suggestions[index]?.setAttribute('aria-selected', 'true')
 }
 
 export const removeHtmlTags = (str: string): string => {
   return str.replace(/(<([^>]+)>)/gi, '')
 }
 
-// export const debounce = (fn: Function, ms = 0) => {
-//   let timeoutId: any
-//   return function (...args: any[]) {
-//     clearTimeout(timeoutId)
-//     timeoutId = setTimeout(() => fn.apply(this, args), ms)
-//   }
-// }
-
-export const stringToJson = (str: string): any[] => {
+export const stringToJson = <T = unknown>(str: string): T[] => {
   try {
     const result = JSON.parse(str)
     if (Array.isArray(result)) {
@@ -67,18 +61,18 @@ export const stringToJson = (str: string): any[] => {
   }
 }
 
-export const objectToQueryString = (object: { [key: string]: any }, prefix = '') => {
-  return (
-    prefix +
-    Object.keys(object)
-      .map(key => {
-        return `${key}=${object[key]}`
-      })
-      .join('&')
-  )
+export const objectToQueryString = (object: Record<string, string | number | boolean>, prefix = '') => {
+  const params = new URLSearchParams()
+  Object.keys(object).forEach(key => {
+    params.set(key, String(object[key]))
+  })
+  return prefix + params.toString()
 }
 
 export const splitArray = <T>(arr: T[], size: number): T[][] => {
+  if (size <= 0) {
+    return []
+  }
   const result: T[][] = []
   for (let i = 0; i < arr.length; i += size) {
     result.push(arr.slice(i, i + size))

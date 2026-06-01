@@ -76,8 +76,13 @@
       opacity 0.3s ease;
     text-rendering: auto;
     visibility: hidden;
+    border: 0;
+    background: transparent;
+    padding: 0;
+    outline: none;
 
     &-icon {
+      display: inline-flex;
       width: 16px;
       height: 16px;
       cursor: pointer;
@@ -91,6 +96,10 @@
       &:hover {
         color: var(--input-hover-icon-color);
       }
+    }
+
+    &:focus-visible {
+      color: var(--input-hover-icon-color);
     }
   }
 
@@ -183,16 +192,26 @@
       display: none;
     }
 
-    a {
+    a,
+    button {
       color: var(--footer-text-color);
       display: inline-flex;
       align-items: center;
+      border: 0;
+      background: transparent;
+      padding: 0;
+      cursor: pointer;
+      font: inherit;
 
       svg {
         margin-right: 5px;
       }
 
       &:hover {
+        color: var(--footer-hover-text-color);
+      }
+
+      &:focus-visible {
         color: var(--footer-hover-text-color);
       }
     }

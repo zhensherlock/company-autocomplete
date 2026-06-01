@@ -1,6 +1,5 @@
 const tsParser = require('@typescript-eslint/parser')
 const tsPlugin = require('@typescript-eslint/eslint-plugin')
-const importPlugin = require('eslint-plugin-import')
 const prettierPlugin = require('eslint-plugin-prettier')
 const globals = require('globals')
 
@@ -36,7 +35,6 @@ module.exports = [
     },
     plugins: {
       '@typescript-eslint': tsPlugin,
-      import: importPlugin,
       prettier: prettierPlugin,
     },
     rules: {
@@ -48,13 +46,6 @@ module.exports = [
       '@typescript-eslint/no-unused-vars': 'warn',
       '@typescript-eslint/no-explicit-any': 'off',
       '@typescript-eslint/no-unused-expressions': ['error', { allowShortCircuit: true, allowTernary: true }],
-    },
-    settings: {
-      'import/resolver': {
-        node: {
-          extensions: ['.js', '.jsx', '.ts', '.tsx'],
-        },
-      },
     },
   },
 ]

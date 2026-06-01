@@ -1,17 +1,18 @@
 import type { CompanyAutocompleteOptions } from '../types'
 import { getAvatar } from '../utils'
 
-const qccAvatarUrls: string[] = ['https://image.qcc.com/logo/{id}.jpg', 'https://image.qcc.com/auto/{id}.jpg']
-
-export const handleAvatar = async (img: HTMLImageElement, options: CompanyAutocompleteOptions) => {
+export const handleAvatar = async (
+  img: HTMLImageElement,
+  options: CompanyAutocompleteOptions,
+  signal?: AbortSignal,
+): Promise<string> => {
   const id = img.dataset.id || ''
-  if (options.avatarUrl) {
-    img.src = await getAvatar(id, [options.avatarUrl])
-    return
+  if (!id || !options.avatarUrl) {
+    return ''
   }
-  switch (options.api) {
-    case 'qcc_open':
-      img.src = await getAvatar(id, qccAvatarUrls)
-      break
+  const avatarUrl = await getAvatar(id, [options.avatarUrl], signal)
+  if (avatarUrl) {
+    img.src = avatarUrl
   }
+  return avatarUrl
 }

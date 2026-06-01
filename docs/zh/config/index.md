@@ -12,7 +12,7 @@ HTML元素标签的id
 ## api
 
 - **Type:** `string`
-- **available values**: `'clearbit' | 'qcc_open' | 'qcc_global'`
+- **available values**: `'clearbit'`
 
 查询数据源
 
@@ -58,12 +58,6 @@ HTML元素标签的id
 
 自动获取焦点
 
-## searchUrl
-
-- **Type:** `string`
-
-搜索查询API url
-
 ## avatarUrl
 
 - **Type:** `string`
@@ -100,49 +94,49 @@ HTML元素标签的id
 
 ## submitCallback
 
-- **Type:** `Function`
+- **Type:** `(payload: { company?: CompanyDataType; text: string }) => void`
 - **Default:** `() => {}`
 
 提交回调事件
 
 ## onFetch
 
-- **Type:** `Function`
+- **Type:** `(data: CompanyDataType[], keyword: string) => void`
 - **Default:** `() => {}`
 
 在搜索时调用
 
 ## onSelect
 
-- **Type:** `Function`
+- **Type:** `(company?: CompanyDataType) => void`
 - **Default:** `() => {}`
 
 当选择选项时调用。参数是选项的值
 
 ## onClear
 
-- **Type:** `Function`
+- **Type:** `() => void`
 - **Default:** `() => {}`
 
 清除时调用
 
 ## onFocus
 
-- **Type:** `Function`
+- **Type:** `() => void`
 - **Default:** `() => {}`
 
 在进入组件时调用.
 
 ## onBlur
 
-- **Type:** `Function`
+- **Type:** `() => void`
 - **Default:** `() => {}`
 
 离开组件时调用.
 
 ## onDropdownVisibleChange
 
-- **Type:** `Function`
+- **Type:** `(visible: boolean) => void`
 - **Default:** `() => {}`
 
 下拉菜单打开关闭时调用.

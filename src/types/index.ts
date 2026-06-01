@@ -1,8 +1,6 @@
-export type ApiType = 'clearbit' | 'qcc_open' | 'qcc_global' | 'qcc' | 'qixin' | 'tianyancha'
+export type ApiType = 'clearbit'
 
 export type HistoryType = 'localStorage' | 'sessionStorage'
-
-export type LayoutDirection = 'ltr' | 'rtl'
 
 export interface HistoryOptions {
   /**
@@ -51,7 +49,7 @@ export interface CompanyAutocompleteOptions {
   /**
    * show clear button
    */
-  clearable: Boolean
+  clearable: boolean
   /**
    * if backFill selected item the input when using keyboard
    */
@@ -67,35 +65,31 @@ export interface CompanyAutocompleteOptions {
   /**
    * auto focus
    */
-  autoFocus: Boolean
+  autoFocus: boolean
   /**
    * Called when searching items
    */
-  onFetch: Function
+  onFetch: (data: CompanyDataType[], keyword: string) => void
   /**
    * Called when an option is selected. param is option's value
    */
-  onSelect: Function
+  onSelect: (company?: CompanyDataType) => void
   /**
    * Called when clear
    */
-  onClear: Function
+  onClear: () => void
   /**
    * Called when entering the component
    */
-  onFocus: Function
+  onFocus: () => void
   /**
    * Called when leaving the component
    */
-  onBlur: Function
+  onBlur: () => void
   /**
    * Call when dropdown open
    */
-  onDropdownVisibleChange: Function
-  /**
-   * search query api url
-   */
-  // searchUrl?: string;
+  onDropdownVisibleChange: (visible: boolean) => void
   /**
    * avatar url
    */
@@ -123,11 +117,22 @@ export interface CompanyAutocompleteOptions {
   /**
    * submit callback
    */
-  submitCallback: Function
+  submitCallback: (payload: CompanyAutocompleteSubmitPayload) => void
+}
+
+export type CompanyAutocompleteUserOptions = Partial<Omit<CompanyAutocompleteOptions, 'history'>> & {
+  history?: Partial<HistoryOptions>
+}
+
+export interface CompanyAutocompleteSubmitPayload {
   /**
-   * set direction of layout
+   * selected company
    */
-  // direction: LayoutDirection;
+  company?: CompanyDataType
+  /**
+   * input text
+   */
+  text: string
 }
 
 export interface CompanyDataType {
@@ -145,48 +150,8 @@ export interface CompanyDataType {
   avatar?: string
 }
 
-export interface QccOpenAPIResponseType {
-  status: string
-  msg: string
-  traceNo: string
-  token: null
-  result: {
-    companyName: string
-    keyNo: string
-  }[]
-}
-
-export interface QccResponseType {
-  status: string
-  result: {
-    name: string
-    keyNo: string
-    avatar: string
-  }[]
-}
-
 export interface ClearBitResponseType {
-  name: string
-  keyNo: string
-  logo: string
-  domain: string
-}
-
-export interface QccGlobalAPIResponseType {
-  status: string
-  msg: string
-  resultList: {
-    keyNo: string
-    name: string
-    imgUrl: string
-    enName: string
-    enShortStatus: string
-    creditCode: string
-    regNo: string
-    orgNo: string
-    shortStatus: string
-    jurisdiction: string
-  }[]
-  totalCount: number
-  jsonStr: object
+  name?: string
+  logo?: string
+  domain?: string
 }

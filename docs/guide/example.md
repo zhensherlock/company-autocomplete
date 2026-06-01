@@ -4,12 +4,8 @@ layout: doc
 # Example
 
 <script setup lang="ts">
-import { getCurrentInstance, ref, onMounted } from 'vue';
+import { onMounted } from 'vue';
 import { CompanyAutocomplete } from '../../src/main';
-
-const app = getCurrentInstance();
-
-const apiType = ref('clearbit');
 
 onMounted(() => {
   new CompanyAutocomplete({
@@ -28,19 +24,7 @@ onMounted(() => {
     // onDropdownVisibleChange: (open) => {
     //   console.log('onDropdownVisibleChange', open)
     // }
-    // searchUrl: 'https://api-company.starmaverick.repl.co/qcc/search/{keyword}',
-    // avatarUrl: 'https://api-company.starmaverick.repl.co/qcc/logo/{id}'
-  });
-  new CompanyAutocomplete({
-    api: 'qcc_open',
-    target: '#qcc_open_input',
-    autoFocus: false
-  });
-
-  new CompanyAutocomplete({
-    api: 'qcc_global',
-    target: '#qcc_global_input',
-    autoFocus: false
+    // avatarUrl: 'https://example.com/company-logo/{id}'
   });
 })
 </script>
@@ -57,47 +41,3 @@ const companyAutocomplete = new CompanyAutocomplete({
   target: '#example'
 })
 ```
-
-[//]: # (## QCC Open API)
-
-[//]: # (<div id="qcc_open_input">)
-
-[//]: # (</div>)
-
-[//]: # ()
-[//]: # (```js)
-
-[//]: # (import { CompanyAutocomplete } from 'company-autocomplete' )
-
-[//]: # ()
-[//]: # (const companyAutocomplete = new CompanyAutocomplete&#40;{)
-
-[//]: # (  api: 'qcc_open',)
-
-[//]: # (  target: '#example')
-
-[//]: # (}&#41;)
-
-[//]: # (```)
-
-[//]: # (## QCC Global API)
-
-[//]: # (<div id="qcc_global_input">)
-
-[//]: # (</div>)
-
-[//]: # ()
-[//]: # (```js)
-
-[//]: # (import { CompanyAutocomplete } from 'company-autocomplete' )
-
-[//]: # ()
-[//]: # (const companyAutocomplete = new CompanyAutocomplete&#40;{)
-
-[//]: # (  api: 'qcc_global',)
-
-[//]: # (  target: '#example')
-
-[//]: # (}&#41;)
-
-[//]: # (```)

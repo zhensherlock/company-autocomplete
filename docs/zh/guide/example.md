@@ -4,30 +4,14 @@ layout: doc
 # 示例
 
 <script setup lang="ts">
-import { getCurrentInstance, ref, onMounted } from 'vue';
+import { onMounted } from 'vue';
 import { CompanyAutocomplete } from '../../../src/main';
-
-const app = getCurrentInstance();
-
-const apiType = ref('clearbit');
 
 onMounted(() => {
   new CompanyAutocomplete({
     api: 'clearbit',
     target: '#clearbit_input',
     autoFocus: true
-  });
-
-  new CompanyAutocomplete({
-    api: 'qcc_open',
-    target: '#qcc_open_input',
-    autoFocus: false
-  });
-
-  new CompanyAutocomplete({
-    api: 'qcc_global',
-    target: '#qcc_global_input',
-    autoFocus: false
   });
 })
 </script>
@@ -44,47 +28,3 @@ const companyAutocomplete = new CompanyAutocomplete({
   target: '#example'
 })
 ```
-
-[//]: # (## QCC Open API)
-
-[//]: # (<div id="qcc_open_input">)
-
-[//]: # (</div>)
-
-[//]: # ()
-[//]: # (```js)
-
-[//]: # (import { CompanyAutocomplete } from 'company-autocomplete')
-
-[//]: # ()
-[//]: # (const companyAutocomplete = new CompanyAutocomplete&#40;{)
-
-[//]: # (  api: 'qcc_open',)
-
-[//]: # (  target: '#example')
-
-[//]: # (}&#41;)
-
-[//]: # (```)
-
-[//]: # (## QCC Global API)
-
-[//]: # (<div id="qcc_global_input">)
-
-[//]: # (</div>)
-
-[//]: # ()
-[//]: # (```js)
-
-[//]: # (import { CompanyAutocomplete } from 'company-autocomplete' )
-
-[//]: # ()
-[//]: # (const companyAutocomplete = new CompanyAutocomplete&#40;{)
-
-[//]: # (  api: 'qcc_global',)
-
-[//]: # (  target: '#example')
-
-[//]: # (}&#41;)
-
-[//]: # (```)

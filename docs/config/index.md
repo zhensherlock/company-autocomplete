@@ -12,7 +12,7 @@ Id of the html element tag.
 ## api
 
 - **Type:** `string`
-- **available values**: `'clearbit' | 'qcc_open' | 'qcc_global'`
+- **available values**: `'clearbit'`
 
 Query data source.
 
@@ -58,12 +58,6 @@ Clear icon.
 
 Auto focus.
 
-## searchUrl
-
-- **Type:** `string`
-
-Search query api url.
-
 ## avatarUrl
 
 - **Type:** `string`
@@ -100,49 +94,49 @@ Submit button label.
 
 ## submitCallback
 
-- **Type:** `Function`
+- **Type:** `(payload: { company?: CompanyDataType; text: string }) => void`
 - **Default:** `() => {}`
 
 Submit callback.
 
 ## onFetch
 
-- **Type:** `Function`
+- **Type:** `(data: CompanyDataType[], keyword: string) => void`
 - **Default:** `() => {}`
 
 Called when searching items.
 
 ## onSelect
 
-- **Type:** `Function`
+- **Type:** `(company?: CompanyDataType) => void`
 - **Default:** `() => {}`
 
 Called when an option is selected. param is option's value.
 
 ## onClear
 
-- **Type:** `Function`
+- **Type:** `() => void`
 - **Default:** `() => {}`
 
 Called when clear.
 
 ## onFocus
 
-- **Type:** `Function`
+- **Type:** `() => void`
 - **Default:** `() => {}`
 
 Called when entering the component.
 
 ## onBlur
 
-- **Type:** `Function`
+- **Type:** `() => void`
 - **Default:** `() => {}`
 
 Called when leaving the component.
 
 ## onDropdownVisibleChange
 
-- **Type:** `Function`
+- **Type:** `(visible: boolean) => void`
 - **Default:** `() => {}`
 
 Call when dropdown open.
