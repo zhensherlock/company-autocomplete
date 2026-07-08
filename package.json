@@ -85,7 +85,7 @@
     "rollup-plugin-filesize": "^10.0.0",
     "rollup-plugin-postcss": "^4.0.2",
     "sass": "^1.100.0",
-    "typescript": "^5.9.3",
+    "typescript": "^7.0.0",
     "vitepress": "^1.6.4"
   },
   "dependencies": {
