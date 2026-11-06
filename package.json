@@ -69,7 +69,7 @@
     "@typescript-eslint/parser": "^8.60.0",
     "autoprefixer": "^10.5.0",
     "concurrently": "^8.2.2",
-    "conventional-changelog-angular": "^7.0.0",
+    "conventional-changelog-angular": "^9.0.0",
     "conventional-changelog-cli": "^4.1.0",
     "cssnano": "^7.1.9",
     "element-plus": "^2.14.1",
